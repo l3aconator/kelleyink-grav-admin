@@ -1,0 +1,11 @@
+email: piratel3acon@gmail.com
+fullname: 'Kyle Bacon'
+title: Dev
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$ZPgZ/OXKtpKbggo8QptUt.1CZEzt2E215vkXGxxYe18LhP7aMZdci
