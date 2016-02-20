@@ -39,46 +39,39 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
 ";
         // line 6
         $this->displayBlock('head', $context, $blocks);
-        // line 41
+        // line 36
         echo "</head>
 <body id=\"top\" class=\"";
-        // line 42
+        // line 37
         echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "body_classes", array());
         echo "\">
     <div id=\"sb-site\">
+        
         ";
-        // line 44
+        // line 40
         $this->displayBlock('header', $context, $blocks);
-        // line 61
+        // line 66
         echo "
         ";
-        // line 62
+        // line 67
         $this->displayBlock('showcase', $context, $blocks);
-        // line 63
+        // line 68
         echo "
         ";
-        // line 64
-        $this->displayBlock('body', $context, $blocks);
         // line 69
+        $this->displayBlock('body', $context, $blocks);
+        // line 74
         echo "
         ";
-        // line 70
+        // line 75
         $this->displayBlock('footer', $context, $blocks);
-        // line 97
+        // line 108
         echo "        
     </div>
-    <div class=\"sb-slidebar sb-left sb-width-thin\">
-        <div id=\"panel\">
-        ";
-        // line 101
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 101)->display($context);
-        // line 102
-        echo "        </div>
-    </div>
     ";
-        // line 104
+        // line 110
         $this->displayBlock('bottom', $context, $blocks);
-        // line 117
+        // line 123
         echo "</body>
 </html>
 ";
@@ -114,15 +107,15 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
     ";
         // line 14
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 30
+        // line 26
         echo "    ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "css", array(), "method");
         echo "
 
     ";
-        // line 32
+        // line 28
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 38
+        // line 33
         echo "    ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(), "method");
         echo "
@@ -135,180 +128,185 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
     {
         // line 15
         echo "        ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/pure-0.5.0/grids-min.css", 1 => 103), "method");
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/normalize.css"), "method");
         // line 16
         echo "        ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css-compiled/nucleus.css", 1 => 102), "method");
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/skeleton.css"), "method");
         // line 17
-        echo "        ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css-compiled/template.css", 1 => 101), "method");
-        // line 18
-        echo "        ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/custom.css", 1 => 100), "method");
-        // line 19
-        echo "        ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/font-awesome.min.css", 1 => 100), "method");
-        // line 20
-        echo "        ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/slidebars.min.css"), "method");
-        // line 21
         echo "
         ";
-        // line 22
+        // line 18
         if ((($this->getAttribute((isset($context["browser"]) ? $context["browser"] : null), "getBrowser", array()) == "msie") && ($this->getAttribute((isset($context["browser"]) ? $context["browser"] : null), "getVersion", array()) == 10))) {
-            // line 23
+            // line 19
             echo "            ";
             $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/nucleus-ie10.css"), "method");
+            // line 20
+            echo "        ";
+        }
+        // line 21
+        echo "        ";
+        if (((($this->getAttribute((isset($context["browser"]) ? $context["browser"] : null), "getBrowser", array()) == "msie") && ($this->getAttribute((isset($context["browser"]) ? $context["browser"] : null), "getVersion", array()) >= 8)) && ($this->getAttribute((isset($context["browser"]) ? $context["browser"] : null), "getVersion", array()) <= 9))) {
+            // line 22
+            echo "            ";
+            $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/nucleus-ie9.css"), "method");
+            // line 23
+            echo "            ";
+            $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/html5shiv-printshiv.min.js"), "method");
             // line 24
             echo "        ";
         }
         // line 25
-        echo "        ";
-        if (((($this->getAttribute((isset($context["browser"]) ? $context["browser"] : null), "getBrowser", array()) == "msie") && ($this->getAttribute((isset($context["browser"]) ? $context["browser"] : null), "getVersion", array()) >= 8)) && ($this->getAttribute((isset($context["browser"]) ? $context["browser"] : null), "getVersion", array()) <= 9))) {
-            // line 26
-            echo "            ";
-            $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/nucleus-ie9.css"), "method");
-            // line 27
-            echo "            ";
-            $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/html5shiv-printshiv.min.js"), "method");
-            // line 28
-            echo "        ";
-        }
-        // line 29
         echo "    ";
     }
 
-    // line 32
+    // line 28
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 33
+        // line 29
         echo "        ";
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "jquery", 1 => 101), "method");
-        // line 34
+        // line 30
         echo "        ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/modernizr.custom.71422.js", 1 => 100), "method");
-        // line 35
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/function.js", 1 => 100), "method");
+        // line 31
         echo "        ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/antimatter.js"), "method");
-        // line 36
-        echo "        ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/slidebars.min.js"), "method");
-        // line 37
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/typed.js"), "method");
+        // line 32
         echo "    ";
     }
 
-    // line 44
+    // line 40
     public function block_header($context, array $blocks = array())
     {
-        // line 45
-        echo "        <header id=\"header\">
-            <div id=\"logo\">
-                <h3><a href=\"";
+        // line 41
+        echo "        <header class=\"header-bg cream gradient-bg\">
+            <div class=\"nav\">
+                <div class=\"nav-bar\">
+                    <div class=\"row\">
+                        <div class=\"container\">
+                            <div class=\"three columns header-logo\">
+                                <a href=\"";
         // line 47
         echo ((((isset($context["base_url"]) ? $context["base_url"] : null) == "")) ? ("/") : ((isset($context["base_url"]) ? $context["base_url"] : null)));
-        echo "\">";
-        echo $this->getAttribute($this->getAttribute((isset($context["config"]) ? $context["config"] : null), "site", array()), "title", array());
-        echo "</a></h3>
-            </div>
-            <div id=\"navbar\">
-                ";
-        // line 50
-        $this->displayBlock('header_extra', $context, $blocks);
+        echo "\"><img class=\"header-logo\" alt=\"";
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["widget"]) ? $context["widget"] : null), "text", array()));
+        echo "\" src=\"";
+        echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/header-logo.png");
+        echo "\" /></a>
+                            </div>
+                            <div class=\"nine columns\">
+                                <nav>
+                                    ";
         // line 51
-        echo "                ";
+        $this->displayBlock('header_extra', $context, $blocks);
+        // line 52
+        echo "                                    ";
         if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["config"]) ? $context["config"] : null), "plugins", array()), "langswitcher", array()), "enabled", array())) {
-            // line 52
-            echo "                ";
-            $this->loadTemplate("partials/langswitcher.html.twig", "partials/base.html.twig", 52)->display($context);
             // line 53
-            echo "                ";
+            echo "                                    ";
+            $this->loadTemplate("partials/langswitcher.html.twig", "partials/base.html.twig", 53)->display($context);
+            // line 54
+            echo "                                    ";
         }
-        // line 54
-        echo "                ";
+        // line 55
+        echo "                                    ";
         $this->displayBlock('header_navigation', $context, $blocks);
-        // line 57
-        echo "                <span class=\"panel-activation sb-toggle-left navbar-left menu-btn fa fa-bars\"></span>
+        // line 58
+        echo "                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
         ";
     }
 
-    // line 50
+    // line 51
     public function block_header_extra($context, array $blocks = array())
     {
     }
 
-    // line 54
+    // line 55
     public function block_header_navigation($context, array $blocks = array())
     {
-        // line 55
-        echo "                ";
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 55)->display($context);
         // line 56
-        echo "                ";
+        echo "                                    ";
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 56)->display($context);
+        // line 57
+        echo "                                    ";
     }
 
-    // line 62
+    // line 67
     public function block_showcase($context, array $blocks = array())
     {
     }
 
-    // line 64
+    // line 69
     public function block_body($context, array $blocks = array())
     {
-        // line 65
+        // line 70
         echo "        <section id=\"body\" class=\"";
         echo (isset($context["class"]) ? $context["class"] : null);
         echo "\">
             ";
-        // line 66
+        // line 71
         $this->displayBlock('content', $context, $blocks);
-        // line 67
+        // line 72
         echo "        </section>
         ";
     }
 
-    // line 66
+    // line 71
     public function block_content($context, array $blocks = array())
     {
     }
 
-    // line 70
+    // line 75
     public function block_footer($context, array $blocks = array())
     {
-        // line 71
-        echo "        <footer>
-            <div class=\"four columns\">
-                <a href=\"#\"><img class=\"footer-logo\" src=\"images/footer-logo.png\" alt=\"Kelley, ink footer logo\" /></a>
-                <h6 class=\"footer-head\">Communicating since 1974.</h6>
-                <p class=\"footer-text knockout-darker\">No, really, I was an early talker.</p>
-            </div>
-            <div class=\"four columns\">
-                <h6 class=\"footer-head\">NAVIGATE</h6>
-                <ul class=\"footer-nav-list\">
-                    <div class=\"six columns\">
-                            <li class=\"footer-nav-item\"><a class=\"footer-nav-link\" href=\"#\">Home</a></li>
-                            <li class=\"footer-nav-item\"><a class=\"footer-nav-link\" href=\"#about\">About</a></li>
-                            <li class=\"footer-nav-item\"><a class=\"footer-nav-link\" href=\"#services\">Services</a></li>
+        // line 76
+        echo "        <div class=\"footer-bg footer-section-pad\"><!--begin footer-->
+            <div class=\"container\">
+                <div class=\"row\">
+                    <footer>
+                        <div class=\"four columns\">
+                            <a href=\"#\"><img class=\"footer-logo\" src=\"";
+        // line 81
+        echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/footer-logo.png");
+        echo "\" alt=\"Kelley, ink footer logo\" /></a>
+                            <h6 class=\"footer-head\">Communicating since 1974.</h6>
+                            <p class=\"footer-text knockout-darker\">No, really, I was an early talker.</p>
                         </div>
-                        <div class=\"six columns\">
-                            <li class=\"footer-nav-item\"><a class=\"footer-nav-link\" href=\"#contact\">Contact</a></li>
-                            <li class=\"footer-nav-item\"><a class=\"footer-nav-link\" href=\"/blog/\">Blog</a></li>
+                        <div class=\"four columns\">
+                            <h6 class=\"footer-head\">NAVIGATE</h6>
+                            <ul class=\"footer-nav-list\">
+                                <div class=\"six columns\">
+                                        <li class=\"footer-nav-item\"><a class=\"footer-nav-link\" href=\"#\">Home</a></li>
+                                        <li class=\"footer-nav-item\"><a class=\"footer-nav-link\" href=\"#about\">About</a></li>
+                                        <li class=\"footer-nav-item\"><a class=\"footer-nav-link\" href=\"#services\">Services</a></li>
+                                    </div>
+                                    <div class=\"six columns\">
+                                        <li class=\"footer-nav-item\"><a class=\"footer-nav-link\" href=\"#contact\">Contact</a></li>
+                                        <li class=\"footer-nav-item\"><a class=\"footer-nav-link\" href=\"/blog/\">Blog</a></li>
+                                    </div>
+                            </ul>
                         </div>
-                </ul>
+                        <div class=\"four columns\">Four
+                            <h4 class=\"knockout-darker\">Currently <span class=\"knockout project-avail\">open</span> for new projects.</h4>
+                            <a href=\"http://www.kylebaconcreative.com/\" target=\"_blank\"><button class=\"button\">Contact Kelley!</button></a>
+                        </div>
+                    </footer>
+                </div>
             </div>
-            <div class=\"four columns\">Four
-                <h4 class=\"knockout-darker\">Currently <span class=\"knockout project-avail\">open</span> for new projects.</h4>
-                <a href=\"http://www.kylebaconcreative.com/\" target=\"_blank\"><button class=\"button\">Contact Kelley!</button></a>
-            </div>
-        </footer>
+        </div>
         ";
     }
 
-    // line 104
+    // line 110
     public function block_bottom($context, array $blocks = array())
     {
-        // line 105
+        // line 111
         echo "        ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(0 => "bottom"), "method");
         echo "
@@ -337,7 +335,7 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
 
     public function getDebugInfo()
     {
-        return array (  312 => 105,  309 => 104,  280 => 71,  277 => 70,  272 => 66,  267 => 67,  265 => 66,  260 => 65,  257 => 64,  252 => 62,  248 => 56,  245 => 55,  242 => 54,  237 => 50,  230 => 57,  227 => 54,  224 => 53,  221 => 52,  218 => 51,  216 => 50,  208 => 47,  204 => 45,  201 => 44,  197 => 37,  194 => 36,  191 => 35,  188 => 34,  185 => 33,  182 => 32,  178 => 29,  175 => 28,  172 => 27,  169 => 26,  166 => 25,  163 => 24,  160 => 23,  158 => 22,  155 => 21,  152 => 20,  149 => 19,  146 => 18,  143 => 17,  140 => 16,  137 => 15,  134 => 14,  126 => 38,  124 => 32,  118 => 30,  116 => 14,  111 => 12,  107 => 11,  104 => 10,  102 => 9,  94 => 8,  91 => 7,  88 => 6,  82 => 117,  80 => 104,  76 => 102,  74 => 101,  68 => 97,  66 => 70,  63 => 69,  61 => 64,  58 => 63,  56 => 62,  53 => 61,  51 => 44,  46 => 42,  43 => 41,  41 => 6,  35 => 3,  32 => 2,  30 => 1,);
+        return array (  310 => 111,  307 => 110,  276 => 81,  269 => 76,  266 => 75,  261 => 71,  256 => 72,  254 => 71,  249 => 70,  246 => 69,  241 => 67,  237 => 57,  234 => 56,  231 => 55,  226 => 51,  215 => 58,  212 => 55,  209 => 54,  206 => 53,  203 => 52,  201 => 51,  190 => 47,  182 => 41,  179 => 40,  175 => 32,  172 => 31,  169 => 30,  166 => 29,  163 => 28,  159 => 25,  156 => 24,  153 => 23,  150 => 22,  147 => 21,  144 => 20,  141 => 19,  139 => 18,  136 => 17,  133 => 16,  130 => 15,  127 => 14,  119 => 33,  117 => 28,  111 => 26,  109 => 14,  104 => 12,  100 => 11,  97 => 10,  95 => 9,  87 => 8,  84 => 7,  81 => 6,  75 => 123,  73 => 110,  69 => 108,  67 => 75,  64 => 74,  62 => 69,  59 => 68,  57 => 67,  54 => 66,  52 => 40,  46 => 37,  43 => 36,  41 => 6,  35 => 3,  32 => 2,  30 => 1,);
     }
 }
 /* {% set theme_config = attribute(config.themes, config.system.pages.theme) %}*/
@@ -354,12 +352,8 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
 /*     <link rel="canonical" href="{{ page.url(true, true) }}" />*/
 /* */
 /*     {% block stylesheets %}*/
-/*         {% do assets.addCss('theme://css/pure-0.5.0/grids-min.css', 103) %}*/
-/*         {% do assets.addCss('theme://css-compiled/nucleus.css',102) %}*/
-/*         {% do assets.addCss('theme://css-compiled/template.css',101) %}*/
-/*         {% do assets.addCss('theme://css/custom.css',100) %}*/
-/*         {% do assets.addCss('theme://css/font-awesome.min.css',100) %}*/
-/*         {% do assets.addCss('theme://css/slidebars.min.css') %}*/
+/*         {% do assets.addCss('theme://css/normalize.css') %}*/
+/*         {% do assets.addCss('theme://css/skeleton.css') %}*/
 /* */
 /*         {% if browser.getBrowser == 'msie' and browser.getVersion == 10 %}*/
 /*             {% do assets.addCss('theme://css/nucleus-ie10.css') %}*/
@@ -373,9 +367,8 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
 /* */
 /*     {% block javascripts %}*/
 /*         {% do assets.addJs('jquery',101) %}*/
-/*         {% do assets.addJs('theme://js/modernizr.custom.71422.js',100) %}*/
-/*         {% do assets.addJs('theme://js/antimatter.js') %}*/
-/*         {% do assets.addJs('theme://js/slidebars.min.js') %}*/
+/*         {% do assets.addJs('theme://js/function.js',100) %}*/
+/*         {% do assets.addJs('theme://js/typed.js') %}*/
 /*     {% endblock %}*/
 /*     {{ assets.js() }}*/
 /* */
@@ -383,20 +376,30 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
 /* </head>*/
 /* <body id="top" class="{{ page.header.body_classes }}">*/
 /*     <div id="sb-site">*/
+/*         */
 /*         {% block header %}*/
-/*         <header id="header">*/
-/*             <div id="logo">*/
-/*                 <h3><a href="{{ base_url == '' ? '/' : base_url }}">{{ config.site.title }}</a></h3>*/
-/*             </div>*/
-/*             <div id="navbar">*/
-/*                 {% block header_extra %}{% endblock %}*/
-/*                 {% if config.plugins.langswitcher.enabled %}*/
-/*                 {% include 'partials/langswitcher.html.twig' %}*/
-/*                 {% endif %}*/
-/*                 {% block header_navigation %}*/
-/*                 {% include 'partials/navigation.html.twig' %}*/
-/*                 {% endblock %}*/
-/*                 <span class="panel-activation sb-toggle-left navbar-left menu-btn fa fa-bars"></span>*/
+/*         <header class="header-bg cream gradient-bg">*/
+/*             <div class="nav">*/
+/*                 <div class="nav-bar">*/
+/*                     <div class="row">*/
+/*                         <div class="container">*/
+/*                             <div class="three columns header-logo">*/
+/*                                 <a href="{{ base_url == '' ? '/' : base_url }}"><img class="header-logo" alt="{{ widget.text|e }}" src="{{ url("theme://images/header-logo.png") }}" /></a>*/
+/*                             </div>*/
+/*                             <div class="nine columns">*/
+/*                                 <nav>*/
+/*                                     {% block header_extra %}{% endblock %}*/
+/*                                     {% if config.plugins.langswitcher.enabled %}*/
+/*                                     {% include 'partials/langswitcher.html.twig' %}*/
+/*                                     {% endif %}*/
+/*                                     {% block header_navigation %}*/
+/*                                     {% include 'partials/navigation.html.twig' %}*/
+/*                                     {% endblock %}*/
+/*                                 </nav>*/
+/*                             </div>*/
+/*                         </div>*/
+/*                     </div>*/
+/*                 </div>*/
 /*             </div>*/
 /*         </header>*/
 /*         {% endblock %}*/
@@ -410,38 +413,39 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
 /*         {% endblock %}*/
 /* */
 /*         {% block footer %}*/
-/*         <footer>*/
-/*             <div class="four columns">*/
-/*                 <a href="#"><img class="footer-logo" src="images/footer-logo.png" alt="Kelley, ink footer logo" /></a>*/
-/*                 <h6 class="footer-head">Communicating since 1974.</h6>*/
-/*                 <p class="footer-text knockout-darker">No, really, I was an early talker.</p>*/
-/*             </div>*/
-/*             <div class="four columns">*/
-/*                 <h6 class="footer-head">NAVIGATE</h6>*/
-/*                 <ul class="footer-nav-list">*/
-/*                     <div class="six columns">*/
-/*                             <li class="footer-nav-item"><a class="footer-nav-link" href="#">Home</a></li>*/
-/*                             <li class="footer-nav-item"><a class="footer-nav-link" href="#about">About</a></li>*/
-/*                             <li class="footer-nav-item"><a class="footer-nav-link" href="#services">Services</a></li>*/
+/*         <div class="footer-bg footer-section-pad"><!--begin footer-->*/
+/*             <div class="container">*/
+/*                 <div class="row">*/
+/*                     <footer>*/
+/*                         <div class="four columns">*/
+/*                             <a href="#"><img class="footer-logo" src="{{ url("theme://images/footer-logo.png") }}" alt="Kelley, ink footer logo" /></a>*/
+/*                             <h6 class="footer-head">Communicating since 1974.</h6>*/
+/*                             <p class="footer-text knockout-darker">No, really, I was an early talker.</p>*/
 /*                         </div>*/
-/*                         <div class="six columns">*/
-/*                             <li class="footer-nav-item"><a class="footer-nav-link" href="#contact">Contact</a></li>*/
-/*                             <li class="footer-nav-item"><a class="footer-nav-link" href="/blog/">Blog</a></li>*/
+/*                         <div class="four columns">*/
+/*                             <h6 class="footer-head">NAVIGATE</h6>*/
+/*                             <ul class="footer-nav-list">*/
+/*                                 <div class="six columns">*/
+/*                                         <li class="footer-nav-item"><a class="footer-nav-link" href="#">Home</a></li>*/
+/*                                         <li class="footer-nav-item"><a class="footer-nav-link" href="#about">About</a></li>*/
+/*                                         <li class="footer-nav-item"><a class="footer-nav-link" href="#services">Services</a></li>*/
+/*                                     </div>*/
+/*                                     <div class="six columns">*/
+/*                                         <li class="footer-nav-item"><a class="footer-nav-link" href="#contact">Contact</a></li>*/
+/*                                         <li class="footer-nav-item"><a class="footer-nav-link" href="/blog/">Blog</a></li>*/
+/*                                     </div>*/
+/*                             </ul>*/
 /*                         </div>*/
-/*                 </ul>*/
+/*                         <div class="four columns">Four*/
+/*                             <h4 class="knockout-darker">Currently <span class="knockout project-avail">open</span> for new projects.</h4>*/
+/*                             <a href="http://www.kylebaconcreative.com/" target="_blank"><button class="button">Contact Kelley!</button></a>*/
+/*                         </div>*/
+/*                     </footer>*/
+/*                 </div>*/
 /*             </div>*/
-/*             <div class="four columns">Four*/
-/*                 <h4 class="knockout-darker">Currently <span class="knockout project-avail">open</span> for new projects.</h4>*/
-/*                 <a href="http://www.kylebaconcreative.com/" target="_blank"><button class="button">Contact Kelley!</button></a>*/
-/*             </div>*/
-/*         </footer>*/
+/*         </div>*/
 /*         {% endblock %}*/
 /*         */
-/*     </div>*/
-/*     <div class="sb-slidebar sb-left sb-width-thin">*/
-/*         <div id="panel">*/
-/*         {% include 'partials/navigation.html.twig' %}*/
-/*         </div>*/
 /*     </div>*/
 /*     {% block bottom %}*/
 /*         {{ assets.js('bottom') }}*/

@@ -17,7 +17,7 @@ class __TwigTemplate_a1e81a1f9b219a207847317217fafe11c5b87789cf78b9499093e68c6be
     {
         // line 17
         echo "
-<ul class=\"navigation\">
+<ul class=\"navigation nav-list u-pull-right\">
     ";
         // line 19
         if ($this->getAttribute($this->getAttribute((isset($context["theme_config"]) ? $context["theme_config"] : null), "dropdown", array()), "enabled", array())) {
@@ -36,10 +36,10 @@ class __TwigTemplate_a1e81a1f9b219a207847317217fafe11c5b87789cf78b9499093e68c6be
                 echo "            ";
                 $context["current_page"] = ((($this->getAttribute($context["page"], "active", array()) || $this->getAttribute($context["page"], "activeChild", array()))) ? ("active") : (""));
                 // line 24
-                echo "            <li class=\"";
+                echo "            <li class=\"nav-item ";
                 echo (isset($context["current_page"]) ? $context["current_page"] : null);
                 echo "\">
-                <a href=\"";
+                <a class=\"nav-link\" href=\"";
                 // line 25
                 echo $this->getAttribute($context["page"], "url", array());
                 echo "\">
@@ -70,8 +70,8 @@ class __TwigTemplate_a1e81a1f9b219a207847317217fafe11c5b87789cf78b9499093e68c6be
         $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "menu", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["mitem"]) {
             // line 33
-            echo "        <li>
-            <a href=\"";
+            echo "        <li class=\"nav-item\">
+            <a class=\"nav-link\" href=\"";
             // line 34
             echo $this->getAttribute($context["mitem"], "url", array());
             echo "\">
@@ -129,10 +129,10 @@ class __TwigTemplate_a1e81a1f9b219a207847317217fafe11c5b87789cf78b9499093e68c6be
                 echo "        ";
                 $context["current_page"] = ((($this->getAttribute($context["p"], "active", array()) || $this->getAttribute($context["p"], "activeChild", array()))) ? ("active") : (""));
                 // line 4
-                echo "        <li class=\"";
+                echo "        <li class=\"nav-item ";
                 echo (isset($context["current_page"]) ? $context["current_page"] : null);
                 echo "\">
-            <a href=\"";
+            <a class=\"nav-link\" href=\"";
                 // line 5
                 echo $this->getAttribute($context["p"], "url", array());
                 echo "\">
@@ -194,8 +194,8 @@ class __TwigTemplate_a1e81a1f9b219a207847317217fafe11c5b87789cf78b9499093e68c6be
 /* {% macro loop(page) %}*/
 /*     {% for p in page.children.visible %}*/
 /*         {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}*/
-/*         <li class="{{ current_page }}">*/
-/*             <a href="{{ p.url }}">*/
+/*         <li class="nav-item {{ current_page }}">*/
+/*             <a class="nav-link" href="{{ p.url }}">*/
 /*                 {% if p.header.icon %}<i class="fa fa-{{ p.header.icon }}"></i>{% endif %}*/
 /*                 {{ p.menu }}*/
 /*             </a>*/
@@ -208,14 +208,14 @@ class __TwigTemplate_a1e81a1f9b219a207847317217fafe11c5b87789cf78b9499093e68c6be
 /*     {% endfor %}*/
 /* {% endmacro %}*/
 /* */
-/* <ul class="navigation">*/
+/* <ul class="navigation nav-list u-pull-right">*/
 /*     {% if theme_config.dropdown.enabled %}*/
 /*         {{ _self.loop(pages) }}*/
 /*     {% else %}*/
 /*         {% for page in pages.children.visible %}*/
 /*             {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}*/
-/*             <li class="{{ current_page }}">*/
-/*                 <a href="{{ page.url }}">*/
+/*             <li class="nav-item {{ current_page }}">*/
+/*                 <a class="nav-link" href="{{ page.url }}">*/
 /*                     {% if page.header.icon %}<i class="fa fa-{{ page.header.icon }}"></i>{% endif %}*/
 /*                     {{ page.menu }}*/
 /*                 </a>*/
@@ -223,8 +223,8 @@ class __TwigTemplate_a1e81a1f9b219a207847317217fafe11c5b87789cf78b9499093e68c6be
 /*         {% endfor %}*/
 /*     {% endif %}*/
 /*     {% for mitem in site.menu %}*/
-/*         <li>*/
-/*             <a href="{{ mitem.url }}">*/
+/*         <li class="nav-item">*/
+/*             <a class="nav-link" href="{{ mitem.url }}">*/
 /*                 {% if mitem.icon %}<i class="fa fa-{{ mitem.icon }}"></i>{% endif %}*/
 /*                 {{ mitem.text }}*/
 /*             </a>*/

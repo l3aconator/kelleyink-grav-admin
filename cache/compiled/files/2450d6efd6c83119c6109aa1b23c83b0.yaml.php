@@ -2,12 +2,12 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/kelley-ink-grav-mampstack-5.6.18-0/apache2/htdocs/grav-admin/user/config/site.yaml',
-    'modified' => 1455224032,
+    'modified' => 1455927240,
     'data' => [
-        'title' => 'Grav',
+        'title' => 'Kelley.ink',
         'author' => [
-            'name' => 'Joe Bloggs',
-            'email' => 'joe@test.com'
+            'name' => 'Kelley McAllister',
+            'email' => 'kelley@kelley.ink'
         ],
         'metadata' => [
             'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'

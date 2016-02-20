@@ -12,12 +12,8 @@
     <link rel="canonical" href="{{ page.url(true, true) }}" />
 
     {% block stylesheets %}
-        {% do assets.addCss('theme://css/pure-0.5.0/grids-min.css', 103) %}
-        {% do assets.addCss('theme://css-compiled/nucleus.css',102) %}
-        {% do assets.addCss('theme://css-compiled/template.css',101) %}
-        {% do assets.addCss('theme://css/custom.css',100) %}
-        {% do assets.addCss('theme://css/font-awesome.min.css',100) %}
-        {% do assets.addCss('theme://css/slidebars.min.css') %}
+        {% do assets.addCss('theme://css/normalize.css') %}
+        {% do assets.addCss('theme://css/skeleton.css') %}
 
         {% if browser.getBrowser == 'msie' and browser.getVersion == 10 %}
             {% do assets.addCss('theme://css/nucleus-ie10.css') %}
@@ -31,9 +27,8 @@
 
     {% block javascripts %}
         {% do assets.addJs('jquery',101) %}
-        {% do assets.addJs('theme://js/modernizr.custom.71422.js',100) %}
-        {% do assets.addJs('theme://js/antimatter.js') %}
-        {% do assets.addJs('theme://js/slidebars.min.js') %}
+        {% do assets.addJs('theme://js/function.js',100) %}
+        {% do assets.addJs('theme://js/typed.js') %}
     {% endblock %}
     {{ assets.js() }}
 
@@ -41,20 +36,30 @@
 </head>
 <body id="top" class="{{ page.header.body_classes }}">
     <div id="sb-site">
+        
         {% block header %}
-        <header id="header">
-            <div id="logo">
-                <h3><a href="{{ base_url == '' ? '/' : base_url }}">{{ config.site.title }}</a></h3>
-            </div>
-            <div id="navbar">
-                {% block header_extra %}{% endblock %}
-                {% if config.plugins.langswitcher.enabled %}
-                {% include 'partials/langswitcher.html.twig' %}
-                {% endif %}
-                {% block header_navigation %}
-                {% include 'partials/navigation.html.twig' %}
-                {% endblock %}
-                <span class="panel-activation sb-toggle-left navbar-left menu-btn fa fa-bars"></span>
+        <header class="header-bg cream gradient-bg">
+            <div class="nav">
+                <div class="nav-bar">
+                    <div class="row">
+                        <div class="container">
+                            <div class="three columns header-logo">
+                                <a href="{{ base_url == '' ? '/' : base_url }}"><img class="header-logo" alt="{{ widget.text|e }}" src="{{ url("theme://images/header-logo.png") }}" /></a>
+                            </div>
+                            <div class="nine columns">
+                                <nav>
+                                    {% block header_extra %}{% endblock %}
+                                    {% if config.plugins.langswitcher.enabled %}
+                                    {% include 'partials/langswitcher.html.twig' %}
+                                    {% endif %}
+                                    {% block header_navigation %}
+                                    {% include 'partials/navigation.html.twig' %}
+                                    {% endblock %}
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
         {% endblock %}
@@ -68,38 +73,39 @@
         {% endblock %}
 
         {% block footer %}
-        <footer>
-            <div class="four columns">
-                <a href="#"><img class="footer-logo" src="images/footer-logo.png" alt="Kelley, ink footer logo" /></a>
-                <h6 class="footer-head">Communicating since 1974.</h6>
-                <p class="footer-text knockout-darker">No, really, I was an early talker.</p>
-            </div>
-            <div class="four columns">
-                <h6 class="footer-head">NAVIGATE</h6>
-                <ul class="footer-nav-list">
-                    <div class="six columns">
-                            <li class="footer-nav-item"><a class="footer-nav-link" href="#">Home</a></li>
-                            <li class="footer-nav-item"><a class="footer-nav-link" href="#about">About</a></li>
-                            <li class="footer-nav-item"><a class="footer-nav-link" href="#services">Services</a></li>
+        <div class="footer-bg footer-section-pad"><!--begin footer-->
+            <div class="container">
+                <div class="row">
+                    <footer>
+                        <div class="four columns">
+                            <a href="#"><img class="footer-logo" src="{{ url("theme://images/footer-logo.png") }}" alt="Kelley, ink footer logo" /></a>
+                            <h6 class="footer-head">Communicating since 1974.</h6>
+                            <p class="footer-text knockout-darker">No, really, I was an early talker.</p>
                         </div>
-                        <div class="six columns">
-                            <li class="footer-nav-item"><a class="footer-nav-link" href="#contact">Contact</a></li>
-                            <li class="footer-nav-item"><a class="footer-nav-link" href="/blog/">Blog</a></li>
+                        <div class="four columns">
+                            <h6 class="footer-head">NAVIGATE</h6>
+                            <ul class="footer-nav-list">
+                                <div class="six columns">
+                                        <li class="footer-nav-item"><a class="footer-nav-link" href="#">Home</a></li>
+                                        <li class="footer-nav-item"><a class="footer-nav-link" href="#about">About</a></li>
+                                        <li class="footer-nav-item"><a class="footer-nav-link" href="#services">Services</a></li>
+                                    </div>
+                                    <div class="six columns">
+                                        <li class="footer-nav-item"><a class="footer-nav-link" href="#contact">Contact</a></li>
+                                        <li class="footer-nav-item"><a class="footer-nav-link" href="/blog/">Blog</a></li>
+                                    </div>
+                            </ul>
                         </div>
-                </ul>
+                        <div class="four columns">Four
+                            <h4 class="knockout-darker">Currently <span class="knockout project-avail">open</span> for new projects.</h4>
+                            <a href="http://www.kylebaconcreative.com/" target="_blank"><button class="button">Contact Kelley!</button></a>
+                        </div>
+                    </footer>
+                </div>
             </div>
-            <div class="four columns">Four
-                <h4 class="knockout-darker">Currently <span class="knockout project-avail">open</span> for new projects.</h4>
-                <a href="http://www.kylebaconcreative.com/" target="_blank"><button class="button">Contact Kelley!</button></a>
-            </div>
-        </footer>
+        </div>
         {% endblock %}
         
-    </div>
-    <div class="sb-slidebar sb-left sb-width-thin">
-        <div id="panel">
-        {% include 'partials/navigation.html.twig' %}
-        </div>
     </div>
     {% block bottom %}
         {{ assets.js('bottom') }}

@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1455825670,
-    'checksum' => 'a697075ee31068012303a4d2406378a3',
+    'timestamp' => 1455937664,
+    'checksum' => '09d4e73188560facabb05d57448ffcc6',
     'files' => [
         'user/config' => [
             'media' => [
@@ -15,7 +15,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1455224032
+                'modified' => 1455927240
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -23,7 +23,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1455825641
+                'modified' => 1455937663
             ],
             'themes/kelleyink' => [
                 'file' => 'user/config/themes/kelleyink.yaml',
@@ -472,10 +472,10 @@ return [
             ]
         ],
         'site' => [
-            'title' => 'Grav',
+            'title' => 'Kelley.ink',
             'author' => [
-                'name' => 'Joe Bloggs',
-                'email' => 'joe@test.com'
+                'name' => 'Kelley McAllister',
+                'email' => 'kelley@kelley.ink'
             ],
             'taxonomies' => [
                 0 => 'category',
