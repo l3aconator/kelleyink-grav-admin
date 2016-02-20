@@ -1,0 +1,22 @@
+1456592883
+a:2:{s:7:"content";s:638:"     <script>
+            $(function(){
+            $("#typed").typed({
+            stringsElement: $('#typed-strings')
+                });
+            });
+</script>
+<div class="container">
+    <div class="row">
+        <div class="">
+            <div class="element opening-heading">
+                <div id="typed-strings">  
+                    <p></p>
+                </div>
+                <span id="typed"></span>
+            </div>
+        </div>
+        <p class="opening-text">Precision of language doesn’t have to be a lost art. I care passionately about communication and about finding the right words.</p>
+    </div>
+</div>
+";s:12:"content_meta";N;}

@@ -1,7 +1,7 @@
 ---
 title: Homepage
 menu: Home
-onpage_menu: false
+onpage_menu: true
 body_classes: ""
 
 content:
@@ -10,6 +10,7 @@ content:
         by: default
         dir: asc
         custom:
+            - _hero
             - _about
             - _services
             - _work

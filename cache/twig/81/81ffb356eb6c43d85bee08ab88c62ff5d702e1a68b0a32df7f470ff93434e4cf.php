@@ -80,7 +80,7 @@ class __TwigTemplate_c4b59772ba39f3948af92e2374a80b9371a4630f9816f847f4d5960c14a
         echo "    ";
         if ((isset($context["show_onpage_menu"]) ? $context["show_onpage_menu"] : null)) {
             // line 31
-            echo "        <ul class=\"navigation\">
+            echo "        <ul class=\"nav-list u-pull-right\">
         ";
             // line 32
             $context['_parent'] = $context;
@@ -90,9 +90,9 @@ class __TwigTemplate_c4b59772ba39f3948af92e2374a80b9371a4630f9816f847f4d5960c14a
                 echo "            ";
                 $context["current_module"] = ((($this->getAttribute($context["module"], "active", array()) || $this->getAttribute($context["module"], "activeChild", array()))) ? ("active") : (""));
                 // line 34
-                echo "            <li class=\"";
+                echo "            <li class=\"nav-item ";
                 echo (isset($context["current_module"]) ? $context["current_module"] : null);
-                echo "\"><a href=\"#";
+                echo "\"><a class=\"nav-link\" href=\"#";
                 echo $this->getAttribute($this, "pageLinkName", array(0 => $this->getAttribute($context["module"], "menu", array())), "method");
                 echo "\">";
                 echo $this->getAttribute($context["module"], "menu", array());
@@ -108,11 +108,8 @@ class __TwigTemplate_c4b59772ba39f3948af92e2374a80b9371a4630f9816f847f4d5960c14a
             $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "menu", array()));
             foreach ($context['_seq'] as $context["_key"] => $context["mitem"]) {
                 // line 37
-                echo "            <li>
-                <a href=\"";
-                // line 38
-                echo $this->getAttribute($context["mitem"], "url", array());
-                echo "\">
+                echo "            <li class=\"nav-item\">
+                <a class=\"nav-link\"     href=\"{ mitem.url }}\">
                     ";
                 // line 39
                 if ($this->getAttribute($context["mitem"], "icon", array())) {
@@ -204,7 +201,7 @@ class __TwigTemplate_c4b59772ba39f3948af92e2374a80b9371a4630f9816f847f4d5960c14a
 
     public function getDebugInfo()
     {
-        return array (  174 => 4,  164 => 54,  159 => 53,  155 => 52,  150 => 51,  147 => 50,  139 => 46,  135 => 44,  124 => 40,  118 => 39,  114 => 38,  111 => 37,  106 => 36,  93 => 34,  90 => 33,  86 => 32,  83 => 31,  80 => 30,  77 => 29,  63 => 17,  61 => 16,  56 => 15,  53 => 14,  46 => 10,  43 => 9,  40 => 8,  37 => 7,  34 => 6,  30 => 1,  28 => 3,  11 => 1,);
+        return array (  171 => 4,  161 => 54,  156 => 53,  152 => 52,  147 => 51,  144 => 50,  136 => 46,  132 => 44,  121 => 40,  115 => 39,  111 => 37,  106 => 36,  93 => 34,  90 => 33,  86 => 32,  83 => 31,  80 => 30,  77 => 29,  63 => 17,  61 => 16,  56 => 15,  53 => 14,  46 => 10,  43 => 9,  40 => 8,  37 => 7,  34 => 6,  30 => 1,  28 => 3,  11 => 1,);
     }
 }
 /* {% extends 'partials/base.html.twig' %}*/
@@ -237,14 +234,14 @@ class __TwigTemplate_c4b59772ba39f3948af92e2374a80b9371a4630f9816f847f4d5960c14a
 /* */
 /* {% block header_navigation %}*/
 /*     {% if show_onpage_menu %}*/
-/*         <ul class="navigation">*/
+/*         <ul class="nav-list u-pull-right">*/
 /*         {% for module in page.collection() %}*/
 /*             {% set current_module = (module.active or module.activeChild) ? 'active' : '' %}*/
-/*             <li class="{{ current_module }}"><a href="#{{ _self.pageLinkName(module.menu) }}">{{ module.menu }}</a></li>*/
+/*             <li class="nav-item {{ current_module }}"><a class="nav-link" href="#{{ _self.pageLinkName(module.menu) }}">{{ module.menu }}</a></li>*/
 /*         {% endfor %}*/
 /*         {% for mitem in site.menu %}*/
-/*             <li>*/
-/*                 <a href="{{ mitem.url }}">*/
+/*             <li class="nav-item">*/
+/*                 <a class="nav-link"     href="{ mitem.url }}">*/
 /*                     {% if mitem.icon %}<i class="fa fa-{{ mitem.icon }}"></i>{% endif %}*/
 /*                     {{ mitem.text }}*/
 /*                 </a>*/

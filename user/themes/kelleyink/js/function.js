@@ -88,7 +88,6 @@ $(window).scroll(function() {
 $(function(){
   $(".element").typed({
     contentType: 'html',
-    strings: ["Words, matter.<span class='typed-cursor'>|</span>"],
     typeSpeed: 150,
     showCursor: false,
   });

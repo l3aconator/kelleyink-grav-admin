@@ -372,7 +372,7 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
 /*     {% endblock %}*/
 /*     {{ assets.js() }}*/
 /* */
-/* {% endblock head%}*/
+/* {% endblock head %}*/
 /* </head>*/
 /* <body id="top" class="{{ page.header.body_classes }}">*/
 /*     <div id="sb-site">*/

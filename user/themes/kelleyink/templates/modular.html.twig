@@ -28,14 +28,14 @@
 
 {% block header_navigation %}
     {% if show_onpage_menu %}
-        <ul class="navigation">
+        <ul class="nav-list u-pull-right">
         {% for module in page.collection() %}
             {% set current_module = (module.active or module.activeChild) ? 'active' : '' %}
-            <li class="{{ current_module }}"><a href="#{{ _self.pageLinkName(module.menu) }}">{{ module.menu }}</a></li>
+            <li class="nav-item {{ current_module }}"><a class="nav-link" href="#{{ _self.pageLinkName(module.menu) }}">{{ module.menu }}</a></li>
         {% endfor %}
         {% for mitem in site.menu %}
-            <li>
-                <a href="{{ mitem.url }}">
+            <li class="nav-item">
+                <a class="nav-link"     href="{ mitem.url }}">
                     {% if mitem.icon %}<i class="fa fa-{{ mitem.icon }}"></i>{% endif %}
                     {{ mitem.text }}
                 </a>

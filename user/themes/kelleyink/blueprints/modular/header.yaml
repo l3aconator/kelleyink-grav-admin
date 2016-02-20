@@ -1,0 +1,4 @@
+title: Header
+'@extends': default
+
+text:
