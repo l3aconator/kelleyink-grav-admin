@@ -1,20 +1,12 @@
-     <script>
-            $(function(){
-            $("#typed").typed({
-            stringsElement: $('#typed-strings')
-                });
-            });
-</script>
-<div class="container">
-    <div class="row">
-        <div class="">
+<div class="cream-gradient-bg">
+    <div class="container">
+        <div class="row">
             <div class="element opening-heading">
                 <div id="typed-strings">  
-                    <p>{{ page.typing }}</p>
                 </div>
                 <span id="typed"></span>
             </div>
+            <p class="opening-text">{{ page.header.text }}</p>
         </div>
-        <p class="opening-text">{{ page.header.text }}</p>
     </div>
 </div>

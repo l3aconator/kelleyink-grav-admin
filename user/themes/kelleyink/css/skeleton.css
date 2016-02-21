@@ -282,6 +282,7 @@ input[type="button"] {
     cursor: pointer;
     border: none;
     box-sizing: border-box; 
+    transition: background-color 600ms ease;
 }
 .button:hover,
 button:hover,
@@ -540,6 +541,11 @@ hr {
   border-width: 0;
   border-top: 1px solid #E1E1E1; }
 
+strong {
+    font-weight: 900;
+    font-family: 'ATCOverlook-Bold', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -672,6 +678,7 @@ a.nav-link:hover {
 
 .opening-heading {
     font-size: 4.8em;
+    font-family: 'AmericanTypewriterStd-Med';
     text-align: center;
     padding: 80px 0px 0px 0px;
 }
@@ -763,12 +770,6 @@ a.nav-link:hover {
 .icon {
     margin-top: 22px;
     width: 100%;
-    height: 100%;
-    display: block;
-}
-
-.icon-pm {
-    background-image: url(../images/icon-1.svg);
 }
 
 .services-heading-smaller {
@@ -802,14 +803,6 @@ a.nav-link:hover {
     background-repeat: no-repeat;
     transition: 1s ease-out;
     margin-bottom: 33px;
-}
-
-.work-one {
-    background-image: url(../images/portfolio-small-placeholder.png);
-}
-
-.work-one {
-    background-image: url(../images/portfolio-small-placeholder.png);
 }
 
 .work-image-box:hover {
@@ -871,6 +864,7 @@ a.work-link {
     display: block;
     top: 0;
     left: 0;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
 }
 
 .work-project-overview-bg {
@@ -925,6 +919,74 @@ a.work-link {
     width: 100%;
 }
 
+.middle-zoom img {
+    max-width: 100%;
+}
+
+/*BLOG POSTS*/
+.blog-post .subtitle {
+    color: #FFFFFB;
+    padding-bottom: 22px;
+}
+
+.blog-post .subtitle a {
+    color: #FFFFFB;
+    text-decoration: none;
+}
+
+.post-date {
+    color: #C4C4BC;
+}
+
+.tag-heading {
+    display: inline;
+    color: #C4C4BC;
+}
+
+.tag-list {
+    display: inline;
+    list-style: none;
+}
+
+.tag-item {
+    display: inline;
+    margin: 0px 11px;
+}
+
+.post-nav {
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    color: #0A161F;
+    font-size: 1em;
+}
+
+.post-circle {
+    height: 62px;
+    width: 62px;
+    background-image: linear-gradient(0deg, #0A161F 50%, #000000 0%);
+    box-shadow: 0px 1px 3px 0px rgba(18,21,24,0.20);
+    border-radius: 1000px;
+}
+
+.post-carousel .right {
+    float: right;
+    text-align: right;
+}
+
+@media (max-width: 550px) {
+    .post-circle {
+        margin-bottom: 11px;
+    }
+}
+
+.post-carousel-heading {
+    margin-bottom: 11px;
+    font-size: 1.5em;
+}
+
+.post-carousel-date {
+    color: #5B5F60;
+}
 
 /*FOOTER*/
 
@@ -935,27 +997,27 @@ a.work-link {
 
 @media (max-width: 800px) {
     .footer-logo {
-    width: 100%;
-    display: block;
-    padding-bottom: 22px;
+        width: 100%;
+        display: block;
+        padding-bottom: 22px;
     }
 }
 
 @media (max-width: 550px) {
     .footer-logo {
-    width: 50%;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    padding-bottom: 22px;
+        width: 50%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 22px;
     }
 }
 
 @media (min-width: 801px) {
  .footer-logo {
-    width: 50%;
-    display: block;
-    padding-bottom: 22px;
+        width: 50%;
+        display: block;
+        padding-bottom: 22px;
     }   
 }
 

@@ -16,30 +16,19 @@ class __TwigTemplate_cb27e742351714c03087eb0d312b3970b4dd71d65142bd58941a3927251
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "     <script>
-            \$(function(){
-            \$(\"#typed\").typed({
-            stringsElement: \$('#typed-strings')
-                });
-            });
-</script>
-<div class=\"container\">
-    <div class=\"row\">
-        <div class=\"\">
+        echo "<div class=\"cream-gradient-bg\">
+    <div class=\"container\">
+        <div class=\"row\">
             <div class=\"element opening-heading\">
                 <div id=\"typed-strings\">  
-                    <p>";
-        // line 13
-        echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "typing", array());
-        echo "</p>
                 </div>
                 <span id=\"typed\"></span>
             </div>
-        </div>
-        <p class=\"opening-text\">";
-        // line 18
+            <p class=\"opening-text\">";
+        // line 9
         echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "text", array());
         echo "</p>
+        </div>
     </div>
 </div>
 ";
@@ -57,27 +46,19 @@ class __TwigTemplate_cb27e742351714c03087eb0d312b3970b4dd71d65142bd58941a3927251
 
     public function getDebugInfo()
     {
-        return array (  41 => 18,  33 => 13,  19 => 1,);
+        return array (  29 => 9,  19 => 1,);
     }
 }
-/*      <script>*/
-/*             $(function(){*/
-/*             $("#typed").typed({*/
-/*             stringsElement: $('#typed-strings')*/
-/*                 });*/
-/*             });*/
-/* </script>*/
-/* <div class="container">*/
-/*     <div class="row">*/
-/*         <div class="">*/
+/* <div class="cream-gradient-bg">*/
+/*     <div class="container">*/
+/*         <div class="row">*/
 /*             <div class="element opening-heading">*/
 /*                 <div id="typed-strings">  */
-/*                     <p>{{ page.typing }}</p>*/
 /*                 </div>*/
 /*                 <span id="typed"></span>*/
 /*             </div>*/
+/*             <p class="opening-text">{{ page.header.text }}</p>*/
 /*         </div>*/
-/*         <p class="opening-text">{{ page.header.text }}</p>*/
 /*     </div>*/
 /* </div>*/
 /* */

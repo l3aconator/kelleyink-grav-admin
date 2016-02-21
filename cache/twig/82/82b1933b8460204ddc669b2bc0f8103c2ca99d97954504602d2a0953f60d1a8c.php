@@ -179,7 +179,7 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
     public function block_header($context, array $blocks = array())
     {
         // line 41
-        echo "        <header class=\"header-bg cream gradient-bg\">
+        echo "        <header class=\"header-bg cream-bg\">
             <div class=\"nav\">
                 <div class=\"nav-bar\">
                     <div class=\"row\">
@@ -378,7 +378,7 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
 /*     <div id="sb-site">*/
 /*         */
 /*         {% block header %}*/
-/*         <header class="header-bg cream gradient-bg">*/
+/*         <header class="header-bg cream-bg">*/
 /*             <div class="nav">*/
 /*                 <div class="nav-bar">*/
 /*                     <div class="row">*/

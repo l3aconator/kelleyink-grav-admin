@@ -1,7 +1,8 @@
 ---
 title: Homepage
 menu: Home
-onpage_menu: true
+onpage_menu: false
+visible: false
 body_classes: ""
 
 content:
