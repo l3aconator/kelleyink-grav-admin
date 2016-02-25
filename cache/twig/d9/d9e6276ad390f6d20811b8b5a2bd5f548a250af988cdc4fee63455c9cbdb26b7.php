@@ -16,22 +16,21 @@ class __TwigTemplate_3f9d54897362229858db57b51f029e345507a4343471c9d3f497e768a19
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<div class=\"container\">
-    <div class=\"row\">
-        <div class=\"five columns headshot-pad\">
-            <div class=\"feature-items\">
-                <img src=\"\" alt=\"\" />
+        echo "<div class=\"section-pad cream-bg about-bg\">
+    <div class=\"container\">
+        <div class=\"row\">
+            <div class=\"five columns headshot-pad\">
+                    ";
+        // line 5
+        echo $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "media", array()), "kelley-headshot.png", array(), "array"), "html", array(0 => "My title", 1 => "Some ALT text", 2 => "headshot"), "method");
+        echo "
             </div>
-        </div>
-        <div class=\"seven columns\">
-            <h2 class=\"subtitle-right about\">";
-        // line 9
-        echo $this->getAttribute((isset($context["about"]) ? $context["about"] : null), "header", array());
-        echo "</h2>
-            <p>";
-        // line 10
+            <div class=\"seven columns\">
+                ";
+        // line 8
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "content", array());
-        echo "</p>
+        echo "
+            </div>
         </div>
     </div>
 </div>
@@ -50,19 +49,18 @@ class __TwigTemplate_3f9d54897362229858db57b51f029e345507a4343471c9d3f497e768a19
 
     public function getDebugInfo()
     {
-        return array (  33 => 10,  29 => 9,  19 => 1,);
+        return array (  31 => 8,  25 => 5,  19 => 1,);
     }
 }
-/* <div class="container">*/
-/*     <div class="row">*/
-/*         <div class="five columns headshot-pad">*/
-/*             <div class="feature-items">*/
-/*                 <img src="" alt="" />*/
+/* <div class="section-pad cream-bg about-bg">*/
+/*     <div class="container">*/
+/*         <div class="row">*/
+/*             <div class="five columns headshot-pad">*/
+/*                     {{ page.media['kelley-headshot.png'].html('My title', 'Some ALT text', 'headshot') }}*/
 /*             </div>*/
-/*         </div>*/
-/*         <div class="seven columns">*/
-/*             <h2 class="subtitle-right about">{{ about.header }}</h2>*/
-/*             <p>{{ page.content }}</p>*/
+/*             <div class="seven columns">*/
+/*                 {{ page.content }}*/
+/*             </div>*/
 /*         </div>*/
 /*     </div>*/
 /* </div>*/

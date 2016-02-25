@@ -1,0 +1,41 @@
+{% embed 'partials/base.html.twig' %}
+
+{% block content %}
+
+<section class="work-post-bg black-gradient-bg section-pad">
+            <div class="container">
+                <h1 class="work-post-heading">{{ page.header.title }}</h1>
+                <div class="row">
+                    <div class="five columns">
+                        <div class="work-post-header-image-wrap">
+                            <img class="work-post-header-image bottom" src="{{ page.media[page.header.bottomimage].url }}" alt="Work image preview." />
+                            <img class="work-post-header-image top" src="{{ page.media[page.header.topimage].url }}" alt="Work image preview." />
+                        </div>
+                    </div>
+                    <div class="seven columns">
+                        {{ page.content }}
+                        {% if page.header.button == true %}
+                        <a href="{{ page.media[page.header.pdf].url }}" target="_blank"><button type="button">{{ page.header.buttontext }}</button></a>
+                        {% else %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="middle-zoom">
+            <img src="{{ page.media[page.header.footerimage].url }}" alt="" />
+        </section>
+        <section class="work-post-cta cream-bg section-pad">
+            <div class="row container">
+                <div class="six columns">
+                Content
+                </div>
+                <div class="six columns">
+                Content
+                </div>
+            </div>
+        </section>
+
+{% endblock %}
+
+{% endembed %}

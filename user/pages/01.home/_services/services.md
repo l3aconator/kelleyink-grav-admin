@@ -2,7 +2,6 @@
 title: Services
 process:
     markdown: true
-image_align: left
 itemcolone:
     -
         servicename: 'Marketing Communications'
