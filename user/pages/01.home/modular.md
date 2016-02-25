@@ -14,7 +14,7 @@ content:
             - _hero
             - _about
             - _services
-            - _work
+            - _work-gallery
             - _contact
-            - _blog
+            - _blog-cta
 ---
