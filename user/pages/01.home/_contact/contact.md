@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: Contact
 ---
 
 ### The Ink Blot

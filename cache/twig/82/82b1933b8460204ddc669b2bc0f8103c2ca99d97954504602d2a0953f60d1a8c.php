@@ -65,13 +65,13 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
         ";
         // line 75
         $this->displayBlock('footer', $context, $blocks);
-        // line 108
+        // line 78
         echo "        
     </div>
     ";
-        // line 110
+        // line 80
         $this->displayBlock('bottom', $context, $blocks);
-        // line 123
+        // line 93
         echo "</body>
 </html>
 ";
@@ -266,47 +266,16 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
     public function block_footer($context, array $blocks = array())
     {
         // line 76
-        echo "        <div class=\"footer-bg footer-section-pad\"><!--begin footer-->
-            <div class=\"container\">
-                <div class=\"row\">
-                    <footer>
-                        <div class=\"four columns\">
-                            <a href=\"#\"><img class=\"footer-logo\" src=\"";
-        // line 81
-        echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/footer-logo.png");
-        echo "\" alt=\"Kelley, ink footer logo\" /></a>
-                            <h6 class=\"footer-head\">Communicating since 1974.</h6>
-                            <p class=\"footer-text knockout-darker\">No, really, I was an early talker.</p>
-                        </div>
-                        <div class=\"four columns\">
-                            <h6 class=\"footer-head\">NAVIGATE</h6>
-                            <ul class=\"footer-nav-list\">
-                                <div class=\"six columns\">
-                                        <li class=\"footer-nav-item\"><a class=\"footer-nav-link\" href=\"#\">Home</a></li>
-                                        <li class=\"footer-nav-item\"><a class=\"footer-nav-link\" href=\"#about\">About</a></li>
-                                        <li class=\"footer-nav-item\"><a class=\"footer-nav-link\" href=\"#services\">Services</a></li>
-                                    </div>
-                                    <div class=\"six columns\">
-                                        <li class=\"footer-nav-item\"><a class=\"footer-nav-link\" href=\"#contact\">Contact</a></li>
-                                        <li class=\"footer-nav-item\"><a class=\"footer-nav-link\" href=\"/blog/\">Blog</a></li>
-                                    </div>
-                            </ul>
-                        </div>
-                        <div class=\"four columns\">Four
-                            <h4 class=\"knockout-darker\">Currently <span class=\"knockout project-avail\">open</span> for new projects.</h4>
-                            <a href=\"http://www.kylebaconcreative.com/\" target=\"_blank\"><button class=\"button\">Contact Kelley!</button></a>
-                        </div>
-                    </footer>
-                </div>
-            </div>
-        </div>
-        ";
+        echo "            ";
+        $this->loadTemplate("partials/footer.html.twig", "partials/base.html.twig", 76)->display($context);
+        // line 77
+        echo "        ";
     }
 
-    // line 110
+    // line 80
     public function block_bottom($context, array $blocks = array())
     {
-        // line 111
+        // line 81
         echo "        ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(0 => "bottom"), "method");
         echo "
@@ -335,7 +304,7 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
 
     public function getDebugInfo()
     {
-        return array (  310 => 111,  307 => 110,  276 => 81,  269 => 76,  266 => 75,  261 => 71,  256 => 72,  254 => 71,  249 => 70,  246 => 69,  241 => 67,  237 => 57,  234 => 56,  231 => 55,  226 => 51,  215 => 58,  212 => 55,  209 => 54,  206 => 53,  203 => 52,  201 => 51,  190 => 47,  182 => 41,  179 => 40,  175 => 32,  172 => 31,  169 => 30,  166 => 29,  163 => 28,  159 => 25,  156 => 24,  153 => 23,  150 => 22,  147 => 21,  144 => 20,  141 => 19,  139 => 18,  136 => 17,  133 => 16,  130 => 15,  127 => 14,  119 => 33,  117 => 28,  111 => 26,  109 => 14,  104 => 12,  100 => 11,  97 => 10,  95 => 9,  87 => 8,  84 => 7,  81 => 6,  75 => 123,  73 => 110,  69 => 108,  67 => 75,  64 => 74,  62 => 69,  59 => 68,  57 => 67,  54 => 66,  52 => 40,  46 => 37,  43 => 36,  41 => 6,  35 => 3,  32 => 2,  30 => 1,);
+        return array (  279 => 81,  276 => 80,  272 => 77,  269 => 76,  266 => 75,  261 => 71,  256 => 72,  254 => 71,  249 => 70,  246 => 69,  241 => 67,  237 => 57,  234 => 56,  231 => 55,  226 => 51,  215 => 58,  212 => 55,  209 => 54,  206 => 53,  203 => 52,  201 => 51,  190 => 47,  182 => 41,  179 => 40,  175 => 32,  172 => 31,  169 => 30,  166 => 29,  163 => 28,  159 => 25,  156 => 24,  153 => 23,  150 => 22,  147 => 21,  144 => 20,  141 => 19,  139 => 18,  136 => 17,  133 => 16,  130 => 15,  127 => 14,  119 => 33,  117 => 28,  111 => 26,  109 => 14,  104 => 12,  100 => 11,  97 => 10,  95 => 9,  87 => 8,  84 => 7,  81 => 6,  75 => 93,  73 => 80,  69 => 78,  67 => 75,  64 => 74,  62 => 69,  59 => 68,  57 => 67,  54 => 66,  52 => 40,  46 => 37,  43 => 36,  41 => 6,  35 => 3,  32 => 2,  30 => 1,);
     }
 }
 /* {% set theme_config = attribute(config.themes, config.system.pages.theme) %}*/
@@ -413,37 +382,7 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
 /*         {% endblock %}*/
 /* */
 /*         {% block footer %}*/
-/*         <div class="footer-bg footer-section-pad"><!--begin footer-->*/
-/*             <div class="container">*/
-/*                 <div class="row">*/
-/*                     <footer>*/
-/*                         <div class="four columns">*/
-/*                             <a href="#"><img class="footer-logo" src="{{ url("theme://images/footer-logo.png") }}" alt="Kelley, ink footer logo" /></a>*/
-/*                             <h6 class="footer-head">Communicating since 1974.</h6>*/
-/*                             <p class="footer-text knockout-darker">No, really, I was an early talker.</p>*/
-/*                         </div>*/
-/*                         <div class="four columns">*/
-/*                             <h6 class="footer-head">NAVIGATE</h6>*/
-/*                             <ul class="footer-nav-list">*/
-/*                                 <div class="six columns">*/
-/*                                         <li class="footer-nav-item"><a class="footer-nav-link" href="#">Home</a></li>*/
-/*                                         <li class="footer-nav-item"><a class="footer-nav-link" href="#about">About</a></li>*/
-/*                                         <li class="footer-nav-item"><a class="footer-nav-link" href="#services">Services</a></li>*/
-/*                                     </div>*/
-/*                                     <div class="six columns">*/
-/*                                         <li class="footer-nav-item"><a class="footer-nav-link" href="#contact">Contact</a></li>*/
-/*                                         <li class="footer-nav-item"><a class="footer-nav-link" href="/blog/">Blog</a></li>*/
-/*                                     </div>*/
-/*                             </ul>*/
-/*                         </div>*/
-/*                         <div class="four columns">Four*/
-/*                             <h4 class="knockout-darker">Currently <span class="knockout project-avail">open</span> for new projects.</h4>*/
-/*                             <a href="http://www.kylebaconcreative.com/" target="_blank"><button class="button">Contact Kelley!</button></a>*/
-/*                         </div>*/
-/*                     </footer>*/
-/*                 </div>*/
-/*             </div>*/
-/*         </div>*/
+/*             {% include 'partials/footer.html.twig' %}*/
 /*         {% endblock %}*/
 /*         */
 /*     </div>*/

@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: 'Blog CTA'
 ---
 
 ### The Ink Blot

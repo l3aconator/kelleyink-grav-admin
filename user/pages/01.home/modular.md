@@ -5,6 +5,8 @@ onpage_menu: false
 visible: false
 body_classes: ""
 
+home: true
+
 content:
     items: '@self.modular'
     order:

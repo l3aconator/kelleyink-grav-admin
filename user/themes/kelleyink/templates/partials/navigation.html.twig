@@ -18,7 +18,40 @@
     {% endfor %}
 {% endmacro %}
 
+
 <ul class="navigation nav-list u-pull-right">
+    
+    {% if page.header.home == true %}
+    <li class="nav-item {{ current_page }}">
+             <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item {{ current_page }}">
+             <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item {{ current_page }}">
+            <a class="nav-link" href="#work">Work</a>
+        </li>
+        <li class="nav-item {{ current_page }}">
+            <a class="nav-link" href="#contact">Contact</a>
+        </li>
+    
+    {% else %}
+    
+    <li class="nav-item {{ current_page }}">
+             <a class="nav-link" href="{{ base_url == '' ? '/' : base_url }}#about">About</a>
+        </li>
+        <li class="nav-item {{ current_page }}">
+             <a class="nav-link" href="{{ base_url == '' ? '/' : base_url }}#services">Services</a>
+        </li>
+        <li class="nav-item {{ current_page }}">
+            <a class="nav-link" href="{{ base_url == '' ? '/' : base_url }}#work">Work</a>
+        </li>
+        <li class="nav-item {{ current_page }}">
+            <a class="nav-link" href="{{ base_url == '' ? '/' : base_url }}#contact">Contact</a>
+        </li>
+    
+    {% endif %}
+    
     {% if theme_config.dropdown.enabled %}
         {{ _self.loop(pages) }}
     {% else %}
@@ -31,17 +64,6 @@
             </li>
         {% endfor %}
     {% endif %}
-    
-    {% for module in page.collection() %}
-        {% if not show_onpage_menu %}
-            {% set current_module = (module.active or module.activeChild) ? 'active' : '' %}
-            {% if module.header.hidemenu == true %}
-            <li class="nav-item {{ current_module }}">
-                        <a class="nav-link" href="#{{ _self.pageLinkName(module.menu) }}">{{ module.menu }}</a>
-            </li>
-            {% endif %}
-        {% endif %}
-    {% endfor %}
     
     {% for mitem in site.menu %}
         <li class="nav-item">

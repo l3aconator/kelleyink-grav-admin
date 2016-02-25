@@ -1,7 +1,6 @@
 ---
-title: hero
+title: Hero
 visible: false
-hidemenu: true
-text: 'Precision of hannah doesn’t have to be a lost art. I care passionately about communication and about finding the right words.'
+text: 'Precision of workds doesn’t have to be a lost art. I care passionately about communication and about finding the right words.'
 ---
 
