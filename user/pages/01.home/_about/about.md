@@ -1,6 +1,7 @@
 ---
 title: About
 visible: false
+hidemenu: true
 ---
 
 ## Nice to meet you. I’m Kelley.

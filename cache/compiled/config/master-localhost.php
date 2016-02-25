@@ -1,13 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1456380077,
-    'checksum' => '96d585fe13921b5faafbc75a5791260f',
+    'timestamp' => 1456382735,
+    'checksum' => 'c6a2c5812a920686fb598760ac02671b',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1455824254
+            ],
+            'plugins/admin' => [
+                'file' => 'user/config/plugins/admin.yaml',
+                'modified' => 1456380389
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -23,7 +27,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1456380075
+                'modified' => 1456382733
             ],
             'themes/kelleyink' => [
                 'file' => 'user/config/themes/kelleyink.yaml',
@@ -90,7 +94,7 @@ return [
                 'warnings' => [
                     'delete_page' => true
                 ],
-                'edit_mode' => 'normal',
+                'edit_mode' => 'expert',
                 'show_github_msg' => true,
                 'google_fonts' => true,
                 'enable_auto_updates_check' => true,
@@ -101,9 +105,9 @@ return [
                         1 => '/modular'
                     ],
                     'history' => [
-                        'daily' => 30,
-                        'monthly' => 12,
-                        'visitors' => 20
+                        'daily' => '30',
+                        'monthly' => '12',
+                        'visitors' => '20'
                     ]
                 ]
             ],
