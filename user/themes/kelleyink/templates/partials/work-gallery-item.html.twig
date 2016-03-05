@@ -1,0 +1,16 @@
+{% for child in collection %}
+			        {% include '/portfolio.html.twig' with {'work':page, 'portfolio':child, 'truncate':true} %}
+{% endfor %}
+
+    <div class="four columns">
+        <a class="work-link" href="{{ url("work/alternative-care") }}">
+            <div class="work-image-box large" style="background-image: url({{ url("user/pages/03.work/alternative-care/bottom.jpg") }});">
+                <div class="work-image-content">
+                    <div class="work-caption">
+                        <span class="work-title">Alternative Care One pager</span>
+                        <span class="work-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>

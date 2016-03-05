@@ -16,7 +16,7 @@ class __TwigTemplate_cb07f11150a7e896997ca702edd880c965f536e62bae646b0932a9d60f4
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<div class=\"footer-bg footer-section-pad\">
+        echo "<div class=\"footer-bg section-pad\">
             <div class=\"container\">
                 <div class=\"row\">
                     <footer>
@@ -27,7 +27,7 @@ class __TwigTemplate_cb07f11150a7e896997ca702edd880c965f536e62bae646b0932a9d60f4
         echo "\"><img class=\"footer-logo\" src=\"";
         echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/footer-logo.png");
         echo "\" alt=\"Kelley, ink footer logo\" /></a>
-                            <h6 class=\"footer-head\">Communicating since 1974.</h6>
+                            <h6 class=\"footer-head footer-heading-override\">Communicating since 1974.</h6>
                             <p class=\"footer-text knockout-darker\">No, really, I was an early talker.</p>
                         </div>
                         <div class=\"four columns\">
@@ -90,7 +90,7 @@ class __TwigTemplate_cb07f11150a7e896997ca702edd880c965f536e62bae646b0932a9d60f4
         // line 40
         echo "                            
                         </div>
-                        <div class=\"four columns\">Four
+                        <div class=\"four columns\">
                             <h4 class=\"knockout-darker\">Currently <span class=\"knockout project-avail\">open</span> for new projects.</h4>
                             <a href=\"";
         // line 44
@@ -125,13 +125,13 @@ class __TwigTemplate_cb07f11150a7e896997ca702edd880c965f536e62bae646b0932a9d60f4
         return array (  97 => 44,  91 => 40,  84 => 36,  80 => 35,  74 => 32,  70 => 31,  66 => 30,  61 => 27,  53 => 22,  44 => 16,  40 => 14,  38 => 13,  26 => 6,  19 => 1,);
     }
 }
-/* <div class="footer-bg footer-section-pad">*/
+/* <div class="footer-bg section-pad">*/
 /*             <div class="container">*/
 /*                 <div class="row">*/
 /*                     <footer>*/
 /*                         <div class="four columns">*/
 /*                             <a href="{{ base_url == '' ? '/' : base_url }}"><img class="footer-logo" src="{{ url("theme://images/footer-logo.png") }}" alt="Kelley, ink footer logo" /></a>*/
-/*                             <h6 class="footer-head">Communicating since 1974.</h6>*/
+/*                             <h6 class="footer-head footer-heading-override">Communicating since 1974.</h6>*/
 /*                             <p class="footer-text knockout-darker">No, really, I was an early talker.</p>*/
 /*                         </div>*/
 /*                         <div class="four columns">*/
@@ -166,7 +166,7 @@ class __TwigTemplate_cb07f11150a7e896997ca702edd880c965f536e62bae646b0932a9d60f4
 /*                             {% endif %}*/
 /*                             */
 /*                         </div>*/
-/*                         <div class="four columns">Four*/
+/*                         <div class="four columns">*/
 /*                             <h4 class="knockout-darker">Currently <span class="knockout project-avail">open</span> for new projects.</h4>*/
 /*                             <a href="{{ base_url == '' ? '/' : base_url }}#contact"><button class="button">Contact Kelley!</button></a>*/
 /*                         </div>*/

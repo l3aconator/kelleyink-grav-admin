@@ -777,8 +777,6 @@ a.nav-link:hover {
     line-height: .1em;
 }
 
-.icon-icon-
-
 /*WORK*/
 .work .subtitle {
     color: #FFFFFB;
@@ -873,28 +871,20 @@ a.work-link {
     padding-top: 124px;
 }
 
+.work-post-feature-padding {
+    margin-top: 44px;
+}
+
 .work-post-heading {
     color: #FFFFFB;
 }
 
-.work-post-discipline-heading {
+.work-post-feature-heading {
     color: #FFFFFB;
     text-align: center;
 }
 
-.work-post-icon {
-    display: block;
-    padding: 44px 0px;
-}
-
-
-.work-post-discipline-body {
-    color: #C4C4BC;
-    text-align: center;
-}
-
-.work-post-key-feature-image-wrap {
-    display: inline-block;
+.work-post-key-feature-wrap {
     position: relative;
     overflow: hidden;
 }
@@ -905,27 +895,79 @@ a.work-link {
 }
 
 .work-post-feature-name-wrap {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
     text-align: center;
-    display: inline-block;
+    background-color: #0A161F;
+    height: 35px;
     width: 100%;
+    position: absolute;
+    bottom: 0px;
 }
 
 .work-post-key-feature-heading {
     position: absolute;
-    transform: translateY(-50%);
-    top: 50%;
+    bottom: 0px;
     width: 100%;
+    color: #fffffb;
+    transform: translatey(-60%);
+    top: 50%;
+}
+
+.work-post-key-feature-body {
+   color: #FFFFFB; 
+}
+
+.work-post-subhead {
+    color: #FFFFFB;
+}
+
+.work-post-description {
+    color: #C4C4BC;
 }
 
 .middle-zoom img {
     max-width: 100%;
 }
 
+.work-post-carousel {
+    position: relative;
+}
+
+.work-post-carousel a {
+    text-decoration: none;
+}
+
+.work-post-carousel-heading {
+    font-size 1.5em;
+}
+
+.left .work-post-carousel-heading  {
+    margin-left: 30%;
+}
+
+.right .work-post-carousel-heading {
+    margin-right: 30%;
+    text-align: right;
+}
+
+.work-post-circle {
+    height: 50px;
+    width: 50px;
+    background-image: radial-gradient(75% 125%, #4BD6E1 50%, #7FEBEE 100%);
+    box-shadow: 0px 1px 3px 0px rgba(18,21,24,0.20);
+    border-radius: 1000px;
+    position: absolute;
+}
+
+.right .work-post-circle {
+   right: 0; 
+}
+
+.right .post-nav {
+    text-align: right;
+}
+
 /*BLOG POSTS*/
+
 .blog-post .subtitle {
     color: #FFFFFB;
     padding-bottom: 22px;
@@ -1039,6 +1081,10 @@ a.work-link {
 
 .footer-head {
     color: #FFFFFB;
+}
+
+.footer-heading-override {
+    margin-bottom: 0;
 }
 
 .knockout-darker {

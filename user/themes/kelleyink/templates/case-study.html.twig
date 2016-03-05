@@ -1,0 +1,97 @@
+{% embed 'partials/base.html.twig' %}
+
+{% block content %}
+    <section class="work-post-bg black-gradient-bg section-pad">
+            <div class="container">
+                <h1 class="work-post-heading">{{ page.header.title }}</h1>
+                <div class="work-post-header-image-wrap">
+                    <img class="work-post-header-image bottom" src="{{ page.media[page.header.bottomimage].url }}" alt="" />
+                    <img class="work-post-header-image top" src="{{ page.media[page.header.topimage].url }}" alt="" />
+                </div>
+            </div>
+        </section>
+        <section class="work-project-overview-bg cream-bg section-pad">
+            <div class="container">
+            {{ page.content }}
+            </div>
+        </section>
+        <section class="work-post-key-bg blue-gradient-bg section-pad">
+            <h2 class="work-post-feature-heading">{{ page.header.highlightmainheading }}</h2>
+            <div class="row container work-post-feature-padding">
+                <div class="three columns">
+                   <div class="work-post-key-feature-wrap">
+                       <div class="work-post-feature-name-wrap">
+                           <div class="work-post-key-feature-heading">{{ page.header.highlightheadingone }}</div>
+                       </div>
+                        <img class="work-post-key-feature-image" src="{{ page.media[page.header.highlightimageone].url }}" alt="" />
+                    </div>
+                </div>
+                <div class="three columns">
+                    <p class="work-post-key-feature-body">{{ page.header.highlightcontentone }}</p>
+                    
+                    {% if page.header.hightlightbuttonone == true %}
+                        <a href="#"><button class="button-cream">{{ page.header.hightlightbuttoncontentone }}</button></a>
+                    {% else %}
+                    {% endif %}
+                    
+                </div>
+                <div class="three columns">
+                   <div class="work-post-key-feature-wrap">
+                       <div class="work-post-feature-name-wrap">
+                           <div class="work-post-key-feature-heading">{{ page.header.highlightheadingtwo }}</div>
+                       </div>
+                        <img class="work-post-key-feature-image" src="{{ page.media[page.header.highlightimagetwo].url }}" alt="" />
+                    </div>
+                </div>
+                <div class="three columns">
+                    <p class="work-post-key-feature-body">{{ page.header.highlightcontenttwo }}</p>
+                    
+                    {% if page.header.hightlightbuttontwo == true %}
+                        <a href="#"><button class="button-cream">{{ page.header.hightlightbuttoncontenttwo }}</button></a>
+                    {% else %}
+                    {% endif %}
+                        
+                </div>
+            </div>
+            <div class="row container work-post-feature-padding">
+                <div class="three columns">
+                   <div class="work-post-key-feature-wrap">
+                       <div class="work-post-feature-name-wrap">
+                           <div class="work-post-key-feature-heading">{{ page.header.highlightheadingthree }}</div>
+                       </div>
+                        <img class="work-post-key-feature-image" src="{{ page.media[page.header.highlightimagethree].url }}" alt="" />
+                    </div>
+                </div>
+                <div class="three columns">
+                    <p class="work-post-key-feature-body">{{ page.header.highlightcontentthree }}</p>
+                    
+                    {% if page.header.hightlightbuttonthree == true %}
+                        <a href="#"><button class="button-cream">{{ page.header.hightlightbuttoncontentthree }}</button></a>
+                    {% else %}
+                    {% endif %}
+                    
+                </div>
+                <div class="three columns">
+                   <div class="work-post-key-feature-wrap">
+                       <div class="work-post-feature-name-wrap">
+                           <div class="work-post-key-feature-heading">{{ page.header.highlightheadingfour }}</div>
+                       </div>
+                        <img class="work-post-key-feature-image" src="{{ page.media[page.header.highlightimagefour].url }}" alt="" />
+                    </div>
+                </div>
+                <div class="three columns">
+                    <p class="work-post-key-feature-body">{{ page.header.highlightcontentfour }}</p>
+                    
+                    {% if page.header.hightlightbuttonfour == true %}
+                        <a href="#"><button class="button-cream">{{ page.header.hightlightbuttoncontentfour }}</button></a>
+                    {% else %}
+                    {% endif %}
+                    
+                </div>
+            </div>
+        </section>
+        {% include 'partials/work-cta.html.twig' %}
+
+    {% endblock %}
+
+{% endembed %}

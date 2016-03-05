@@ -1,8 +1,8 @@
 {% embed 'partials/base.html.twig' %}
 
-{% block content %}
+    {% block content %}
 
-<section class="work-post-bg black-gradient-bg section-pad">
+        <section class="work-post-bg black-gradient-bg section-pad">
             <div class="container">
                 <h1 class="work-post-heading">{{ page.header.title }}</h1>
                 <div class="row">
@@ -25,17 +25,8 @@
         <section class="middle-zoom">
             <img src="{{ page.media[page.header.footerimage].url }}" alt="" />
         </section>
-        <section class="work-post-cta cream-bg section-pad">
-            <div class="row container">
-                <div class="six columns">
-                Content
-                </div>
-                <div class="six columns">
-                Content
-                </div>
-            </div>
-        </section>
+        {% include 'partials/work-cta.html.twig' %}
 
-{% endblock %}
+    {% endblock %}
 
 {% endembed %}
