@@ -16,7 +16,7 @@ class __TwigTemplate_32b76b6461d92db8fe9359f779951691c06e7c95c7b1e8e6a755d03d741
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        $this->loadTemplate("portfolio.html.twig", "portfolio.html.twig", 1, "208546428")->display($context);
+        $this->loadTemplate("portfolio.html.twig", "portfolio.html.twig", 1, "206285126")->display($context);
     }
 
     public function getTemplateName()
@@ -32,7 +32,7 @@ class __TwigTemplate_32b76b6461d92db8fe9359f779951691c06e7c95c7b1e8e6a755d03d741
 
 
 /* portfolio.html.twig */
-class __TwigTemplate_32b76b6461d92db8fe9359f779951691c06e7c95c7b1e8e6a755d03d741e776e_208546428 extends Twig_Template
+class __TwigTemplate_32b76b6461d92db8fe9359f779951691c06e7c95c7b1e8e6a755d03d741e776e_206285126 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -59,7 +59,7 @@ class __TwigTemplate_32b76b6461d92db8fe9359f779951691c06e7c95c7b1e8e6a755d03d741
     {
         // line 4
         echo "
-        <section class=\"work-post-bg black-gradient-bg section-pad\">
+        <section class=\"work-post-bg simple black-gradient-bg section-pad\">
             <div class=\"container\">
                 <h1 class=\"work-post-heading\">";
         // line 7
@@ -78,7 +78,7 @@ class __TwigTemplate_32b76b6461d92db8fe9359f779951691c06e7c95c7b1e8e6a755d03d741
         echo "\" alt=\"Work image preview.\" />
                         </div>
                     </div>
-                    <div class=\"seven columns\">
+                    <div class=\"seven columns work-post-content\">
                         ";
         // line 16
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "content", array());
@@ -135,7 +135,7 @@ class __TwigTemplate_32b76b6461d92db8fe9359f779951691c06e7c95c7b1e8e6a755d03d741
 /* */
 /*     {% block content %}*/
 /* */
-/*         <section class="work-post-bg black-gradient-bg section-pad">*/
+/*         <section class="work-post-bg simple black-gradient-bg section-pad">*/
 /*             <div class="container">*/
 /*                 <h1 class="work-post-heading">{{ page.header.title }}</h1>*/
 /*                 <div class="row">*/
@@ -145,7 +145,7 @@ class __TwigTemplate_32b76b6461d92db8fe9359f779951691c06e7c95c7b1e8e6a755d03d741
 /*                             <img class="work-post-header-image top" src="{{ page.media[page.header.topimage].url }}" alt="Work image preview." />*/
 /*                         </div>*/
 /*                     </div>*/
-/*                     <div class="seven columns">*/
+/*                     <div class="seven columns work-post-content">*/
 /*                         {{ page.content }}*/
 /*                         {% if page.header.button == true %}*/
 /*                         <a href="{{ page.media[page.header.pdf].url }}" target="_blank"><button type="button">{{ page.header.buttontext }}</button></a>*/

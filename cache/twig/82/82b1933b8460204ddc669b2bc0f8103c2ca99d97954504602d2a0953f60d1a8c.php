@@ -50,28 +50,28 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
         ";
         // line 40
         $this->displayBlock('header', $context, $blocks);
-        // line 66
-        echo "
-        ";
-        // line 67
-        $this->displayBlock('showcase', $context, $blocks);
-        // line 68
-        echo "
-        ";
         // line 69
-        $this->displayBlock('body', $context, $blocks);
-        // line 74
         echo "
         ";
-        // line 75
-        $this->displayBlock('footer', $context, $blocks);
+        // line 70
+        $this->displayBlock('showcase', $context, $blocks);
+        // line 71
+        echo "
+        ";
+        // line 72
+        $this->displayBlock('body', $context, $blocks);
+        // line 77
+        echo "
+        ";
         // line 78
+        $this->displayBlock('footer', $context, $blocks);
+        // line 81
         echo "        
     </div>
     ";
-        // line 80
+        // line 83
         $this->displayBlock('bottom', $context, $blocks);
-        // line 93
+        // line 96
         echo "</body>
 </html>
 ";
@@ -184,7 +184,7 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
                 <div class=\"nav-bar\">
                     <div class=\"row\">
                         <div class=\"container\">
-                            <div class=\"three columns header-logo\">
+                            <div class=\"three mobile-six columns header-logo-container\">
                                 <a href=\"";
         // line 47
         echo ((((isset($context["base_url"]) ? $context["base_url"] : null) == "")) ? ("/") : ((isset($context["base_url"]) ? $context["base_url"] : null)));
@@ -194,24 +194,27 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
         echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/header-logo.png");
         echo "\" /></a>
                             </div>
+                            <div id=\"mobile-menu\" class=\"mobile-six columns\">
+                                <span>Menu</span>
+                            </div>
                             <div class=\"nine columns\">
                                 <nav>
                                     ";
-        // line 51
+        // line 54
         $this->displayBlock('header_extra', $context, $blocks);
-        // line 52
-        echo "                                    ";
-        if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["config"]) ? $context["config"] : null), "plugins", array()), "langswitcher", array()), "enabled", array())) {
-            // line 53
-            echo "                                    ";
-            $this->loadTemplate("partials/langswitcher.html.twig", "partials/base.html.twig", 53)->display($context);
-            // line 54
-            echo "                                    ";
-        }
         // line 55
         echo "                                    ";
-        $this->displayBlock('header_navigation', $context, $blocks);
+        if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["config"]) ? $context["config"] : null), "plugins", array()), "langswitcher", array()), "enabled", array())) {
+            // line 56
+            echo "                                    ";
+            $this->loadTemplate("partials/langswitcher.html.twig", "partials/base.html.twig", 56)->display($context);
+            // line 57
+            echo "                                    ";
+        }
         // line 58
+        echo "                                    ";
+        $this->displayBlock('header_navigation', $context, $blocks);
+        // line 61
         echo "                                </nav>
                             </div>
                         </div>
@@ -222,60 +225,60 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
         ";
     }
 
-    // line 51
+    // line 54
     public function block_header_extra($context, array $blocks = array())
     {
     }
 
-    // line 55
+    // line 58
     public function block_header_navigation($context, array $blocks = array())
     {
-        // line 56
+        // line 59
         echo "                                    ";
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 56)->display($context);
-        // line 57
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 59)->display($context);
+        // line 60
         echo "                                    ";
     }
 
-    // line 67
+    // line 70
     public function block_showcase($context, array $blocks = array())
     {
     }
 
-    // line 69
+    // line 72
     public function block_body($context, array $blocks = array())
     {
-        // line 70
+        // line 73
         echo "        <section id=\"body\" class=\"";
         echo (isset($context["class"]) ? $context["class"] : null);
         echo "\">
             ";
-        // line 71
+        // line 74
         $this->displayBlock('content', $context, $blocks);
-        // line 72
+        // line 75
         echo "        </section>
         ";
     }
 
-    // line 71
+    // line 74
     public function block_content($context, array $blocks = array())
     {
     }
 
-    // line 75
+    // line 78
     public function block_footer($context, array $blocks = array())
     {
-        // line 76
+        // line 79
         echo "            ";
-        $this->loadTemplate("partials/footer.html.twig", "partials/base.html.twig", 76)->display($context);
-        // line 77
+        $this->loadTemplate("partials/footer.html.twig", "partials/base.html.twig", 79)->display($context);
+        // line 80
         echo "        ";
     }
 
-    // line 80
+    // line 83
     public function block_bottom($context, array $blocks = array())
     {
-        // line 81
+        // line 84
         echo "        ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(0 => "bottom"), "method");
         echo "
@@ -304,7 +307,7 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
 
     public function getDebugInfo()
     {
-        return array (  279 => 81,  276 => 80,  272 => 77,  269 => 76,  266 => 75,  261 => 71,  256 => 72,  254 => 71,  249 => 70,  246 => 69,  241 => 67,  237 => 57,  234 => 56,  231 => 55,  226 => 51,  215 => 58,  212 => 55,  209 => 54,  206 => 53,  203 => 52,  201 => 51,  190 => 47,  182 => 41,  179 => 40,  175 => 32,  172 => 31,  169 => 30,  166 => 29,  163 => 28,  159 => 25,  156 => 24,  153 => 23,  150 => 22,  147 => 21,  144 => 20,  141 => 19,  139 => 18,  136 => 17,  133 => 16,  130 => 15,  127 => 14,  119 => 33,  117 => 28,  111 => 26,  109 => 14,  104 => 12,  100 => 11,  97 => 10,  95 => 9,  87 => 8,  84 => 7,  81 => 6,  75 => 93,  73 => 80,  69 => 78,  67 => 75,  64 => 74,  62 => 69,  59 => 68,  57 => 67,  54 => 66,  52 => 40,  46 => 37,  43 => 36,  41 => 6,  35 => 3,  32 => 2,  30 => 1,);
+        return array (  282 => 84,  279 => 83,  275 => 80,  272 => 79,  269 => 78,  264 => 74,  259 => 75,  257 => 74,  252 => 73,  249 => 72,  244 => 70,  240 => 60,  237 => 59,  234 => 58,  229 => 54,  218 => 61,  215 => 58,  212 => 57,  209 => 56,  206 => 55,  204 => 54,  190 => 47,  182 => 41,  179 => 40,  175 => 32,  172 => 31,  169 => 30,  166 => 29,  163 => 28,  159 => 25,  156 => 24,  153 => 23,  150 => 22,  147 => 21,  144 => 20,  141 => 19,  139 => 18,  136 => 17,  133 => 16,  130 => 15,  127 => 14,  119 => 33,  117 => 28,  111 => 26,  109 => 14,  104 => 12,  100 => 11,  97 => 10,  95 => 9,  87 => 8,  84 => 7,  81 => 6,  75 => 96,  73 => 83,  69 => 81,  67 => 78,  64 => 77,  62 => 72,  59 => 71,  57 => 70,  54 => 69,  52 => 40,  46 => 37,  43 => 36,  41 => 6,  35 => 3,  32 => 2,  30 => 1,);
     }
 }
 /* {% set theme_config = attribute(config.themes, config.system.pages.theme) %}*/
@@ -352,8 +355,11 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
 /*                 <div class="nav-bar">*/
 /*                     <div class="row">*/
 /*                         <div class="container">*/
-/*                             <div class="three columns header-logo">*/
+/*                             <div class="three mobile-six columns header-logo-container">*/
 /*                                 <a href="{{ base_url == '' ? '/' : base_url }}"><img class="header-logo" alt="{{ widget.text|e }}" src="{{ url("theme://images/header-logo.png") }}" /></a>*/
+/*                             </div>*/
+/*                             <div id="mobile-menu" class="mobile-six columns">*/
+/*                                 <span>Menu</span>*/
 /*                             </div>*/
 /*                             <div class="nine columns">*/
 /*                                 <nav>*/

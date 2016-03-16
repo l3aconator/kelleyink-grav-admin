@@ -19,7 +19,66 @@
 {% endmacro %}
 
 
-<ul class="navigation nav-list u-pull-right">
+<ul class="navigation nav-list u-pull-right desktop">
+    
+    {% if page.header.home == true %}
+    <li class="nav-item {{ current_page }}">
+             <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item {{ current_page }}">
+             <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item {{ current_page }}">
+            <a class="nav-link" href="#work">Work</a>
+        </li>
+        <li class="nav-item {{ current_page }}">
+            <a class="nav-link" href="#contact">Contact</a>
+        </li>
+    
+    {% else %}
+    
+    <li class="nav-item {{ current_page }}">
+             <a class="nav-link" href="{{ base_url == '' ? '/' : base_url }}#about">About</a>
+        </li>
+        <li class="nav-item {{ current_page }}">
+             <a class="nav-link" href="{{ base_url == '' ? '/' : base_url }}#services">Services</a>
+        </li>
+        <li class="nav-item {{ current_page }}">
+            <a class="nav-link" href="{{ base_url == '' ? '/' : base_url }}#work">Work</a>
+        </li>
+        <li class="nav-item {{ current_page }}">
+            <a class="nav-link" href="{{ base_url == '' ? '/' : base_url }}#contact">Contact</a>
+        </li>
+    
+    {% endif %}
+    
+    {% if theme_config.dropdown.enabled %}
+        {{ _self.loop(pages) }}
+    {% else %}
+        {% for page in pages.children.visible %}
+            {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
+            <li class="nav-item {{ current_page }}">
+                <a class="nav-link" href="{{ page.url }}">
+                    {{ page.menu }}
+                </a>
+            </li>
+        {% endfor %}
+    {% endif %}
+    
+    {% for mitem in site.menu %}
+        <li class="nav-item">
+            <a class="nav-link" href="{{ mitem.url }}">
+                {{ mitem.text }}
+            </a>
+        </li>
+    {% endfor %}
+    
+    {% if config.plugins.login.enabled and grav.user.username %}
+        <li>{% include 'partials/login-status.html.twig' %}</li>
+    {% endif %}
+</ul>
+
+<ul class="navigation nav-list u-pull-right mobile">
     
     {% if page.header.home == true %}
     <li class="nav-item {{ current_page }}">

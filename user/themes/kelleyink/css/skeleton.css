@@ -646,6 +646,41 @@ there.
     padding: .75em 0em .75em 0em;
 }
 
+.navigation.mobile {
+    display: none;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+@media (max-width: 950px) {    
+    .navigation.desktop {
+        display: none;
+    }
+    
+    .header-logo {
+        display: inline;
+    }
+    
+    #mobile-menu {
+        display: block;
+        cursor: pointer;
+        text-align: right;
+    }
+    
+    .mobile-six.columns {
+        width: 50%;
+        float: left;
+    }
+    
+    .nav-item {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .nav-list {
     padding-top: 2.4em;
 }
@@ -848,6 +883,12 @@ a.work-link {
     height: 200px;
 }
 
+.simple .work-post-header-image-wrap {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
 .work-post-header-image-wrap .top {
     opacity: 1;
     transition: opacity 1s ease;
@@ -865,6 +906,20 @@ a.work-link {
     top: 0;
     left: 0;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+}
+
+@media (max-width: 550px) {
+    .simple .work-post-content {
+        display: block;
+        margin-top: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .simple .work-post-content {
+        display: block;
+        margin-top: 75%;
+    }
 }
 
 .work-project-overview-bg {
@@ -894,6 +949,7 @@ a.work-link {
     display: block;
 }
 
+
 .work-post-feature-name-wrap {
     text-align: center;
     background-color: #0A161F;
@@ -918,6 +974,14 @@ a.work-link {
 
 .work-post-subhead {
     color: #FFFFFB;
+}
+
+.work-post-bg.simple h2 {
+    color: #FFFFFB;
+}
+
+.work-post-bg.simple p {
+    color: #C4C4BC;
 }
 
 .work-post-description {

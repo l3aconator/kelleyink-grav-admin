@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1456885160,
-    'checksum' => '2c484d66329b2d0c095b97b9a87da14d',
+    'timestamp' => 1458003392,
+    'checksum' => 'ebce467454b567b9dd91d19896720048',
     'files' => [
         'user/config' => [
             'media' => [
@@ -27,7 +27,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1456885159
+                'modified' => 1458003390
             ],
             'themes/kelleyink' => [
                 'file' => 'user/config/themes/kelleyink.yaml',

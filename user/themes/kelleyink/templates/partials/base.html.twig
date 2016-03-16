@@ -43,8 +43,11 @@
                 <div class="nav-bar">
                     <div class="row">
                         <div class="container">
-                            <div class="three columns header-logo">
+                            <div class="three mobile-six columns header-logo-container">
                                 <a href="{{ base_url == '' ? '/' : base_url }}"><img class="header-logo" alt="{{ widget.text|e }}" src="{{ url("theme://images/header-logo.png") }}" /></a>
+                            </div>
+                            <div id="mobile-menu" class="mobile-six columns">
+                                <span>Menu</span>
                             </div>
                             <div class="nine columns">
                                 <nav>
