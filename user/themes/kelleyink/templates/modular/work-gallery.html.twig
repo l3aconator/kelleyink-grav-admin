@@ -3,15 +3,14 @@
       <h2 class="subtitle">Want some examples?</h2>
       <div class="row">
         
-        
-        {% for children in page.find('/work') %}
+      {% for p in page.find('/work').children if p != page %}
           <div class="four columns">
-                <a class="work-link" href="{{ page.url }}">
-                    <div class="work-image-box large" style="background-image: url({{ url("user/pages/03.work/alternative-care/bottom.jpg") }});">
+                <a class="work-link" href="{{ p.url }}">
+                    <div class="work-image-box large" style="background-image: url({{ p.media['bottom.jpg'].url }});">
                         <div class="work-image-content">
                             <div class="work-caption">
-                                <span class="work-title">{{ page.title }}</span>
-                                <span class="work-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                <span class="work-title">{{ p.title }}</span>
+                                <span class="work-body">{{ p.header.caption }}</span>
                             </div>
                         </div>
                     </div>
@@ -19,8 +18,6 @@
             </div>
         {% endfor %}
         
-        
-          
     </div>  
   </div>
 </section>

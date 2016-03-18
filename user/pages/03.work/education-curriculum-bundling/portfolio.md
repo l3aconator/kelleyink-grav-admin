@@ -6,6 +6,8 @@ pdf: alternative-care.pdf
 bottomimage: bottom.jpg
 topimage: top.jpg
 footerimage: footer.jpg
+
+caption: 'this is text that will be populated on the homepage preview'
 ---
 
 ## Offering bundle options
