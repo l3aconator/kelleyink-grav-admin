@@ -3,7 +3,16 @@ $(document).ready(function() {
     //Mobile menu
     
     $('#mobile-menu').on('click', function(){
-        $('.navigation.mobile').slideToggle();
+        $('.navigation.mobile').fadeToggle();
+    });
+    
+    $('.mobile .nav-link').on('click', function(myEvent){
+        myEvent.stopPropagation();
+        $('.navigation.mobile').fadeToggle();
+    });
+    
+    $('.navigation.mobile').on('click', function(){
+        $('.navigation.mobile').fadeToggle();
     });
     
     //Sticky Nav
