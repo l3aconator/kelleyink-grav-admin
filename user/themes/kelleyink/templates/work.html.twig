@@ -1,6 +1,19 @@
-{% embed 'partials/work_item-simple.html.twig' %}
+{% include 'partials/base.html.twig' %}
 
-	
-{% endembed %}
+{% for children in page.collection %}
+          <div class="four columns">
+                <a class="work-link" href="{{ page.url }}">
+                    <div class="work-image-box large" style="background-image: url({{ url("user/pages/03.work/alternative-care/bottom.jpg") }});">
+                        <div class="work-image-content">
+                            <div class="work-caption">
+                                <span class="work-title">{{ page.title }}</span>
+                                <span class="work-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+  {% endfor %}
+
 
 

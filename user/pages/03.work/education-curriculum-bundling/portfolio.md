@@ -1,14 +1,12 @@
 ---
-title: 'Alternative Care One-pager'
+title: 'Education curriculum bundling'
 button: true
-buttontext: 'See the pdf!'
+buttontext: 'See postcard PDF!'
 pdf: alternative-care.pdf
 bottomimage: bottom.jpg
 topimage: top.jpg
 footerimage: footer.jpg
 ---
 
-## Project Overview
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet
+## Offering bundle options
+Used books cause financial challenges for publishers...in fact, they are the root cause of the pricing crisis that students and the industry are facing now. “Bundling” books is a win-win: more books at a discount for the students, and new books sold for publishers. In some cases, like this one, two titles are the perfect match to complement one another and sell together.

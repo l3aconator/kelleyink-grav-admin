@@ -1,5 +1,5 @@
 ---
-title: 'Alternative Care One-pager'
+title: 'Field 4/e postcard'
 button: true
 buttontext: 'See the pdf!'
 pdf: alternative-care.pdf
@@ -8,7 +8,5 @@ topimage: top.jpg
 footerimage: footer.jpg
 ---
 
-## Project Overview
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet
+## Showcasing strengths
+This title by well-known stats author Andy Field is beloved for the quirky and beloved characters throughout the book, and this edition offered two new ones! The request for this postcard was to play to the popularity of those personas, and we chose to achieve that by offering a way to invest further by identifying with one of them.Play to the strengths that are already resonating with the market!
