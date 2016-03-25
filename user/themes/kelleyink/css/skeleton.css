@@ -1034,6 +1034,39 @@ a.work-link {
     text-align: right;
 }
 
+/*RESUME*/
+.resume-container {
+    max-width: 633px;
+    margin: 0 auto;
+}
+
+.resume h1  {
+    color: #FFFFFB;
+    text-align: center;
+}
+
+.job-location {
+    font-size: 1em;
+    
+}
+
+.job-date {
+    font-size: 1.25em;
+    font-family:  'AmericanTypewriterStd-Med', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    display: block;
+}
+
+.job-separator {
+    display: block;
+    text-align: center;
+}
+
+.job-title {
+    font-size: 1.5em;
+}
+
+
 /*BLOG POSTS*/
 
 .blog-post .subtitle {

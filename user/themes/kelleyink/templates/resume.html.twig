@@ -1,0 +1,120 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    <header class="resume blue-gradient-bg">
+        <div class="container section-pad">
+            <h1>{{ page.title }}</h1>
+        </div>
+    </header>
+    <section class="resume-container section-pad">
+	   {{ page.content }}
+        
+        {% for workhistory in page.header.workhistory %}
+        <div class="work-history-item">
+            <h4>
+                
+                {{ workhistory.employer }}
+                
+                {% if workhistory.joblocation %}
+                <span class="job-location">{{ workhistory.joblocation }}</span>
+                {% else %}
+            
+                {% endif %}
+                
+            </h4>
+            {% if workhistory.jobnote %}
+                <p>{{ workhistory.jobnote }}</p>
+                 {% endif %}
+            
+            <div class="row">
+                <div class="three columns">
+                    <span class="job-date">{{ workhistory.position.jobbegan }}</span>
+                    <span class="job-separator">–</span>
+                    <span class="job-date">{{ workhistory.position.jobended }}</span>
+                </div>
+                <div class="nine columns">
+                    
+                    {% if workhistory.position.jobtitle %}
+                       
+                        <h6 class="job-title">{{ workhistory.position.jobtitle }}</h6>
+                    
+                        {% else %}
+                    
+                    {% endif %}
+                    
+                    <p>{{ workhistory.position.jobexplanation }}</p>
+                </div>
+            </div>
+        </div>
+        
+        {% if workhistory.position.jobbegantwo %}
+            <div class="row">
+                <div class="three columns">
+                    <span class="job-date">{{ workhistory.position.jobbegantwo }}</span>
+                    <span class="job-separator">–</span>
+                    <span class="job-date">{{ workhistory.position.jobendedtwo }}</span>
+                </div>
+                <div class="nine columns">
+                    
+                    {% if workhistory.position.jobtitletwo %}
+                       
+                        <h6 class="job-title">{{ workhistory.position.jobtitletwo }}</h6>
+                    
+                        {% else %}
+                    
+                    {% endif %}
+                    
+                    <p>{{ workhistory.position.jobexplanationtwo }}</p>
+                </div>
+            </div>
+        {% endif %}
+        
+        {% if workhistory.position.jobbeganthree %}
+            <div class="row">
+                <div class="three columns">
+                    <span class="job-date">{{ workhistory.position.jobbeganthree }}</span>
+                    <span class="job-separator">–</span>
+                    <span class="job-date">{{ workhistory.position.jobendedthree }}</span>
+                </div>
+                <div class="nine columns">
+                    
+                    {% if workhistory.position.jobtitlethree %}
+                       
+                        <h6 class="job-title">{{ workhistory.position.jobtitlethree }}</h6>
+                    
+                        {% else %}
+                    
+                    {% endif %}
+                    
+                    <p>{{ workhistory.position.jobexplanationthree }}</p>
+                </div>
+            </div>
+        {% endif %}
+        
+        {% if workhistory.position.jobbeganfour %}
+            <div class="row">
+                <div class="three columns">
+                    <span class="job-date">{{ workhistory.position.jobbeganfour }}</span>
+                    <span class="job-separator">–</span>
+                    <span class="job-date">{{ workhistory.position.jobendedfour }}</span>
+                </div>
+                <div class="nine columns">
+                    
+                    {% if workhistory.position.jobtitlefour %}
+                       
+                        <h6 class="job-title">{{ workhistory.position.jobtitlefour }}</h6>
+                    
+                        {% else %}
+                    
+                    {% endif %}
+                    
+                    <p>{{ workhistory.position.jobexplanationfour }}</p>
+                </div>
+            </div>
+        {% endif %}
+        
+        {% endfor %}
+        
+        
+    </section>
+{% endblock %}
