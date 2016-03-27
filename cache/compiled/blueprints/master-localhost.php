@@ -1,51 +1,51 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1458931098,
-    'checksum' => 'edf034190ae351cab2b480c539961f13',
+    'timestamp' => 1459043778,
+    'checksum' => 'b2ee215dda6c4d13bd861b8a8967cea9',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
                 'file' => 'system/blueprints/config/media.yaml',
-                'modified' => 1455224032
+                'modified' => 1458260569
             ],
             'site' => [
                 'file' => 'system/blueprints/config/site.yaml',
-                'modified' => 1455224032
+                'modified' => 1458260569
             ],
             'streams' => [
                 'file' => 'system/blueprints/config/streams.yaml',
-                'modified' => 1455224032
+                'modified' => 1458260569
             ],
             'system' => [
                 'file' => 'system/blueprints/config/system.yaml',
-                'modified' => 1455224032
+                'modified' => 1458260569
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/blueprints.yaml',
-                'modified' => 1455224032
+                'modified' => 1458260569
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/blueprints.yaml',
-                'modified' => 1455224032
+                'modified' => 1458260570
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/blueprints.yaml',
-                'modified' => 1455224032
+                'modified' => 1458260570
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/blueprints.yaml',
-                'modified' => 1455224032
+                'modified' => 1458260570
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/blueprints.yaml',
-                'modified' => 1455224032
+                'modified' => 1458260570
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/blueprints.yaml',
-                'modified' => 1455224032
+                'modified' => 1458260570
             ]
         ]
     ],

@@ -1040,14 +1040,40 @@ a.work-link {
     margin: 0 auto;
 }
 
+@media (max-width: 800px) {
+    .resume-container {
+        max-width: 550px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .resume-container {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 801px) {
+ 
+}
+
 .resume h1  {
     color: #FFFFFB;
     text-align: center;
 }
 
+.resume-container li {
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
 .job-location {
-    font-size: 1em;
-    
+    font-size: .65em;
+    font-family: 'ATCOverlook-Regular', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: .1em;
 }
 
 .job-date {
