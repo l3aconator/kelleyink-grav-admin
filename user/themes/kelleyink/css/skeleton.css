@@ -900,6 +900,13 @@ a.work-link {
     display: block;
 }
 
+
+/*CONTACT*/
+
+.thanks-hidden {
+    display: none;
+}
+
 /*WORK_POSTS*/
 
 .work-post-header-image-wrap {
