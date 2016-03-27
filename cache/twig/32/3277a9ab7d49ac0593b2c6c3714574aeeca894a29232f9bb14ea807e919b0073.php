@@ -195,7 +195,7 @@ class __TwigTemplate_ba3481655b380072c0e58e4dbc80f6d87c123dab338d41d90ebf83cda53
         echo "\" /></a>
                             </div>
                             <div id=\"mobile-menu\" class=\"mobile-six columns\">
-                                <span>Menu</span>
+                                <span id=\"mobile-menu-button\">Menu</span>
                             </div>
                             <div class=\"nine columns\">
                                 <nav>
@@ -359,7 +359,7 @@ class __TwigTemplate_ba3481655b380072c0e58e4dbc80f6d87c123dab338d41d90ebf83cda53
 /*                                 <a href="{{ base_url == '' ? '/' : base_url }}"><img class="header-logo" alt="{{ widget.text|e }}" src="{{ url("theme://images/header-logo.png") }}" /></a>*/
 /*                             </div>*/
 /*                             <div id="mobile-menu" class="mobile-six columns">*/
-/*                                 <span>Menu</span>*/
+/*                                 <span id="mobile-menu-button">Menu</span>*/
 /*                             </div>*/
 /*                             <div class="nine columns">*/
 /*                                 <nav>*/
