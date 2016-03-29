@@ -903,7 +903,7 @@ a.work-link {
 
 /*CONTACT*/
 
-.thanks-hidden {
+.input[type: hidden] {
     display: none;
 }
 
