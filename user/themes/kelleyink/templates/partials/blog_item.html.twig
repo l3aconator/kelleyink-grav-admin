@@ -73,7 +73,11 @@
         <section class="post-carousel cream-gradient-bg section-pad prev-next">
             <div class=" row container">
                 <div class="six columns">
-                 <div class="post-nav">Previous post</div>
+                  
+                  {% if not page.isFirst %}
+                    <div class="post-nav">Previous post</div>
+                  {% endif %}
+                  
                     <div class="post-carousel-item">
                         <div class="row">
                             <div class="three columns">
@@ -93,7 +97,9 @@
                     </div>
                 </div>
                 <div class="six columns right">
-                    <div class="post-nav">Next post</div>
+                    {% if not page.isLast %}
+                      <div class="post-nav">Next post</div>
+                    {% endif %}
                     <div class="post-carousel-item">
                         <div class="row">
                             <div class="nine columns">

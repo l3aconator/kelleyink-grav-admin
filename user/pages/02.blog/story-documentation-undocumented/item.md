@@ -1,5 +1,5 @@
 ---
-title: 'story documentation...undocumented'
+title: 'story documentation... undocumented'
 taxonomy:
     tag: [story, story class]
 date: 05/19/2013

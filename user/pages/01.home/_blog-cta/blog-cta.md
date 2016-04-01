@@ -1,7 +1,4 @@
 ---
-title: 'Blog CTA'
+title: 'Ink Blot'
 ---
-
-### The Ink Blot
-
-Lorem
+Here’s an overview of what I’m thinking and doing, as well as occasional project updates. Writing begets writing, you know.

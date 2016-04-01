@@ -1,0 +1,39 @@
+title: Work
+'@extends':
+    type: default
+    context: blueprints://pages
+    
+child_type: portfolio
+child_type: case-study
+
+title: Blog
+'@extends':
+    type: default
+    context: blueprints://pages
+
+child_type: item
+
+
+title: Default
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        advanced:
+          fields:
+            overrides:
+              fields:
+                header.child_type:
+                  default: portfolio
+                  
+      fields:
+        advanced:
+          fields:
+            overrides:
+              fields:
+                header.child_type:
+                  default: case-study

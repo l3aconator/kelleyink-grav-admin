@@ -2,7 +2,7 @@
 title: 'my wheelhouse: marketing communications'
 taxonomy:
     tag: [marketing, communication, experience]
-date: 01/26/2016
+date: 26-01-2016
 ---
 How is Marketing Communications (MarComm) different from Marketing? Some of it is in the eye of the beholder, sure. Here’s how I think of it.
 

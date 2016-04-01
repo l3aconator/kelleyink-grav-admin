@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/kelley-ink-grav-mampstack-5.6.18-0/apache2/htdocs/grav-admin/user/config/plugins/admin.yaml',
-    'modified' => 1456380389,
+    'modified' => 1459392747,
     'data' => [
         'enabled' => true,
         'route' => '/admin',
@@ -16,7 +16,7 @@ return [
         'warnings' => [
             'delete_page' => true
         ],
-        'edit_mode' => 'expert',
+        'edit_mode' => 'normal',
         'show_github_msg' => true,
         'google_fonts' => true,
         'enable_auto_updates_check' => true,

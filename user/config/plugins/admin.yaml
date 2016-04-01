@@ -7,7 +7,7 @@ session:
   timeout: 1800
 warnings:
   delete_page: true
-edit_mode: expert
+edit_mode: normal
 show_github_msg: true
 google_fonts: true
 enable_auto_updates_check: true

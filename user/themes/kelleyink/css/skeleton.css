@@ -533,6 +533,11 @@ form {
     text-align: center;
 }
 
+.u-img-center {
+  margin: 0 auto;
+  display: block;
+}
+
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
@@ -907,6 +912,17 @@ a.work-link {
     display: none;
 }
 
+/*BLOG CTA*/
+
+.blog-carousel img {
+  padding-bottom: 44px;
+}
+
+.blog-text p {
+  text-align: center;
+  margin: 0 100px 22px 100px;
+}
+
 /*WORK_POSTS*/
 
 .work-post-header-image-wrap {
@@ -1118,6 +1134,93 @@ a.work-link {
 
 .job-title {
     font-size: 1.5em;
+}
+
+
+/*BLOG HOME*/
+
+.blog-post-snippet {
+  margin: 0;
+  padding: 0;
+  margin-top: 44px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.snippet-pad {
+  padding-right: 30px;
+}
+
+.blog-post-snippet-heading a {
+  color: black;
+  text-decoration: none;
+}
+
+.blog-post-snippet-content a {
+  padding-right: 100px;
+}
+
+.blog-post-letters-circle {
+  width: 131px;
+  height: 136px;
+  border-radius: 50%;
+  background-color: black;
+  text-align: center;
+  position: relative;
+  transition: all 500ms ease;
+}
+
+.blog-post-letters-circle.large {
+  width: 216px;
+  height: 224px;
+  border-radius: 50%;
+  background-color: black;
+  text-align: center;
+  position: relative;
+}
+
+.featured-blog-post {
+  margin: 22px 0px;
+}
+
+.featured-blog-post-wrapper { 
+  width: 100%;
+  margin: 0 175px;
+}
+
+.blog-post-letters {
+  font-family:  'AmericanTypewriterStd-Med', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 3.75em;
+  line-height: 1.25em;
+  text-transform: uppercase;
+  top: -50%;
+  transform: translateY(50%);
+  color: transparent;
+  text-shadow: 0 0 5px rgba(255,255,255,.75);
+  transition: all 500ms ease;
+}
+
+.blog-post-letters.large {
+  line-height: 1em;
+  font-size: 7.25em;
+}
+
+.blog-post-snippet:hover .blog-post-letters-circle {
+  transform: scale(.75);
+}
+
+.blog-post-snippet:hover .blog-post-letters {
+  color: white;
+  text-shadow: 0 0 0px rgba(255,255,255,1);
+}
+
+.featured-blog-post:hover .blog-post-letters-circle {
+  transform: scale(.75);
+}
+
+.featured-blog-post:hover .blog-post-letters {
+  color: white;
+  text-shadow: 0 0 0px rgba(255,255,255,1);
 }
 
 

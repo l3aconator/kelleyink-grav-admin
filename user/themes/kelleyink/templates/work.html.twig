@@ -1,12 +1,15 @@
 {% include 'partials/base.html.twig' %}
 
-{% for children in page.collection %}
+{% set collection = page.collection() %}
+
+{% block content %}
+{% for children in collection %}
           <div class="four columns">
-                <a class="work-link" href="{{ page.url }}">
+                <a class="work-link" href="{{ child.url }}">
                     <div class="work-image-box large" style="background-image: url({{ url("user/pages/03.work/alternative-care/bottom.jpg") }});">
                         <div class="work-image-content">
                             <div class="work-caption">
-                                <span class="work-title">{{ page.title }}</span>
+                                <span class="work-title">{{ child.title }}</span>
                                 <span class="work-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                             </div>
                         </div>
@@ -14,6 +17,7 @@
                 </a>
             </div>
   {% endfor %}
+{% endblock %}
 
 
 

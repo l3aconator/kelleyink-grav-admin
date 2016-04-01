@@ -1,36 +1,60 @@
 {% embed 'partials/base.html.twig' %}
 
-	{% set collection = page.collection() %}
+  {% set collection = page.collection() %}
 
-	{% block content %}
-		{% set blog_image = page.media.images|first.grayscale().contrast(20).brightness(-100).colorize(-35,81,122) %}
 
-		{% if blog_image %}
-		<div class="flush-top blog-header blog-header-image" style="background-image: url({{ blog_image.url }});">
-		{% else %}
-		<div class="blog-header">
-		{% endif %}
-			{{ page.content }}
-		</div>
 
-			{% if config.plugins.breadcrumbs.enabled %}
-				{% include 'partials/breadcrumbs.html.twig' %}
-			{% endif %}
+  {% block content %}
 
-		<div class="content-wrapper blog-content-list grid pure-g">
-			<div id="listing" class="block pure-u-2-3">
-				{% for child in collection %}
-			        {% include 'partials/blog_item.html.twig' with {'blog':page, 'page':child, 'truncate':true} %}
-			    {% endfor %}
+  <div class="blue-gradient-bg">
+    <div class="container section-pad">
+      <h1>Kelley's Blog</h1>
+    </div>
+  </div>
 
-                {% if config.plugins.pagination.enabled and collection.params.pagination %}
-                    {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
-                {% endif %}
-			</div>
-			<div id="sidebar" class="block size-1-3 pure-u-1-3">
-				{% include 'partials/sidebar.html.twig' with {'blog':page} %}
-			</div>
-		</div>
+  <div class="container section-pad">
+    
+    {% for child in collection.sort(date, desc) | slice(0, 1) %}
+    <div class="featured-blog-post">
+        <div class="row">
+          <div class="featured-blog-post-wrapper">
+          <div class="three columns">
+            <div class="blog-post-letters-circle large">
+              <div class="blog-post-letters large">{{ child.title | slice(0, 1) }}</div>
+            </div>
+          </div>
+            <div class="five columns">
+              <h2 class="blog-post-snippet-heading"><a href="{{ child.url }}">{{ child.title }}</a></h2>
+              <p>{{ child.content | truncate(110) }} <a href="{{ child.url }}">Read more &raquo;</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    
+    <div class="row">
+      {% for child in collection.sort(date, desc) | slice(1) %}
+      <div class="six columns blog-post-snippet">
+        <div class="blog-post-wrapper">
+          <div class="four columns">
+            <div class="blog-post-letters-circle">
+              <div class="blog-post-letters">{{ child.title | slice(0, 1) }}</div>
+            </div>
+          </div>
+          <div class="eight columns snippet-pad">
+            <h5 class="blog-post-snippet-heading"><a href="{{ child.url }}">{{ child.title }}</a></h5>
+            <p class="blog-post-snippet-content">{{ child.content | truncate(90) }} <a href="{{ child.url }}">Read more &raquo;</a></p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    
+    
+    
+    
+  </div>
+
 	{% endblock %}
 
 {% endembed %}

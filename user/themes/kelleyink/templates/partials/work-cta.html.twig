@@ -1,3 +1,10 @@
+
+{% set page_sib = page.find('/work').descendants %}
+
+{% set work = page.find('/work/' ~ title).collection %}
+
+{% set collection = page.collection() %}
+
 <section class="work-post-cta cream-gradient-bg section-pad">
     <div class="row container">
         <div class="five columns">
@@ -7,18 +14,79 @@
         <div class="seven columns">
             <div class="six columns work-post-carousel left">
                 <div class="post-nav">Previous Sample</div>
-                <a href="#">
+                
+              {% if not work.page.isFirst %}
+                <a href="{{ collection.page.nextSibling.url }}">
                     <div class="work-post-circle"></div>
-                    <h6 class="work-post-carousel-heading">Project name with hopefully two lines</h6>
+                    <h6 class="work-post-carousel-heading">{{ work.title }}</h6>
                 </a>
+               {% endif %}
+              
             </div>
             <div class="six columns work-post-carousel right">
                 <div class="post-nav">Next Sample</div>
-                <a href="#">
+                
+              {% if not page.isLast %}
+              <a href="{{ page.nextSibling.url }}">
                     <div class="work-post-circle u-pull-right"></div>
-                    <h6 class="work-post-carousel-heading">Project name with hopefully two lines</h6>
+                    <h6 class="work-post-carousel-heading">{{ page_sib.page.nextSibling.title }}</h6>
                 </a>
+              {% endif %}
+              
             </div>
         </div>
     </div>
 </section>
+    
+
+<!--
+    {% set show_prev_next = true %}
+    {% if show_prev_next %}
+        <section class="post-carousel cream-gradient-bg section-pad prev-next">
+            <div class=" row container">
+                <div class="six columns">
+                 <div class="post-nav">Previous post</div>
+                    <div class="post-carousel-item">
+                        <div class="row">
+                            <div class="three columns">
+                                
+                                {% if not page.isFirst %}
+                               <a href="{{ page.nextSibling.url }}"><div class="post-circle"></div></a>
+                                {% endif %}
+                                
+                            </div>
+                            <div class="nine columns">
+                                {% if not page.isFirst %}
+                                <h6 class="post-carousel-heading">{{ page.nextSibling.title }}</h6>
+                                <div class="post-carousel-date">Posted {{ page.nextSibling.date|date("F d, Y") }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="six columns right">
+                    <div class="post-nav">Next post</div>
+                    <div class="post-carousel-item">
+                        <div class="row">
+                            <div class="nine columns">
+                                
+                                 {% if not page.isLast %}
+                                <h6 class="post-carousel-heading">{{ page.prevSibling.title }}</h6>
+                                <div class="post-carousel-date">Posted {{ page.prevSibling.date|date("F d, Y") }}</div>
+                                {% endif %}
+                                
+                            </div>
+                             <div class="three columns">
+                                 
+                                 {% if not page.isLast %}
+                                <a href="{{ page.prevSibling.url }}"><div class="post-circle u-pull-right"></div></a>
+                                 {% endif %}
+                                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% endif %}
+-->
