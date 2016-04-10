@@ -6,11 +6,15 @@
       {% for p in page.find('/work').children if p != page %}
           <div class="four columns">
                 <a class="work-link" href="{{ p.url }}">
-                    <div class="work-image-box large" style="background-image: url({{ p.media['bottom.jpg'].url }});">
+                    <div class="work-image-box large" style="background-image: url({{ p.media['preview.jpg'].url }});">
                         <div class="work-image-content">
                             <div class="work-caption">
                                 <span class="work-title">{{ p.title }}</span>
                                 <span class="work-body">{{ p.header.caption }}</span>
+                                <div class="post-circle left u-center">
+                                        <div class="bar bar-top"></div>
+                                        <div class="bar bar-bottom"></div>
+                                    </div> 
                             </div>
                         </div>
                     </div>

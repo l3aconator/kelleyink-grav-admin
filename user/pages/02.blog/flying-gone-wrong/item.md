@@ -1,12 +1,12 @@
 ---
 title: 'flying gone wrong'
+date: '29-04-2013 00:00'
 taxonomy:
     tag:
         - story
         - audio
         - campfire
         - 'story class'
-date: 01/26/2016
 ---
 
 Campfire after-hours (theme: curveball) at CSz Portland: 4/29/2013

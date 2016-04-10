@@ -19,9 +19,11 @@
         <div class="row">
           <div class="featured-blog-post-wrapper">
           <div class="three columns">
-            <div class="blog-post-letters-circle large">
-              <div class="blog-post-letters large">{{ child.title | slice(0, 1) }}</div>
-            </div>
+            <a class="blog-post-link" href="{{ child.url }}">
+                <div class="blog-post-letters-circle large">
+                  <div class="blog-post-letters large">{{ child.title | slice(0, 1) }}</div>
+                </div>
+            </a>
           </div>
             <div class="five columns">
               <h2 class="blog-post-snippet-heading"><a href="{{ child.url }}">{{ child.title }}</a></h2>
@@ -37,9 +39,11 @@
       <div class="six columns blog-post-snippet">
         <div class="blog-post-wrapper">
           <div class="four columns">
-            <div class="blog-post-letters-circle">
-              <div class="blog-post-letters">{{ child.title | slice(0, 1) }}</div>
-            </div>
+                <a class="blog-post-link" href="{{ child.url }}">
+                    <div class="blog-post-letters-circle">
+                        <div class="blog-post-letters">{{ child.title | slice(0, 1) }}</div>
+                    </div>
+                </a>
           </div>
           <div class="eight columns snippet-pad">
             <h5 class="blog-post-snippet-heading"><a href="{{ child.url }}">{{ child.title }}</a></h5>

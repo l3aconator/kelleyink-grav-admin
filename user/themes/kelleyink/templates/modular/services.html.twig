@@ -1,111 +1,128 @@
 <div class="services-bg blue-gradient-bg section-pad" id="services">
             <div class="container">
-                <h2 class="subtitle services"></h2>
+                <h2 class="subtitle services">{{ page.title }}</h2>
                 <div class="row">
                     {% for itemcolone in page.header.itemcolone %}
-                    <div class="two columns">
-                        {% if itemcolone.icon %}
-                            <span>
-                                {{ page.media['icon-1.svg'].html('My title', 'Some ALT text', 'icon') }}
-                            </span>
-                        {% endif %}
-                    </div>
-                    <div class="four columns">
-                        {% if itemcolone.servicename %}
-                            <h3 class="subhead services">{{ itemcolone.servicename }}</h3>
-                        {% endif %}
-                        {% if itemcolone.text %}
-                            <p class="services-brief">{{ itemcolone.text }}</p>
-                        {% endif %}
-                    </div>
+                      <div class="service-box">
+                        <div class="two columns">
+                            {% if itemcolone.icon %}
+                                <span class="icon-circle">
+                                  {{ page.media['icon-1.svg'].html('My title', 'Some ALT text', 'icon') }}
+                                </span>
+                            {% endif %}
+                        </div>
+                        <div class="four columns">
+                            {% if itemcolone.servicename %}
+                                <h3 class="subhead services">{{ itemcolone.servicename }}</h3>
+                            {% endif %}
+                            {% if itemcolone.text %}
+                                <p class="services-brief">{{ itemcolone.text }}</p>
+                            {% endif %}
+                        </div>
+                     </div>
                     {% endfor %}
+                  
                     {% for itemcoltwo in page.header.itemcoltwo %}
-                    <div class="two columns">
-                        {% if itemcoltwo.icon %}
-                            <span>
-                                {{ page.media['icon-1.svg'].html('My title', 'Some ALT text', 'icon') }}
-                            </span>
-                        {% endif %}
-                    </div>
-                    <div class="four columns">
-                        {% if itemcoltwo.servicename %}
-                            <h3 class="subhead services">{{ itemcoltwo.servicename }}</h3>
-                        {% endif %}
-                        {% if itemcoltwo.text %}
-                            <p class="services-brief">{{ itemcoltwo.text }}</p>
-                        {% endif %}
+                    <div class="service-box">
+                        <div class="two columns">
+                            {% if itemcoltwo.icon %}
+                                <span class="icon-circle">
+                                </span>
+                            {% endif %}
+                        </div>
+                        <div class="four columns">
+                            {% if itemcoltwo.servicename %}
+                                <h3 class="subhead services">{{ itemcoltwo.servicename }}</h3>
+                            {% endif %}
+                            {% if itemcoltwo.text %}
+                                <p class="services-brief">{{ itemcoltwo.text }}</p>
+                            {% endif %}
+                        </div>
                     </div>
                     {% endfor %}
             </div>
             <div class="row">
+                
                     {% for itemcolthree in page.header.itemcolthree %}
-                    <div class="two columns">
-                        {% if itemcolthree.icon %}
-                            <span>
-                                {{ page.media['icon-1.svg'].html('My title', 'Some ALT text', 'icon') }}
-                            </span>
-                        {% endif %}
-                    </div>
-                    <div class="four columns">
-                        {% if itemcolthree.servicename %}
-                            <h3 class="subhead services">{{ itemcolthree.servicename }}</h3>
-                        {% endif %}
-                        {% if itemcolthree.text %}
-                            <p class="services-brief">{{ itemcolthree.text }}</p>
-                        {% endif %}
+                    <div class="service-box">
+                        <div class="two columns">
+                            {% if itemcolthree.icon %}
+                                <span class="icon-circle">
+                                    {{ page.media['icon-1.svg'].html('My title', 'Some ALT text', 'icon') }}
+                                </span>
+                            {% endif %}
+                        </div>
+                        <div class="four columns">
+                            {% if itemcolthree.servicename %}
+                                <h3 class="subhead services">{{ itemcolthree.servicename }}</h3>
+                            {% endif %}
+                            {% if itemcolthree.text %}
+                                <p class="services-brief">{{ itemcolthree.text }}</p>
+                            {% endif %}
+                        </div>
                     </div>
                     {% endfor %}
+                
                     {% for itemcolfour in page.header.itemcolfour %}
-                    <div class="two columns">
-                        {% if itemcolfour.icon %}
-                            <span>
-                                {{ page.media['icon-1.svg'].html('My title', 'Some ALT text', 'icon') }}
-                            </span>
-                        {% endif %}
-                    </div>
-                    <div class="four columns">
-                        {% if itemcolfour.servicename %}
-                            <h3 class="subhead services">{{ itemcolfour.servicename }}</h3>
-                        {% endif %}
-                        {% if itemcolfour.text %}
-                            <p class="services-brief">{{ itemcolfour.text }}</p>
-                        {% endif %}
+                    <div class="service-box">
+                        <div class="two columns">
+                            {% if itemcolfour.icon %}
+                                <span class="icon-circle">
+                                    {{ page.media['icon-1.svg'].html('My title', 'Some ALT text', 'icon') }}
+                                </span>
+                            {% endif %}
+                        </div>
+                        <div class="four columns">
+                            {% if itemcolfour.servicename %}
+                                <h3 class="subhead services">{{ itemcolfour.servicename }}</h3>
+                            {% endif %}
+                            {% if itemcolfour.text %}
+                                <p class="services-brief">{{ itemcolfour.text }}</p>
+                            {% endif %}
+                        </div>
                     </div>
                     {% endfor %}
+                
             </div>
             <div class="row">
+                
                     {% for itemcolfive in page.header.itemcolfive %}
-                    <div class="two columns">
-                        {% if itemcolfive.icon %}
-                            <span>
-                                {{ page.media['icon-1.svg'].html('My title', 'Some ALT text', 'icon') }}
-                            </span>
-                        {% endif %}
-                    </div>
-                    <div class="four columns">
-                        {% if itemcolfive.servicename %}
-                            <h3 class="subhead services">{{ itemcolfive.servicename }}</h3>
-                        {% endif %}
-                        {% if itemcolfive.text %}
-                            <p class="services-brief">{{ itemcolfive.text }}</p>
-                        {% endif %}
+                    <div class="service-box">
+                        <div class="two columns">
+                            {% if itemcolfive.icon %}
+                                <span class="icon-circle">
+                                    {{ page.media['icon-1.svg'].html('My title', 'Some ALT text', 'icon') }}
+                                </span>
+                            {% endif %}
+                        </div>
+                        <div class="four columns">
+                            {% if itemcolfive.servicename %}
+                                <h3 class="subhead services">{{ itemcolfive.servicename }}</h3>
+                            {% endif %}
+                            {% if itemcolfive.text %}
+                                <p class="services-brief">{{ itemcolfive.text }}</p>
+                            {% endif %}
+                        </div>
                     </div>
                     {% endfor %}
+                    
                     {% for itemcolsix in page.header.itemcolsix %}
-                    <div class="two columns">
-                        {% if itemcolsix.icon %}
-                            <span>
-                                {{ page.media['icon-1.svg'].html('My title', 'Some ALT text', 'icon') }}
-                            </span>
-                        {% endif %}
-                    </div>
-                    <div class="four columns">
-                        {% if itemcolsix.servicename %}
-                            <h3 class="subhead services">{{ itemcolsix.servicename }}</h3>
-                        {% endif %}
-                        {% if itemcolsix.text %}
-                            <p class="services-brief">{{ itemcolsix.text }}</p>
-                        {% endif %}
+                    <div class="service-box">
+                        <div class="two columns">
+                            {% if itemcolsix.icon %}
+                                <span class="icon-circle">
+                                    {{ page.media['icon-1.svg'].html('My title', 'Some ALT text', 'icon') }}
+                                </span>
+                            {% endif %}
+                        </div>
+                        <div class="four columns">
+                            {% if itemcolsix.servicename %}
+                                <h3 class="subhead services">{{ itemcolsix.servicename }}</h3>
+                            {% endif %}
+                            {% if itemcolsix.text %}
+                                <p class="services-brief">{{ itemcolsix.text }}</p>
+                            {% endif %}
+                        </div>
                     </div>
                     {% endfor %}
             </div>

@@ -1,12 +1,48 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-	<div id="error">
-		<div>
-			<h1>Error {{ page.header.http_response_code }}</h1>
-			<p>
-				{{ page.content }}
-			</p>
-		</div>
-	</div>
+	<section class="blue-gradient-bg section-pad error">
+        <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    <p class="knockout">Error Code: {{ page.header.http_response_code }}</p>
+                    <h1 class="knockout error-heading">{{ page.header.errorheading }}</h1>
+                    <h3 class="knockout error-content">{{ page.header.errorcontent }}</h3>
+                </div>
+                <div class="offset-by-six columns"></div>
+            </div>
+             <div class="row section-pad">
+                <div class="six columns error-hover">
+                    <div class="two columns">
+                        <a href="{{ page.header.errorctaleftlink }}">
+                            <div class="post-circle right">
+                                <div class="bar bar-top"></div>
+                                <div class="bar bar-bottom"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ten columns">
+                        <h5 class="error-cta-small-heading"><a href="{{ page.header.errorctaleftlink }}">{{ page.header.errorctaleft }}</a></h5>
+                    </div>
+                </div>
+                 <div class="offset-by-six columns"></div>
+            </div>
+            <div class="row">
+                 <div class="six columns error-hover">
+                    
+                    <div class="two columns">
+                        <a href="{{ base_url == '' ? '/' : base_url }}{{ page.header.errorctarightlink }}">
+                            <div class="post-circle left">
+                                <div class="bar bar-top"></div>
+                                <div class="bar bar-bottom"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ten columns">
+                        <h5 class="error-cta-small-heading"><a href="{{ base_url == '' ? '/' : base_url }}{{ page.header.errorctarightlink }}">{{ page.header.errorctaright }}</a></h5>
+                    </div>
+                </div>
+            </div> 
+        </div>
+	</section>
 {% endblock %}

@@ -46,7 +46,8 @@
         </div>
     </section>
 
-    <div class="section-pad cream-bg">
+  
+    <div class="cream-bg u-pad-top-44 blog-post-content">
         <div class="container">
     {% if page.header.continue_link is sameas(false) %}
         {{ page.content }}
@@ -83,13 +84,18 @@
                             <div class="three columns">
                                 
                                 {% if not page.isFirst %}
-                               <a href="{{ page.nextSibling.url }}"><div class="post-circle"></div></a>
+                               <a href="{{ page.nextSibling.url }}" class="u-pad-right-30">
+                                   <div class="post-circle right">
+                                        <div class="bar bar-top"></div>
+                                        <div class="bar bar-bottom"></div>
+                                    </div>
+                                </a>
                                 {% endif %}
                                 
                             </div>
                             <div class="nine columns">
                                 {% if not page.isFirst %}
-                                <h6 class="post-carousel-heading">{{ page.nextSibling.title }}</h6>
+                                <h6 class="post-carousel-heading"><a href="{{ page.nextSibling.url }}">{{ page.nextSibling.title }}</a></h6>
                                 <div class="post-carousel-date">Posted {{ page.nextSibling.date|date("F d, Y") }}</div>
                                 {% endif %}
                             </div>
@@ -105,7 +111,7 @@
                             <div class="nine columns">
                                 
                                  {% if not page.isLast %}
-                                <h6 class="post-carousel-heading">{{ page.prevSibling.title }}</h6>
+                                <h6 class="post-carousel-heading"><a href="{{ page.prevSibling.url }}">{{ page.prevSibling.title }}</a></h6>
                                 <div class="post-carousel-date">Posted {{ page.prevSibling.date|date("F d, Y") }}</div>
                                 {% endif %}
                                 
@@ -113,7 +119,12 @@
                              <div class="three columns">
                                  
                                  {% if not page.isLast %}
-                                <a href="{{ page.prevSibling.url }}"><div class="post-circle u-pull-right"></div></a>
+                                <a href="{{ page.prevSibling.url }}" class="u-pad-left-30">
+                                    <div class="post-circle left">
+                                        <div class="bar bar-top"></div>
+                                        <div class="bar bar-bottom"></div>
+                                    </div> 
+                                </a>
                                  {% endif %}
                                  
                             </div>

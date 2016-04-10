@@ -7,25 +7,39 @@
                 <h1 class="work-post-heading">{{ page.header.title }}</h1>
                 <div class="row">
                     <div class="five columns">
-                        <div class="work-post-header-image-wrap">
-                            <img class="work-post-header-image bottom" src="{{ page.media[page.header.bottomimage].url }}" alt="Work image preview." />
-                            <img class="work-post-header-image top" src="{{ page.media[page.header.topimage].url }}" alt="Work image preview." />
-                        </div>
+                        
+                        {% if page.header.button == true %}
+                        <a href="{{ page.media[page.header.pdf].url }}" target="_blank">
+                        {% endif %}
+                            
+                        {% if page.header.outsidebutton == true %}
+                        <a href="{{ page.header.outsidelink }}" target="_blank">
+                        {% endif %}
+                            
+                            <div class="work-post-header-image-wrap">
+                                <img class="work-post-header-image bottom" src="{{ page.media[page.header.bottomimage].url }}" alt="Work image preview." />
+                                <img class="work-post-header-image top" src="{{ page.media[page.header.topimage].url }}" alt="Work image preview." />
+                            </div>
+                        </a>
                     </div>
                     <div class="seven columns work-post-content">
                         {{ page.content }}
                         {% if page.header.button == true %}
                         <a href="{{ page.media[page.header.pdf].url }}" target="_blank"><button type="button">{{ page.header.buttontext }}</button></a>
                         {% else %}
+                        
+                        {% endif %}
+                        
+                        {% if page.header.outsidebutton == true %}
+                        <a href="{{ page.header.outsidelink }}" target="_blank"><button type="button">{{ page.header.outsidebuttontext }}</button></a>
+                        {% else %}
+                        
                         {% endif %}
                     </div>
                 </div>
             </div>
         </section>
-        <section class="middle-zoom">
-            <img src="{{ page.media[page.header.footerimage].url }}" alt="" />
-        </section>
-        {% include 'partials/work-cta.html.twig' %}
+        <section class="middle-zoom" style="background-image: url({{ page.media[page.header.footerimage].url }})"></section>
 
     {% endblock %}
 

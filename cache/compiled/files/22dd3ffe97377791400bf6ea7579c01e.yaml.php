@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'themes://kelleyink/kelleyink.yaml',
-    'modified' => 1455825194,
+    'modified' => 1458260570,
     'data' => [
         'enabled' => true,
         'default_lang' => 'en',
