@@ -1,11 +1,18 @@
 ---
 title: 'Textbook VPS'
-button: true
+
+button: false
 buttontext: 'See my coroflot portfolio!'
-pdf: alternative-care.pdf
+
+outsidebutton: true
+outsidebuttontext: 'See my coroflot portfolio!'
+outsidelink: http://www.coroflot.com/kamcalli/portfolio
+
 bottomimage: bottom.jpg
 topimage: top.jpg
 footerimage: footer.jpg
+
+caption: 'this is text that will be populated on the homepage preview'
 ---
 
 ## Visual prefaces

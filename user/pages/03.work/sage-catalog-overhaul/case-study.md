@@ -5,28 +5,30 @@ topimage: top.jpg
 
 highlightmainheading: 'Work Highlights'
 highlightheadingone: 'More comprehensive'
-highlightimageone: highlight-one.png
+highlightimageone: highlight-one.jpg
 highlightcontentone: 'It’s counterintuitive, but we were able to save money by adding listings (due to automation, saving countless manhours), which also provided added utility.'
 hightlightbuttonone: true
 hightlightbuttoncontentone: 'See an image'
 
 highlightheadingtwo: 'Streamlined spring followup'
 highlightcontenttwo: 'Rather than doing two full catalogs/year, I mapped out a matching spring update strategy, folded to drastically save mailing costs.'
-highlightimagetwo: highlight-two.png
+highlightimagetwo: highlight-two.jpg
 hightlightbuttontwo: true
 hightlightbuttoncontenttwo: 'See an image'
 
 highlightheadingthree: 'Structured procedure'
 highlightcontentthree: 'The catalog process involved many people and moving pieces, so I carefully managed and communicated the procedure.'
-highlightimagethree: highlight-three.png
+highlightimagethree: highlight-three.jpg
 hightlightbuttonthree: true
 hightlightbuttoncontentthree: 'See an image'
 
 highlightheadingfour: 'Catalog interior'
 highlightcontentfour: 'Just before I arrived, the catalog interior had been redesigned, so we wanted to keep its greatest strength: automatic pagination.'
-highlightimagefour: highlight-four.png
+highlightimagefour: highlight-four.jpg
 hightlightbuttonfour: true
 hightlightbuttoncontentfour: 'See an image'
+
+caption: 'this is text that will be populated on the homepage preview'
 ---
 
 ## Project Overview

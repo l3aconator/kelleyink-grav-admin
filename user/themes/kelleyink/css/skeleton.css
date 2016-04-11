@@ -387,9 +387,11 @@ select {
     background-color: #FFFFFB;
     box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.20);
     box-sizing: border-box;
-    border: none;
+    border: 2px solid #72E6EB;
     font-size: 1.467em;
     color: #5B5F60;
+    border-radius: 20px;
+    transition: border 500ms ease;
 }
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"],
@@ -994,6 +996,10 @@ a.work-link {
     height: 200px;
 }
 
+.work-post-header-image-wrap img {
+    border-radius: 50px;
+}
+
 .simple .work-post-header-image-wrap {
     position: relative;
     display: block;
@@ -1037,6 +1043,10 @@ a.work-link {
     padding-top: 124px;
 }
 
+.work-project-overview-bg p {
+    font-size: 1.25em;
+}
+
 .work-post-feature-padding {
     margin-top: 44px;
 }
@@ -1053,6 +1063,8 @@ a.work-link {
 .work-post-key-feature-wrap {
     position: relative;
     overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 0px 1px 3px 0px rgba(18,21,24,0.20);
 }
 
 .work-post-key-feature-image {
@@ -1063,7 +1075,7 @@ a.work-link {
 
 .work-post-feature-name-wrap {
     text-align: center;
-    background-color: #0A161F;
+    background-color: rgba(0, 0, 0, 0.8);
     height: 35px;
     width: 100%;
     position: absolute;
