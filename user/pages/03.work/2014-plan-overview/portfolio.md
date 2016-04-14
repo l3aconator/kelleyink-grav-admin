@@ -1,12 +1,16 @@
 ---
 title: '2015 plan overview'
+order: 10
+
 button: true
 buttontext: 'See the side-by-side checklist!'
 pdf: 2015-hric-plans-and-networks.pdf
+
 bottomimage: bottom.jpg
 topimage: top.jpg
 footerimage: footer.jpg
-caption: 'This a spot for a super awesome caption that Kelley can write.'
+
+caption: 'One of my all-time favorites: a checklist-style plan comparison.'
 ---
 
 ##  Checklists ftw!

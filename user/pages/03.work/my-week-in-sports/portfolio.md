@@ -1,5 +1,6 @@
 ---
 title: 'My week in sports'
+order: 3
 
 button: false
 
@@ -11,7 +12,7 @@ bottomimage: bottom.jpg
 topimage: top.jpg
 footerimage: footer.jpg
 
-caption: 'This a spot for a super awesome caption that Kelley can write.'
+caption: 'Silly, satirical...my knowledge of sports. (Or, the lack thereof.) '
 ---
 
 ## Sports-blogging

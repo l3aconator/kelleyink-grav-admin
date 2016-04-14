@@ -1,5 +1,6 @@
 ---
 title: 'Health Republic Insurance Website(s)'
+order: 12
 
 bottomimage: bottom.jpg
 topimage: top.jpg
@@ -10,26 +11,30 @@ highlightimageone: highlight-one.jpg
 highlightcontentone: 'Most companies make getting a price difficult. We chose transparency and built a quoting engine that showed you all prices, ranked by which benefits mattered most to you.'
 hightlightbuttonone: true
 hightlightbuttoncontentone: 'Try it!'
+highlightbuttononelink: '#'
 
 highlightheadingtwo: 'Small business site'
 highlightcontenttwo: 'See the business quoting engine (“easy estimate”), and “how it works” menu with snapshot examples, reasons to offer insurance, popular plan combos, and more.'
 highlightimagetwo: highlight-two.jpg
 hightlightbuttontwo: true
 hightlightbuttoncontenttwo: 'See it live!'
+highlightbuttontwolink: '#'
 
 highlightheadingthree: 'Animated videos'
 highlightcontentthree: 'I vetted animators and worked with my chosen partner to write, voice, and PM a video for each of our 2014 plan types. The animator used our official plan visuals for a friendly, accessible feel.'
 highlightimagethree: highlight-three.jpg
 hightlightbuttonthree: true
 hightlightbuttoncontentthree: 'See it live!'
+highlightbuttonthreelink: '/work/health-republic-insurance-website/videos'
 
 highlightheadingfour: 'HRIC’s story'
 highlightcontentfour: 'We were truly a different type of insurance company, and as such, our story mattered. This section gave that overview.'
 highlightimagefour: highlight-four.jpg
 hightlightbuttonfour: true
 hightlightbuttoncontentfour: 'See it live!'
+highlightbuttonfourlink: '#'
 
-caption: 'this is text that will be populated on the homepage preview'
+caption: 'One of my favorite examples: the brand-new websites I spearheaded.'
 ---
 
 ## Site + quoting engines

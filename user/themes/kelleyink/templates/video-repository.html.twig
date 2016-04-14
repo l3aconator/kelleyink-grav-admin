@@ -1,0 +1,56 @@
+{% embed 'partials/base.html.twig' %}
+
+    {% block content %}
+
+        <section class="black-gradient-bg section-pad">
+            <div class="container">
+                <h1 class="knockout u-center">{{ page.title }}</h1>
+                
+                <div class="featured-video-container">
+                    <div class="video-wrapper">
+                        <iframe width="1280" height="720" src="{{ page.header.featuredvideoembedlink }}" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h4 class="video-title knockout">{{ page.header.featuredvideotitle }}</h4>
+                    <p class="knockout-darker">{{ page.header.featuredvideocontent }}</p>
+                </div>
+                
+                <div class="row">
+                    
+                    {% for video in page.header.video %}
+                    <div class="four columns video-container">
+                        <div class="video-padding">
+                            <div class="video-wrapper video-small">
+                                <iframe width="1280" height="720" src="{{ video.link }}" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <h5 class="video-title knockout">{{ video.title }}</h5>
+                            <p class="knockout-darker">{{ video.content }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="blue-gradient-bg section-pad go-back">
+            <div class="container">
+                <div class="row">
+                    <div class="one column">
+                        <a href="/work/health-republic-insurance-website">
+                            <div class="post-circle right">
+                                <div class="bar bar-top"></div>
+                                <div class="bar bar-bottom"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="eleven columns">
+                        <h4 class="go-back-heading"><a href="/work/health-republic-insurance-website">Back to main project page</a></h4>    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    {% endblock %}
+
+{% endembed %}

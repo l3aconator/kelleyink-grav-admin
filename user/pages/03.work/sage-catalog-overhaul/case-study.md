@@ -1,5 +1,7 @@
 ---
 title: 'SAGE catalog overhaul'
+order: 11
+
 bottomimage: bottom.jpg
 topimage: top.jpg
 
@@ -9,26 +11,30 @@ highlightimageone: highlight-one.jpg
 highlightcontentone: 'It’s counterintuitive, but we were able to save money by adding listings (due to automation, saving countless manhours), which also provided added utility.'
 hightlightbuttonone: true
 hightlightbuttoncontentone: 'See an image'
+highlightbuttononelink: '/user/pages/03.work/sage-catalog-overhaul/sage-highlight-one-full.jpg'
 
 highlightheadingtwo: 'Streamlined spring followup'
 highlightcontenttwo: 'Rather than doing two full catalogs/year, I mapped out a matching spring update strategy, folded to drastically save mailing costs.'
 highlightimagetwo: highlight-two.jpg
 hightlightbuttontwo: true
 hightlightbuttoncontenttwo: 'See an image'
+highlightbuttontwolink: '/user/pages/03.work/sage-catalog-overhaul/sage-highlight-two-full.jpg'
 
 highlightheadingthree: 'Structured procedure'
 highlightcontentthree: 'The catalog process involved many people and moving pieces, so I carefully managed and communicated the procedure.'
 highlightimagethree: highlight-three.jpg
 hightlightbuttonthree: true
 hightlightbuttoncontentthree: 'See an image'
+highlightbuttonthreelink: '/user/pages/03.work/sage-catalog-overhaul/sage-highlight-three-full.jpg'
 
 highlightheadingfour: 'Catalog interior'
 highlightcontentfour: 'Just before I arrived, the catalog interior had been redesigned, so we wanted to keep its greatest strength: automatic pagination.'
 highlightimagefour: highlight-four.jpg
 hightlightbuttonfour: true
 hightlightbuttoncontentfour: 'See an image'
+highlightbuttonfourlink: '/user/pages/03.work/sage-catalog-overhaul/sage-highlight-four-full.jpg'
 
-caption: 'this is text that will be populated on the homepage preview'
+caption: 'I provided a better product that saved money by re-examining our process.'
 ---
 
 ## Project Overview

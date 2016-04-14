@@ -18,7 +18,7 @@ class __TwigTemplate_18cf2c129679564ebc0598fdaa3289273612ed0907b9ae62f7cc2d169e0
         // line 1
         echo "<div class=\"contact-bg section-pad blue-gradient-bg\" id=\"contact\">
             <div class=\"container\">
-                <h2 class=\"subtitle contact\">I love talking to people. Are you people?</h2>
+                <h2 class=\"subtitle contact knockout\">I love talking to people. Are you people?</h2>
                 <form method=\"post\" action=\"https://formspree.io/kelley@kelley.ink\">
                     <div class=\"row\">
                         <div class=\"six columns\">
@@ -51,7 +51,7 @@ class __TwigTemplate_18cf2c129679564ebc0598fdaa3289273612ed0907b9ae62f7cc2d169e0
 }
 /* <div class="contact-bg section-pad blue-gradient-bg" id="contact">*/
 /*             <div class="container">*/
-/*                 <h2 class="subtitle contact">I love talking to people. Are you people?</h2>*/
+/*                 <h2 class="subtitle contact knockout">I love talking to people. Are you people?</h2>*/
 /*                 <form method="post" action="https://formspree.io/kelley@kelley.ink">*/
 /*                     <div class="row">*/
 /*                         <div class="six columns">*/

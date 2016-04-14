@@ -1,0 +1,150 @@
+{% embed 'partials/base.html.twig' %}
+
+    {% block content %}
+
+        <section class="black-gradient-bg section-pad quote-header">
+            <div class="container knockout">
+                {{ page.content }}
+            </div>
+        </section>
+
+        <section class="blue-gradient-bg section-pad quote-section">
+            <div class="container">
+                <div class="row">
+                    <div class="four columns">
+                        <div class="quote-circle blue-white">
+                            <span class="quote-mark blue">”</span>
+                        </div>
+                    </div>
+                    <div class="eight columns">
+                        <p class="quote-content knockout um-marg-top-44">{{ page.header.quoteone }}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="black-gradient-bg section-pad">
+            <div class="container">
+                <div class="row quote-section">
+                    <div class="eight columns">
+                        <p class="quote-content knockout">{{ page.header.quotetwo }}</p>
+                    </div>
+                    <div class="four columns">
+                        <div class="quote-circle black-white">
+                            <span class="quote-mark">”</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        <section class="section-pad cream-gradient-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="six columns quote-section">
+                        <div class="quote-circle white-black">
+                            <span class="quote-mark blue">”</span>
+                        </div>
+                        <p class="quote-content u-center u-marg-top-44">{{ page.header.quotethree }}</p>
+                    </div>
+                    <div class="six columns quote-section">
+                        <div class="quote-circle white-black">
+                            <span class="quote-mark blue">”</span>
+                        </div>
+                        <p class="quote-content u-center u-marg-top-44">{{ page.header.quotefour }}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="black-gradient-bg section-pad">
+            <div class="container">
+                <div class="row quote-section">
+                    <div class="four columns">
+                        <div class="quote-circle black-white">
+                            <span class="quote-mark">”</span>
+                        </div>
+                    </div>
+                    <div class="eight columns">
+                        <p class="quote-content knockout um-marg-top-44">{{ page.header.quotefive }}</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="cream-gradient-bg section-pad">
+            <div class="container">
+                <div class="row quote-section">
+                    <div class="eight columns">
+                        <p class="quote-content">{{ page.header.quotesix }}</p>
+                    </div>
+                    <div class="four columns">
+                        <div class="quote-circle white-black">
+                            <span class="quote-mark">”</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="blue-gradient-bg section-pad">
+            <div class="container">
+                <div class="row quote-section">
+                    <div class="three columns">
+                         <div class="quote-circle blue-white">
+                            <span class="quote-mark">”</span>
+                        </div>
+                    </div>
+                    <div class="five columns">
+                        <p class="quote-content knockout um-marg-top-44">{{ page.header.quoteseven }}</p>
+                    </div>
+                    <div class="offset-by-four columns"></div>
+                </div>
+                <div class="row quote-section u-marg-top-44">
+                    <div class="one column">
+                        &nbsp;
+                    </div>
+                    <div class="three columns">
+                         <div class="quote-circle blue-white">
+                            <span class="quote-mark">”</span>
+                        </div>
+                    </div>
+                    <div class="five columns">
+                        <p class="quote-content knockout um-marg-top-44">{{ page.header.quoteeight }}</p>
+                    </div>
+                    <div class="offset-by-three columns"></div>
+                </div>
+                <div class="row quote-section u-marg-top-44">
+                    <div class="two columns">
+                        &nbsp;
+                    </div>
+                    <div class="three columns">
+                         <div class="quote-circle blue-white">
+                            <span class="quote-mark">”</span>
+                        </div>
+                    </div>
+                    <div class="five columns">
+                        <p class="quote-content knockout um-marg-top-44">{{ page.header.quotenine }}</p>
+                    </div>
+                </div>
+                <div class="row quote-section u-marg-top-44">
+                    <div class="three columns">
+                        &nbsp;
+                    </div>
+                    <div class="three columns">
+                         <div class="quote-circle blue-white">
+                            <span class="quote-mark">”</span>
+                        </div>
+                    </div>
+                    <div class="five columns">
+                        <p class="quote-content knockout um-marg-top-44">{{ page.header.quoteten }}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    {% endblock %}
+
+{% endembed %}

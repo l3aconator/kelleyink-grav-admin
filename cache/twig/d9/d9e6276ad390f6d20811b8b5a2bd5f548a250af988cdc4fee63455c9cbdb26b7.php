@@ -19,17 +19,14 @@ class __TwigTemplate_3f9d54897362229858db57b51f029e345507a4343471c9d3f497e768a19
         echo "<div class=\"section-pad cream-bg about-bg\">
     <div class=\"container\">
         <div class=\"row\">
-            <div class=\"five columns headshot-pad\">
-                    ";
-        // line 5
-        echo $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "media", array()), "kelley-headshot.png", array(), "array"), "html", array(0 => "My title", 1 => "Some ALT text", 2 => "headshot"), "method");
-        echo "
-            </div>
-            <div class=\"seven columns\">
+            <div class=\"nine columns about-pad\">
                 ";
-        // line 8
+        // line 5
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "content", array());
         echo "
+            </div>
+            <div class=\"three columns headshot-pad\">
+                &nbsp; 
             </div>
         </div>
     </div>
@@ -49,17 +46,17 @@ class __TwigTemplate_3f9d54897362229858db57b51f029e345507a4343471c9d3f497e768a19
 
     public function getDebugInfo()
     {
-        return array (  31 => 8,  25 => 5,  19 => 1,);
+        return array (  25 => 5,  19 => 1,);
     }
 }
 /* <div class="section-pad cream-bg about-bg">*/
 /*     <div class="container">*/
 /*         <div class="row">*/
-/*             <div class="five columns headshot-pad">*/
-/*                     {{ page.media['kelley-headshot.png'].html('My title', 'Some ALT text', 'headshot') }}*/
-/*             </div>*/
-/*             <div class="seven columns">*/
+/*             <div class="nine columns about-pad">*/
 /*                 {{ page.content }}*/
+/*             </div>*/
+/*             <div class="three columns headshot-pad">*/
+/*                 &nbsp; */
 /*             </div>*/
 /*         </div>*/
 /*     </div>*/

@@ -1,12 +1,16 @@
 ---
 title: 'Preventive Care overview'
+order: 4
+
 button: true
 buttontext: 'See the pdf!'
 pdf: preventive-care-overview.pdf
+
 bottomimage: bottom.jpg
 topimage: top.jpg
 footerimage: footer.jpg
-caption: 'This a spot for a super awesome caption that Kelley can write.'
+
+caption: 'We wanted to make sure our members took full advantage of their free preventive care.'
 ---
 
 ## Free to members!

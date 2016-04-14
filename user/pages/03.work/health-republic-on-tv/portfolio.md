@@ -1,5 +1,6 @@
 ---
 title: 'Health Republic on TV'
+order: 9
 
 button: false
 
@@ -11,7 +12,7 @@ bottomimage: bottom.jpg
 topimage: top.jpg
 footerimage: footer.jpg
 
-caption: 'This a spot for a super awesome caption that Kelley can write.'
+caption: 'Health Republic’s first commercial: written, voiced, PM’ed by me.'
 ---
 
 ## Television commercial

@@ -19,12 +19,12 @@ class __TwigTemplate_61f989cd2650f73d314e3e876421131a8cf6d1e9ec82e3468c3e5db9df8
         echo "<section class=\"work-bg black-gradient-bg section-pad\" id=\"work\">
   <div class=\"container work\">
       <h2 class=\"subtitle\">Want some examples?</h2>
-      <div class=\"row\">
+      <div class=\"row work-gallery-col-break\">
         
       ";
         // line 6
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/work"), "method"), "children", array()));
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/work"), "method"), "children", array()), "order", array(0 => "header.order", 1 => "desc"), "method"));
         foreach ($context['_seq'] as $context["_key"] => $context["p"]) {
             if (($context["p"] != (isset($context["page"]) ? $context["page"] : null))) {
                 // line 7
@@ -88,9 +88,9 @@ class __TwigTemplate_61f989cd2650f73d314e3e876421131a8cf6d1e9ec82e3468c3e5db9df8
 /* <section class="work-bg black-gradient-bg section-pad" id="work">*/
 /*   <div class="container work">*/
 /*       <h2 class="subtitle">Want some examples?</h2>*/
-/*       <div class="row">*/
+/*       <div class="row work-gallery-col-break">*/
 /*         */
-/*       {% for p in page.find('/work').children if p != page %}*/
+/*       {% for p in page.find('/work').children.order('header.order', 'desc') if p != page %}*/
 /*           <div class="four columns">*/
 /*                 <a class="work-link" href="{{ p.url }}">*/
 /*                     <div class="work-image-box large" style="background-image: url({{ p.media['preview.jpg'].url }});">*/

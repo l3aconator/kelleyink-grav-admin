@@ -1,12 +1,16 @@
 ---
 title: 'Member newsletters'
+order: 2
+
 button: true
 buttontext: 'See the pdf!'
 pdf: newsletter-q3-2015.pdf
+
 bottomimage: bottom.jpg
 topimage: top.jpg
 footerimage: footer.jpg
-caption: 'This a spot for a super awesome caption that Kelley can write.'
+
+caption: 'This is one of our quarterly newsletters, sent to HRIC members.'
 ---
 
 ## Quarterly member newsletters

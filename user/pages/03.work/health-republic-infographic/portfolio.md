@@ -1,12 +1,16 @@
 ---
 title: 'Health Republic Infographic'
+order: 7
+
 button: true
 buttontext: 'See the infographic!'
 pdf: can-I-afford-to-buy-insurance-this-year-Infographic.jpg
+
 bottomimage: bottom.jpg
 topimage: top.jpg
 footerimage: footer.jpg
-caption: 'This a spot for a super awesome caption that Kelley can write.'
+
+caption: 'This infographic explained part of the complicated health insurance market.'
 ---
 
 ## Infographic content

@@ -1,12 +1,16 @@
 ---
 title: 'Maxwell 3/e postcard'
+order: 1
+
 button: true
 buttontext: 'See the pdf!'
 pdf: alternative-care.pdf
+
 bottomimage: bottom.jpg
 topimage: top.jpg
 footerimage: footer.jpg
-caption: 'This a spot for a super awesome caption that Kelley can write.'
+
+caption: 'This new edition postcard confirmed expected changes for professors.'
 ---
 
 ## New edition mailer

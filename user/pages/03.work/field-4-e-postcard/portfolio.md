@@ -1,12 +1,16 @@
 ---
 title: 'Field 4/e postcard'
+order: 8
+
 button: true
 buttontext: 'See postcard PDF!'
-pdf: alternative-care.pdf
+pdf: field-4e-postcard.pdf
+
 bottomimage: bottom.jpg
 topimage: top.jpg
 footerimage: footer.jpg
-caption: 'This a spot for a super awesome caption that Kelley can write.'
+
+caption: 'This new edition postcard showcased popular in-book personas.'
 ---
 
 ## Showcasing strengths

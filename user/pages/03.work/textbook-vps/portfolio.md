@@ -1,5 +1,6 @@
 ---
 title: 'Textbook VPS'
+order: 5
 
 button: false
 buttontext: 'See my coroflot portfolio!'
@@ -12,7 +13,7 @@ bottomimage: bottom.jpg
 topimage: top.jpg
 footerimage: footer.jpg
 
-caption: 'this is text that will be populated on the homepage preview'
+caption: 'From my time in higher-ed: an in-textbook Visual Preface example.'
 ---
 
 ## Visual prefaces

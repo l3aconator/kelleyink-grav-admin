@@ -2,11 +2,82 @@
 
     {% block content %}
 
-        <section class="section-pad">
-          <div class="container">
-            {{ page.content }}
-          </div>
-        </section>
+    <section class="blue-gradient-bg section-pad thanks">
+        <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    &nbsp;
+                 </div>
+                <div class="six columns um-center">
+                    <h1 class="knockout">{{ page.header.thanksheading }}</h1>
+                    <h5 class="knockout thanks-content">{{ page.header.thankscontent }}</h5>
+                </div>
+            </div>
+             <div class="row section-pad">
+                 <div class="six columns">
+                    &nbsp;
+                 </div>
+                <div class="six columns thanks-hover">
+                    <div class="two columns">
+                        <a href="{{ page.header.thanksctaleftlink }}">
+                            <div class="post-circle right">
+                                <div class="bar bar-top"></div>
+                                <div class="bar bar-bottom"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ten columns">
+                        <h5 class="thanks-cta-small-heading"><a href="{{ page.header.thanksctaleftlink }}">{{ page.header.thanksctaleft }}</a></h5>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    &nbsp;
+                 </div>
+                 <div class="six columns thanks-hover">
+                    <div class="two columns">
+                        <a href="{{ base_url == '' ? '/' : base_url }}{{ page.header.thanksctarightlink }}">
+                            <div class="post-circle left">
+                                <div class="bar bar-top"></div>
+                                <div class="bar bar-bottom"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ten columns">
+                        <h5 class="thanks-cta-small-heading"><a href="{{ base_url == '' ? '/' : base_url }}{{ page.header.thanksctarightlink }}">{{ page.header.thanksctaright }}</a></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row section-pad">
+                <div class="six columns">
+                    &nbsp;
+                </div>
+                <div class="six columns">
+                    <div class="social-media um-center">
+                        <h5 class="knockout social-media-heading">Follow me!</h5>
+                        <a href="https://www.facebook.com/kelleyinkfreelance" target="_blank">
+                            <div class="social-circle">
+                                {{ page.media['fb-512.png'].html('Facbook Icon', 'This is the Facebook icon.', 'social-fb') }}
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/kelley_ink" target="_blank">
+                            <div class="social-circle">
+                                {{ page.media['tw-1687.png'].html('Twitter Icon', 'This is the Twitter icon.', 'social-tw') }}
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kelley-mcallister-a907958" target="_blank">
+                            <div class="social-circle">
+                                {{ page.media['in-128.png'].html('LinkedIn Icon', 'This is the LinkedIn icon.', 'social-in') }}
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+	</section>
 
     {% endblock %}
 

@@ -6,26 +6,27 @@
 
   {% block content %}
 
-  <div class="blue-gradient-bg">
-    <div class="container section-pad">
-      <h1>Kelley's Blog</h1>
-    </div>
+  <div class="blue-gradient-bg blog-hero">
+        <div class="container section-pad">
+            {{ page.media['ink-blot-hero.svg'].html('Blog hero image', 'An image of an ink blot.', 'blog-hero-img') }}
+            <h1 class="knockout um-center">{{ page.header.blogheading }}</h1>
+        </div>
   </div>
 
   <div class="container section-pad">
     
     {% for child in collection.sort(date, desc) | slice(0, 1) %}
     <div class="featured-blog-post">
-        <div class="row">
+        <div class="row featured-blog-col-break">
           <div class="featured-blog-post-wrapper">
           <div class="three columns">
             <a class="blog-post-link" href="{{ child.url }}">
-                <div class="blog-post-letters-circle large">
+                <div class="blog-post-letters-circle large u-marg-bottom-44 um-center">
                   <div class="blog-post-letters large">{{ child.title | slice(0, 1) }}</div>
                 </div>
             </a>
           </div>
-            <div class="five columns">
+            <div class="five columns um-center">
               <h2 class="blog-post-snippet-heading"><a href="{{ child.url }}">{{ child.title }}</a></h2>
               <p>{{ child.content | truncate(110) }} <a href="{{ child.url }}">Read more &raquo;</a></p>
           </div>
@@ -34,18 +35,18 @@
     </div>
     {% endfor %}
     
-    <div class="row">
+    <div class="row blog-col-break">
       {% for child in collection.sort(date, desc) | slice(1) %}
       <div class="six columns blog-post-snippet">
         <div class="blog-post-wrapper">
           <div class="four columns">
                 <a class="blog-post-link" href="{{ child.url }}">
-                    <div class="blog-post-letters-circle">
+                    <div class="blog-post-letters-circle um-marg-bot-44 um-center">
                         <div class="blog-post-letters">{{ child.title | slice(0, 1) }}</div>
                     </div>
                 </a>
           </div>
-          <div class="eight columns snippet-pad">
+          <div class="eight columns snippet-pad um-center">
             <h5 class="blog-post-snippet-heading"><a href="{{ child.url }}">{{ child.title }}</a></h5>
             <p class="blog-post-snippet-content">{{ child.content | truncate(90) }} <a href="{{ child.url }}">Read more &raquo;</a></p>
           </div>

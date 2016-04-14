@@ -1,5 +1,7 @@
 ---
 title: 'Education curriculum bundling'
+order: 6
+
 button: true
 buttontext: 'See postcard PDF!'
 pdf: alternative-care.pdf
