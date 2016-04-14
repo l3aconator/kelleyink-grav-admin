@@ -5,7 +5,7 @@
         <section class="work-post-bg simple black-gradient-bg section-pad">
             <div class="container">
                 <h1 class="work-post-heading">{{ page.header.title }}</h1>
-                <div class="row">
+                <div class="row simple-col-break">
                     <div class="five columns">
                         
                         {% if page.header.button == true %}
@@ -16,7 +16,7 @@
                         <a href="{{ page.header.outsidelink }}" target="_blank">
                         {% endif %}
                             
-                            <div class="work-post-header-image-wrap">
+                            <div class="work-post-header-image-wrap simple">
                                 <img class="work-post-header-image bottom" src="{{ page.media[page.header.bottomimage].url }}" alt="Work image preview." />
                                 <img class="work-post-header-image top" src="{{ page.media[page.header.topimage].url }}" alt="Work image preview." />
                             </div>
