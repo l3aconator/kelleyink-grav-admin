@@ -1,6 +1,6 @@
 ---
-title: 'Textbook VPS'
-order: 5
+title: 'Textbook VPs'
+order: 4
 
 button: false
 buttontext: 'See my coroflot portfolio!'

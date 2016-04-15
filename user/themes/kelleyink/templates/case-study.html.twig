@@ -4,10 +4,20 @@
     <section class="work-post-bg black-gradient-bg section-pad">
             <div class="container">
                 <h1 class="work-post-heading">{{ page.header.title }}</h1>
-                <div class="work-post-header-image-wrap case-study">
-                    <img class="work-post-header-image case-study bottom" src="{{ page.media[page.header.bottomimage].url }}" alt="" />
-                    <img class="work-post-header-image case-study top" src="{{ page.media[page.header.topimage].url }}" alt="" />
-                </div>
+              
+                {% if page.header.topbottomimageinside == true %}
+                  <a href="{{ page.header.topbottomimagelink }}">
+                {% endif %}
+                    
+                {% if page.header.topbottomimageoutside == true %}
+                  <a href="{{ page.header.topbottomimageoutsidelink }}" target="_blank">
+                {% endif %}
+                    
+                      <div class="work-post-header-image-wrap case-study">
+                          <img class="work-post-header-image case-study bottom" src="{{ page.media[page.header.bottomimage].url }}" alt="" />
+                          <img class="work-post-header-image case-study top" src="{{ page.media[page.header.topimage].url }}" alt="" />
+                      </div>
+                  </a>
             </div>
         </section>
         <section class="work-project-overview-bg cream-bg section-pad">
@@ -33,6 +43,11 @@
                         <a class="um-center" href="{{ page.header.highlightbuttononelink }}"><button class="button-cream um-marg-bot-44 um-btn-full-width">{{ page.header.hightlightbuttoncontentone }}</button></a>
                     {% else %}
                     {% endif %}
+                  
+                    {% if page.header.hightlightbuttonoutsideone == true %}
+                        <a class="um-center" href="{{ page.header.highlightbuttonoutsideonelink }}" target="_blank"><button class="button-cream um-marg-bot-44 um-btn-full-width">{{ page.header.hightlightbuttonoutsidecontentone }}</button></a>
+                    {% else %}
+                    {% endif %}
                     
                 </div>
                 <div class="three columns um-marg-bot-22">
@@ -48,6 +63,12 @@
                     
                     {% if page.header.hightlightbuttontwo == true %}
                         <a class="um-center" href="{{ page.header.highlightbuttontwolink }}"><button class="button-cream um-btn-full-width">{{ page.header.hightlightbuttoncontenttwo }}</button></a>
+                    {% else %}
+                    {{ page.header.highlightbuttontwooutsidelink }}
+                    {% endif %}
+                  
+                    {% if page.header.hightlightbuttonoutsidetwo == true %}
+                        <a class="um-center" href="{{ page.header.highlightbuttonoutsidetwolink }}" target="_blank"><button class="button-cream um-marg-bot-44 um-btn-full-width">{{ page.header.hightlightbuttonoutsidecontenttwo }}</button></a>
                     {% else %}
                     {% endif %}
                         
@@ -69,6 +90,11 @@
                         <a class="um-center" href="{{ page.header.highlightbuttonthreelink }}"><button class="button-cream um-marg-bot-44 um-btn-full-width">{{ page.header.hightlightbuttoncontentthree }}</button></a>
                     {% else %}
                     {% endif %}
+                  
+                    {% if page.header.hightlightbuttonoutsidethree == true %}
+                        <a class="um-center" href="{{ page.header.highlightbuttonoutsidethreelink }}" target="_blank"><button class="button-cream um-marg-bot-44 um-btn-full-width">{{ page.header.hightlightbuttonoutsidecontentthree }}</button></a>
+                    {% else %}
+                    {% endif %}
                     
                 </div>
                 <div class="three columns um-marg-bot-22">
@@ -84,6 +110,11 @@
                     
                     {% if page.header.hightlightbuttonfour == true %}
                         <a class="um-center" href="{{ page.header.highlightbuttonfourlink }}"><button class="button-cream um-marg-bot-44 um-btn-full-width">{{ page.header.hightlightbuttoncontentfour }}</button></a>
+                    {% else %}
+                    {% endif %}
+                  
+                    {% if page.header.hightlightbuttonoutsidefour == true %}
+                        <a class="um-center" href="{{ page.header.highlightbuttonoutsidefourlink }}" target="_blank"><button class="button-cream um-marg-bot-44 um-btn-full-width">{{ page.header.hightlightbuttonoutsidecontentfour }}</button></a>
                     {% else %}
                     {% endif %}
                     

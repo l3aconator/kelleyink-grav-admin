@@ -6,7 +6,7 @@ itemcolone:
     -
         servicename: 'Marketing Communications'
         icon: pm
-        text: 'Whether you need support in one small area or you want oversight of your whole comm department, <a href="/about/resume">I have the experience.</a>'
+        text: 'Whether you need support in one small area or you want oversight of your whole comm department, <a href="about/resume/">I have the experience.</a>'
 itemcoltwo:
     -
         servicename: 'Project Management'
@@ -31,6 +31,6 @@ itemcolsix:
     -
         servicename: 'Story (narrative performance or coaching)'
         icon: pm
-        text: 'I’ve been performing stories since 2012. I also teach group courses and offer individual coaching. See blogs tagged “story;” contact me for curricula.'
+        text: 'I’ve been performing stories since 2012. I also teach group courses and offer individual coaching. See blogs tagged <a href="blog/tag:story">“story”</a> or contact me for curricula.'
 ---
 

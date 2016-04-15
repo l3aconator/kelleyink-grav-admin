@@ -39,39 +39,51 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
 ";
         // line 6
         $this->displayBlock('head', $context, $blocks);
-        // line 36
-        echo "</head>
+        // line 51
+        echo "
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-76443540-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+</head>
 <body id=\"top\" class=\"";
-        // line 37
+        // line 64
         echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "body_classes", array());
         echo "\">
     <div id=\"sb-site\">
         
         ";
-        // line 40
+        // line 67
         $this->displayBlock('header', $context, $blocks);
-        // line 69
+        // line 96
         echo "
         ";
-        // line 70
+        // line 97
         $this->displayBlock('showcase', $context, $blocks);
-        // line 71
+        // line 98
         echo "
         ";
-        // line 72
+        // line 99
         $this->displayBlock('body', $context, $blocks);
-        // line 77
+        // line 104
         echo "
         ";
-        // line 78
+        // line 105
         $this->displayBlock('footer', $context, $blocks);
-        // line 81
+        // line 108
         echo "        
     </div>
     ";
-        // line 83
+        // line 110
         $this->displayBlock('bottom', $context, $blocks);
-        // line 96
+        // line 123
         echo "</body>
 </html>
 ";
@@ -95,27 +107,69 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
         $this->loadTemplate("partials/metadata.html.twig", "partials/base.html.twig", 9)->display($context);
         // line 10
         echo "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\">
+    
+    <meta name=\"robots\" content=\"noindex, nofollow\">
+    
     <link rel=\"icon\" type=\"image/png\" href=\"";
-        // line 11
+        // line 14
         echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/favicon.png", true);
         echo "\" />
     <link rel=\"canonical\" href=\"";
-        // line 12
+        // line 15
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "url", array(0 => true, 1 => true), "method");
+        echo "\" />
+  
+    <link rel=\"apple-touch-icon-precomposed\" sizes=\"57x57\" href=\"";
+        // line 17
+        echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/apple-touch-icon-57x57.png", true);
+        echo "\" />
+    <link rel=\"apple-touch-icon-precomposed\" sizes=\"114x114\" href=\"";
+        // line 18
+        echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/apple-touch-icon-114x114.png", true);
+        echo "\" />
+    <link rel=\"apple-touch-icon-precomposed\" sizes=\"72x72\" href=\"";
+        // line 19
+        echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/apple-touch-icon-72x72.png", true);
+        echo "\" />
+    <link rel=\"apple-touch-icon-precomposed\" sizes=\"144x144\" href=\"";
+        // line 20
+        echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/apple-touch-icon-144x144.png", true);
+        echo "\" />
+    <link rel=\"apple-touch-icon-precomposed\" sizes=\"120x120\" href=\"";
+        // line 21
+        echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/apple-touch-icon-120x120.png", true);
+        echo "\" />
+    <link rel=\"apple-touch-icon-precomposed\" sizes=\"152x152\" href=\"";
+        // line 22
+        echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/apple-touch-icon-152x152.png", true);
+        echo "\" />
+    <link rel=\"icon\" type=\"image/png\" href=\"";
+        // line 23
+        echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/favicon-32x32.png", true);
+        echo "\" sizes=\"32x32\" />
+    <link rel=\"icon\" type=\"image/png\" href=\"";
+        // line 24
+        echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/favicon-16x16.png", true);
+        echo "\" sizes=\"16x16\" />
+    <meta name=\"application-name\" content=\"Kelley.Ink\"/>
+    <meta name=\"msapplication-TileColor\" content=\"#FFFFFF\" />
+    <meta name=\"msapplication-TileImage\" content=\"";
+        // line 27
+        echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/mstile-144x144", true);
         echo "\" />
 
     ";
-        // line 14
+        // line 29
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 26
+        // line 41
         echo "    ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "css", array(), "method");
         echo "
 
     ";
-        // line 28
+        // line 43
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 33
+        // line 48
         echo "    ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(), "method");
         echo "
@@ -123,62 +177,62 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
 ";
     }
 
-    // line 14
+    // line 29
     public function block_stylesheets($context, array $blocks = array())
     {
-        // line 15
-        echo "        ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/normalize.css"), "method");
-        // line 16
-        echo "        ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/skeleton.css"), "method");
-        // line 17
-        echo "
-        ";
-        // line 18
-        if ((($this->getAttribute((isset($context["browser"]) ? $context["browser"] : null), "getBrowser", array()) == "msie") && ($this->getAttribute((isset($context["browser"]) ? $context["browser"] : null), "getVersion", array()) == 10))) {
-            // line 19
-            echo "            ";
-            $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/nucleus-ie10.css"), "method");
-            // line 20
-            echo "        ";
-        }
-        // line 21
-        echo "        ";
-        if (((($this->getAttribute((isset($context["browser"]) ? $context["browser"] : null), "getBrowser", array()) == "msie") && ($this->getAttribute((isset($context["browser"]) ? $context["browser"] : null), "getVersion", array()) >= 8)) && ($this->getAttribute((isset($context["browser"]) ? $context["browser"] : null), "getVersion", array()) <= 9))) {
-            // line 22
-            echo "            ";
-            $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/nucleus-ie9.css"), "method");
-            // line 23
-            echo "            ";
-            $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/html5shiv-printshiv.min.js"), "method");
-            // line 24
-            echo "        ";
-        }
-        // line 25
-        echo "    ";
-    }
-
-    // line 28
-    public function block_javascripts($context, array $blocks = array())
-    {
-        // line 29
-        echo "        ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "jquery", 1 => 101), "method");
         // line 30
         echo "        ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/function.js", 1 => 100), "method");
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/normalize.css"), "method");
         // line 31
         echo "        ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/typed.js"), "method");
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/skeleton.css"), "method");
         // line 32
+        echo "
+        ";
+        // line 33
+        if ((($this->getAttribute((isset($context["browser"]) ? $context["browser"] : null), "getBrowser", array()) == "msie") && ($this->getAttribute((isset($context["browser"]) ? $context["browser"] : null), "getVersion", array()) == 10))) {
+            // line 34
+            echo "            ";
+            $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/nucleus-ie10.css"), "method");
+            // line 35
+            echo "        ";
+        }
+        // line 36
+        echo "        ";
+        if (((($this->getAttribute((isset($context["browser"]) ? $context["browser"] : null), "getBrowser", array()) == "msie") && ($this->getAttribute((isset($context["browser"]) ? $context["browser"] : null), "getVersion", array()) >= 8)) && ($this->getAttribute((isset($context["browser"]) ? $context["browser"] : null), "getVersion", array()) <= 9))) {
+            // line 37
+            echo "            ";
+            $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/nucleus-ie9.css"), "method");
+            // line 38
+            echo "            ";
+            $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/html5shiv-printshiv.min.js"), "method");
+            // line 39
+            echo "        ";
+        }
+        // line 40
         echo "    ";
     }
 
-    // line 40
+    // line 43
+    public function block_javascripts($context, array $blocks = array())
+    {
+        // line 44
+        echo "        ";
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "jquery", 1 => 101), "method");
+        // line 45
+        echo "        ";
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/function.js", 1 => 100), "method");
+        // line 46
+        echo "        ";
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/typed.js"), "method");
+        // line 47
+        echo "    ";
+    }
+
+    // line 67
     public function block_header($context, array $blocks = array())
     {
-        // line 41
+        // line 68
         echo "        <header class=\"header-bg cream-bg\">
             <div class=\"nav\">
                 <div class=\"nav-bar\">
@@ -186,7 +240,7 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
                         <div class=\"container\">
                             <div class=\"three mobile-six columns header-logo-container\">
                                 <a href=\"";
-        // line 47
+        // line 74
         echo ((((isset($context["base_url"]) ? $context["base_url"] : null) == "")) ? ("/") : ((isset($context["base_url"]) ? $context["base_url"] : null)));
         echo "\"><img class=\"header-logo\" alt=\"";
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["widget"]) ? $context["widget"] : null), "text", array()));
@@ -200,21 +254,21 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
                             <div class=\"nine columns\">
                                 <nav>
                                     ";
-        // line 54
+        // line 81
         $this->displayBlock('header_extra', $context, $blocks);
-        // line 55
+        // line 82
         echo "                                    ";
         if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["config"]) ? $context["config"] : null), "plugins", array()), "langswitcher", array()), "enabled", array())) {
-            // line 56
+            // line 83
             echo "                                    ";
-            $this->loadTemplate("partials/langswitcher.html.twig", "partials/base.html.twig", 56)->display($context);
-            // line 57
+            $this->loadTemplate("partials/langswitcher.html.twig", "partials/base.html.twig", 83)->display($context);
+            // line 84
             echo "                                    ";
         }
-        // line 58
+        // line 85
         echo "                                    ";
         $this->displayBlock('header_navigation', $context, $blocks);
-        // line 61
+        // line 88
         echo "                                </nav>
                             </div>
                         </div>
@@ -225,60 +279,60 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
         ";
     }
 
-    // line 54
+    // line 81
     public function block_header_extra($context, array $blocks = array())
     {
     }
 
-    // line 58
+    // line 85
     public function block_header_navigation($context, array $blocks = array())
     {
-        // line 59
+        // line 86
         echo "                                    ";
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 59)->display($context);
-        // line 60
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 86)->display($context);
+        // line 87
         echo "                                    ";
     }
 
-    // line 70
+    // line 97
     public function block_showcase($context, array $blocks = array())
     {
     }
 
-    // line 72
+    // line 99
     public function block_body($context, array $blocks = array())
     {
-        // line 73
+        // line 100
         echo "        <section id=\"body\" class=\"";
         echo (isset($context["class"]) ? $context["class"] : null);
         echo "\">
             ";
-        // line 74
+        // line 101
         $this->displayBlock('content', $context, $blocks);
-        // line 75
+        // line 102
         echo "        </section>
         ";
     }
 
-    // line 74
+    // line 101
     public function block_content($context, array $blocks = array())
     {
     }
 
-    // line 78
+    // line 105
     public function block_footer($context, array $blocks = array())
     {
-        // line 79
+        // line 106
         echo "            ";
-        $this->loadTemplate("partials/footer.html.twig", "partials/base.html.twig", 79)->display($context);
-        // line 80
+        $this->loadTemplate("partials/footer.html.twig", "partials/base.html.twig", 106)->display($context);
+        // line 107
         echo "        ";
     }
 
-    // line 83
+    // line 110
     public function block_bottom($context, array $blocks = array())
     {
-        // line 84
+        // line 111
         echo "        ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(0 => "bottom"), "method");
         echo "
@@ -307,7 +361,7 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
 
     public function getDebugInfo()
     {
-        return array (  282 => 84,  279 => 83,  275 => 80,  272 => 79,  269 => 78,  264 => 74,  259 => 75,  257 => 74,  252 => 73,  249 => 72,  244 => 70,  240 => 60,  237 => 59,  234 => 58,  229 => 54,  218 => 61,  215 => 58,  212 => 57,  209 => 56,  206 => 55,  204 => 54,  190 => 47,  182 => 41,  179 => 40,  175 => 32,  172 => 31,  169 => 30,  166 => 29,  163 => 28,  159 => 25,  156 => 24,  153 => 23,  150 => 22,  147 => 21,  144 => 20,  141 => 19,  139 => 18,  136 => 17,  133 => 16,  130 => 15,  127 => 14,  119 => 33,  117 => 28,  111 => 26,  109 => 14,  104 => 12,  100 => 11,  97 => 10,  95 => 9,  87 => 8,  84 => 7,  81 => 6,  75 => 96,  73 => 83,  69 => 81,  67 => 78,  64 => 77,  62 => 72,  59 => 71,  57 => 70,  54 => 69,  52 => 40,  46 => 37,  43 => 36,  41 => 6,  35 => 3,  32 => 2,  30 => 1,);
+        return array (  336 => 111,  333 => 110,  329 => 107,  326 => 106,  323 => 105,  318 => 101,  313 => 102,  311 => 101,  306 => 100,  303 => 99,  298 => 97,  294 => 87,  291 => 86,  288 => 85,  283 => 81,  272 => 88,  269 => 85,  266 => 84,  263 => 83,  260 => 82,  258 => 81,  244 => 74,  236 => 68,  233 => 67,  229 => 47,  226 => 46,  223 => 45,  220 => 44,  217 => 43,  213 => 40,  210 => 39,  207 => 38,  204 => 37,  201 => 36,  198 => 35,  195 => 34,  193 => 33,  190 => 32,  187 => 31,  184 => 30,  181 => 29,  173 => 48,  171 => 43,  165 => 41,  163 => 29,  158 => 27,  152 => 24,  148 => 23,  144 => 22,  140 => 21,  136 => 20,  132 => 19,  128 => 18,  124 => 17,  119 => 15,  115 => 14,  109 => 10,  107 => 9,  99 => 8,  96 => 7,  93 => 6,  87 => 123,  85 => 110,  81 => 108,  79 => 105,  76 => 104,  74 => 99,  71 => 98,  69 => 97,  66 => 96,  64 => 67,  58 => 64,  43 => 51,  41 => 6,  35 => 3,  32 => 2,  30 => 1,);
     }
 }
 /* {% set theme_config = attribute(config.themes, config.system.pages.theme) %}*/
@@ -320,8 +374,23 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
 /*     <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>*/
 /*     {% include 'partials/metadata.html.twig' %}*/
 /*     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">*/
+/*     */
+/*     <meta name="robots" content="noindex, nofollow">*/
+/*     */
 /*     <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png', true) }}" />*/
 /*     <link rel="canonical" href="{{ page.url(true, true) }}" />*/
+/*   */
+/*     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ url('theme://images/apple-touch-icon-57x57.png', true) }}" />*/
+/*     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ url('theme://images/apple-touch-icon-114x114.png', true) }}" />*/
+/*     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ url('theme://images/apple-touch-icon-72x72.png', true) }}" />*/
+/*     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ url('theme://images/apple-touch-icon-144x144.png', true) }}" />*/
+/*     <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ url('theme://images/apple-touch-icon-120x120.png', true) }}" />*/
+/*     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ url('theme://images/apple-touch-icon-152x152.png', true) }}" />*/
+/*     <link rel="icon" type="image/png" href="{{ url('theme://images/favicon-32x32.png', true) }}" sizes="32x32" />*/
+/*     <link rel="icon" type="image/png" href="{{ url('theme://images/favicon-16x16.png', true) }}" sizes="16x16" />*/
+/*     <meta name="application-name" content="Kelley.Ink"/>*/
+/*     <meta name="msapplication-TileColor" content="#FFFFFF" />*/
+/*     <meta name="msapplication-TileImage" content="{{ url('theme://images/mstile-144x144', true) }}" />*/
 /* */
 /*     {% block stylesheets %}*/
 /*         {% do assets.addCss('theme://css/normalize.css') %}*/
@@ -345,6 +414,18 @@ class __TwigTemplate_afe9518cb90abca44a0253d93b66f52ceeaa550a33549676951b2968f1e
 /*     {{ assets.js() }}*/
 /* */
 /* {% endblock head %}*/
+/* */
+/*   <script>*/
+/*     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){*/
+/*     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),*/
+/*     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)*/
+/*     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');*/
+/* */
+/*     ga('create', 'UA-76443540-1', 'auto');*/
+/*     ga('send', 'pageview');*/
+/* */
+/*   </script>*/
+/* */
 /* </head>*/
 /* <body id="top" class="{{ page.header.body_classes }}">*/
 /*     <div id="sb-site">*/

@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1460651368,
-    'checksum' => '148d6df3f4bfccd28e3eea86535498ff',
+    'timestamp' => 1460732700,
+    'checksum' => 'f471e8d1dc11776ab5d7e720e05cd6bd',
     'files' => [
         'user/config' => [
             'media' => [
@@ -19,7 +19,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1455927240
+                'modified' => 1460732293
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -27,7 +27,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1460651364
+                'modified' => 1460732691
             ],
             'themes/kelleyink' => [
                 'file' => 'user/config/themes/kelleyink.yaml',
@@ -486,7 +486,7 @@ return [
                 1 => 'tag'
             ],
             'metadata' => [
-                'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+                'description' => 'Kelley is a writer, a marketer, a teller of stories…above all, a communicator. Based in Portland, OR.'
             ],
             'summary' => [
                 'enabled' => true,

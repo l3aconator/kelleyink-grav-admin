@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/kelley-ink-grav-mampstack-5.6.18-0/apache2/htdocs/grav-admin/user/config/system.yaml',
-    'modified' => 1460651364,
+    'modified' => 1460732691,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',

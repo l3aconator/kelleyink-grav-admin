@@ -1,6 +1,6 @@
 ---
 title: 'Health Republic Infographic'
-order: 7
+order: 5
 
 button: true
 buttontext: 'See the infographic!'

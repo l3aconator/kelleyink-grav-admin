@@ -1,9 +1,12 @@
 ---
 title: 'story documentation... undocumented'
+date: '11-01-2016 00:00'
 taxonomy:
-    tag: [story, story class]
-date: 05/19/2013
+    tag:
+        - story
+        - 'story class'
 ---
+
 Did I stop telling stories between May of 2013 and the start of 2016? Heck, no. But...I kinda stopped documenting it. I regret that, but I suppose in the scheme of life regrets, it’s not the end of the world. 
 
 In my defense, I had a lot on my plate: a divorce, a new relationship, a move from a job for an established company to a start-up, the failure of that start-up, job-hunting, a new job at another start-up (this time, one I was truly passionate about), a new baby, the demise of the second start-up...and now we’re here at job-hunting again. 

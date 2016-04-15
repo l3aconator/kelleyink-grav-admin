@@ -1,11 +1,11 @@
 ---
 title: 'horsing around'
-date: '2-10-2013 00:00'
+date: '10-02-2013 00:00'
 taxonomy:
     tag:
-        - marketing
-        - communication
-        - experience
+        - story
+        - audio
+        - campfire
 ---
 
 Campfire after-hours (theme: guarantee) at CSz Portland: 2/10/2013

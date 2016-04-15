@@ -4,7 +4,7 @@ order: 1
 
 button: true
 buttontext: 'See the pdf!'
-pdf: alternative-care.pdf
+pdf: maxwell-3e-postcard.pdf
 
 bottomimage: bottom.jpg
 topimage: top.jpg

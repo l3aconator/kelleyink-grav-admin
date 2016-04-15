@@ -32,17 +32,26 @@ class __TwigTemplate_cb07f11150a7e896997ca702edd880c965f536e62bae646b0932a9d60f4
                             <div class=\"social um-marg-bot-22\">
                                 <a href=\"https://www.facebook.com/kelleyinkfreelance\" target=\"_blank\">
                                     <div class=\"social-circle small\">
-                                        <img src=\"/user/pages/05.thanks/fb-512.png\" alt=\"This is the Facebook icon.\" class=\"social-fb small\" />
+                                        <img src=\"";
+        // line 12
+        echo (isset($context["base_url"]) ? $context["base_url"] : null);
+        echo "/user/pages/05.thanks/fb-512.png\" alt=\"This is the Facebook icon.\" class=\"social-fb small\" />
                                     </div>
                                 </a>
                                 <a href=\"https://twitter.com/kelley_ink\" target=\"_blank\">
                                     <div class=\"social-circle small\">
-                                        <img src=\"/user/pages/05.thanks/tw-1687.png\" alt=\"This is the Twitter icon.\" class=\"social-tw small\" />
+                                        <img src=\"";
+        // line 17
+        echo (isset($context["base_url"]) ? $context["base_url"] : null);
+        echo "/user/pages/05.thanks/tw-1687.png\" alt=\"This is the Twitter icon.\" class=\"social-tw small\" />
                                     </div>
                                 </a>
                                 <a href=\"https://www.linkedin.com/in/kelley-mcallister-a907958\" target=\"_blank\">
                                     <div class=\"social-circle small\">
-                                        <img src=\"/user/pages/05.thanks/in-128.png\" alt=\"This is the LinkedIn icon.\" class=\"social-in small\" />
+                                        <img src=\"";
+        // line 22
+        echo (isset($context["base_url"]) ? $context["base_url"] : null);
+        echo "/user/pages/05.thanks/in-128.png\" alt=\"This is the LinkedIn icon.\" class=\"social-in small\" />
                                     </div>
                                 </a>
                             </div>
@@ -161,7 +170,7 @@ class __TwigTemplate_cb07f11150a7e896997ca702edd880c965f536e62bae646b0932a9d60f4
 
     public function getDebugInfo()
     {
-        return array (  136 => 68,  130 => 64,  123 => 60,  119 => 59,  115 => 58,  111 => 57,  104 => 53,  100 => 52,  96 => 51,  92 => 50,  87 => 47,  79 => 42,  75 => 41,  71 => 40,  61 => 33,  57 => 31,  55 => 30,  26 => 6,  19 => 1,);
+        return array (  145 => 68,  139 => 64,  132 => 60,  128 => 59,  124 => 58,  120 => 57,  113 => 53,  109 => 52,  105 => 51,  101 => 50,  96 => 47,  88 => 42,  84 => 41,  80 => 40,  70 => 33,  66 => 31,  64 => 30,  53 => 22,  45 => 17,  37 => 12,  26 => 6,  19 => 1,);
     }
 }
 /* <div class="footer-bg section-pad">*/
@@ -175,17 +184,17 @@ class __TwigTemplate_cb07f11150a7e896997ca702edd880c965f536e62bae646b0932a9d60f4
 /*                             <div class="social um-marg-bot-22">*/
 /*                                 <a href="https://www.facebook.com/kelleyinkfreelance" target="_blank">*/
 /*                                     <div class="social-circle small">*/
-/*                                         <img src="/user/pages/05.thanks/fb-512.png" alt="This is the Facebook icon." class="social-fb small" />*/
+/*                                         <img src="{{ base_url }}/user/pages/05.thanks/fb-512.png" alt="This is the Facebook icon." class="social-fb small" />*/
 /*                                     </div>*/
 /*                                 </a>*/
 /*                                 <a href="https://twitter.com/kelley_ink" target="_blank">*/
 /*                                     <div class="social-circle small">*/
-/*                                         <img src="/user/pages/05.thanks/tw-1687.png" alt="This is the Twitter icon." class="social-tw small" />*/
+/*                                         <img src="{{ base_url }}/user/pages/05.thanks/tw-1687.png" alt="This is the Twitter icon." class="social-tw small" />*/
 /*                                     </div>*/
 /*                                 </a>*/
 /*                                 <a href="https://www.linkedin.com/in/kelley-mcallister-a907958" target="_blank">*/
 /*                                     <div class="social-circle small">*/
-/*                                         <img src="/user/pages/05.thanks/in-128.png" alt="This is the LinkedIn icon." class="social-in small" />*/
+/*                                         <img src="{{ base_url }}/user/pages/05.thanks/in-128.png" alt="This is the LinkedIn icon." class="social-in small" />*/
 /*                                     </div>*/
 /*                                 </a>*/
 /*                             </div>*/

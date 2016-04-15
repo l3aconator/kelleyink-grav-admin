@@ -1,5 +1,5 @@
 ---
-title: 'The Résumé of Kelley McAllister'
+title: 'Kelley (Tyner) McAllister’s résumé'
 visible: false
 onpage_menu: false
 workhistory:
@@ -41,20 +41,20 @@ workhistory:
             jobexplanation: 'When I decided to re-enter the work force, I worked independently for my former company, in conjunction with a former colleague, and for SAGE Publications—where I would eventually be hired full-time in January of 2012.'
     -
         employer: 'Thomson Higher Education'
-        joblocation: '(Belmont, CA / Champaign, IL / Philadelphia, PA / San Francisco, CA)'
+        joblocation: '<br />(Belmont, CA / Champaign, IL / Philadelphia, PA / San Francisco, CA)'
         jobnote: '(Prior to 2001, Thomson was known as Harcourt College Publishers/Saunders College Publishing)'
         position:
-            jobbegan: 'Jan 2012'
-            jobended: 'Jun 2013'
+            jobbegan: 'Jan 2003'
+            jobended: 'Jul 2006'
             jobtitle: 'Senior Marketing Communications Manager (MCM)'
-            jobexplanation: 'I was hired as a Senior MCM and was promoted to manage the MarComm group (three employees + freelancers), where I increased our group’s performance metrics (from the 60s to the 90s) and saved the company hundreds of thousands of dollars by restructuring our annual catalog mailings.'
+            jobexplanation: 'I wrote/PM’ed hundreds of annual promotional pieces (hard-copy and digital) and became our procedural lead.'
             jobbegantwo: 'Aug 2001'
             jobendedtwo: 'Dec 2003'
             jobtitletwo: 'Senior Marketing Manager / Marketing Manager'
             jobexplanationtwo: 'I was responsible for the marketing/sales performance of disciplines totaling ~$20 million. I also conceptualized and managed a first-of-its-kind “genie” for identifying best-fit books based on instructor teaching styles.'
             jobbeganthree: 'Jan 1999'
             jobendedthree: 'Aug 2001'
-            jobtitlethree: 'Acquisitions Manager for'
+            jobtitlethree: 'Acquisitions Editor'
             jobexplanationthree: 'I oversaw my lists’ P&L (~$4 M/~$11 M), signed authors, managed text revisions, and directed our team. '
             jobbeganfour: 'Aug 1997'
             jobendedfour: 'Jan 1999'
@@ -94,7 +94,7 @@ I’m a content marketing leader and a marketing communication expert. My experi
 - I am high-energy, dedicated, and skilled at both viewing the big picture and applying attention to detail. 
 
 ## Any relevant extracurriculars?
-I’m an improviser and a storyteller and trust me, this is a killer combination. A true storyteller can find the narrative thread in anything (a must for coherence communications) and an improviser is almost guaranteed to be the best team player and leader that you’ve ever hired. We are truth tellers, capable of acknowledging tough realities productively.
+I’m an improviser and a storyteller and trust me, this is a killer combination. A true storyteller can find the narrative thread in anything (a must for coherent communications) and an improviser is almost guaranteed to be the best team player and leader that you’ve ever hired. We are truth tellers, capable of acknowledging tough realities productively.
 
 ## Where did I go to school?
 Rice University, graduated 1996 with a double major in English and Religious Studies. 
