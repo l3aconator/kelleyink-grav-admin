@@ -30,102 +30,123 @@ class __TwigTemplate_a1e81a1f9b219a207847317217fafe11c5b87789cf78b9499093e68c6be
         // line 24
         if (($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "home", array()) == true)) {
             // line 25
-            echo "    <li class=\"nav-item ";
+            echo "        <li class=\"nav-item ";
             echo (isset($context["current_page"]) ? $context["current_page"] : null);
-            echo "\">
-             <a class=\"nav-link\" href=\"#about\">About</a>
+            echo " about-drop\">
+            <a class=\"nav-link\" href=\"#about\">About</a>
+            <ul class=\"about-drop-list\">
+                <li class=\"about-drop-list-item\">
+                    <a class=\"nav-link\" href=\"about/resume\">Résumé</a>
+                </li>
+                <li class=\"about-drop-list-item\">
+                    <a class=\"nav-link\" href=\"about/testimonials\">Testimonials</a>
+                </li>
+            </ul>
         </li>
         <li class=\"nav-item ";
-            // line 28
+            // line 36
             echo (isset($context["current_page"]) ? $context["current_page"] : null);
             echo "\">
              <a class=\"nav-link\" href=\"#services\">Services</a>
         </li>
         <li class=\"nav-item ";
-            // line 31
+            // line 39
             echo (isset($context["current_page"]) ? $context["current_page"] : null);
             echo "\">
             <a class=\"nav-link\" href=\"#work\">Work</a>
         </li>
         <li class=\"nav-item ";
-            // line 34
+            // line 42
             echo (isset($context["current_page"]) ? $context["current_page"] : null);
             echo "\">
             <a class=\"nav-link\" href=\"#contact\">Contact</a>
         </li>
-    
     ";
         } else {
-            // line 39
+            // line 46
             echo "    
-    <li class=\"nav-item ";
-            // line 40
+        <li class=\"nav-item ";
+            // line 47
             echo (isset($context["current_page"]) ? $context["current_page"] : null);
-            echo "\">
-             <a class=\"nav-link\" href=\"";
-            // line 41
+            echo " about-drop\">
+            <a class=\"nav-link\" href=\"";
+            // line 48
             echo ((((isset($context["base_url"]) ? $context["base_url"] : null) == "")) ? ("/") : ((isset($context["base_url"]) ? $context["base_url"] : null)));
             echo "#about\">About</a>
+            <ul class=\"about-drop-list\">
+                <li class=\"about-drop-list-item\">
+                    <a class=\"nav-link\" href=\"";
+            // line 51
+            echo (isset($context["base_url"]) ? $context["base_url"] : null);
+            echo "/about/resume\">Résumé</a>
+                </li>
+                <li class=\"about-drop-list-item\">
+                    <a class=\"nav-link\" href=\"";
+            // line 54
+            echo (isset($context["base_url"]) ? $context["base_url"] : null);
+            echo "/about/testimonials\">Testimonials</a>
+                </li>
+            </ul>
         </li>
         <li class=\"nav-item ";
-            // line 43
+            // line 58
             echo (isset($context["current_page"]) ? $context["current_page"] : null);
             echo "\">
              <a class=\"nav-link\" href=\"";
-            // line 44
+            // line 59
             echo ((((isset($context["base_url"]) ? $context["base_url"] : null) == "")) ? ("/") : ((isset($context["base_url"]) ? $context["base_url"] : null)));
             echo "#services\">Services</a>
         </li>
         <li class=\"nav-item ";
-            // line 46
+            // line 61
             echo (isset($context["current_page"]) ? $context["current_page"] : null);
             echo "\">
             <a class=\"nav-link\" href=\"";
-            // line 47
+            // line 62
             echo ((((isset($context["base_url"]) ? $context["base_url"] : null) == "")) ? ("/") : ((isset($context["base_url"]) ? $context["base_url"] : null)));
             echo "#work\">Work</a>
         </li>
         <li class=\"nav-item ";
-            // line 49
+            // line 64
             echo (isset($context["current_page"]) ? $context["current_page"] : null);
             echo "\">
             <a class=\"nav-link\" href=\"";
-            // line 50
+            // line 65
             echo ((((isset($context["base_url"]) ? $context["base_url"] : null) == "")) ? ("/") : ((isset($context["base_url"]) ? $context["base_url"] : null)));
             echo "#contact\">Contact</a>
         </li>
     
     ";
         }
-        // line 54
+        // line 69
         echo "    
     ";
-        // line 55
+        // line 70
         if ($this->getAttribute($this->getAttribute((isset($context["theme_config"]) ? $context["theme_config"] : null), "dropdown", array()), "enabled", array())) {
-            // line 56
+            // line 71
             echo "        ";
             echo $this->getAttribute($this, "loop", array(0 => (isset($context["pages"]) ? $context["pages"] : null)), "method");
             echo "
     ";
         } else {
-            // line 58
+            // line 73
             echo "        ";
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute((isset($context["pages"]) ? $context["pages"] : null), "children", array()), "visible", array()));
             foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
-                // line 59
+                // line 74
                 echo "            ";
                 $context["current_page"] = ((($this->getAttribute($context["page"], "active", array()) || $this->getAttribute($context["page"], "activeChild", array()))) ? ("active") : (""));
-                // line 60
+                // line 75
                 echo "            <li class=\"nav-item ";
                 echo (isset($context["current_page"]) ? $context["current_page"] : null);
                 echo "\">
                 <a class=\"nav-link\" href=\"";
-                // line 61
+                // line 76
                 echo $this->getAttribute($context["page"], "url", array());
                 echo "\">
                     ";
-                // line 62
+                // line 77
                 echo $this->getAttribute($context["page"], "menu", array());
                 echo "
                 </a>
@@ -135,24 +156,24 @@ class __TwigTemplate_a1e81a1f9b219a207847317217fafe11c5b87789cf78b9499093e68c6be
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 66
+            // line 81
             echo "    ";
         }
-        // line 67
+        // line 82
         echo "    
     ";
-        // line 68
+        // line 83
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "menu", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["mitem"]) {
-            // line 69
+            // line 84
             echo "        <li class=\"nav-item\">
             <a class=\"nav-link\" href=\"";
-            // line 70
+            // line 85
             echo $this->getAttribute($context["mitem"], "url", array());
             echo "\">
                 ";
-            // line 71
+            // line 86
             echo $this->getAttribute($context["mitem"], "text", array());
             echo "
             </a>
@@ -162,45 +183,57 @@ class __TwigTemplate_a1e81a1f9b219a207847317217fafe11c5b87789cf78b9499093e68c6be
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['mitem'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 75
+        // line 90
         echo "    
     ";
-        // line 76
+        // line 91
         if (($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["config"]) ? $context["config"] : null), "plugins", array()), "login", array()), "enabled", array()) && $this->getAttribute($this->getAttribute((isset($context["grav"]) ? $context["grav"] : null), "user", array()), "username", array()))) {
-            // line 77
+            // line 92
             echo "        <li>";
-            $this->loadTemplate("partials/login-status.html.twig", "partials/navigation.html.twig", 77)->display($context);
+            $this->loadTemplate("partials/login-status.html.twig", "partials/navigation.html.twig", 92)->display($context);
             echo "</li>
     ";
         }
-        // line 79
+        // line 94
         echo "</ul>
 
 <ul class=\"navigation nav-list u-pull-right mobile\">
     
     ";
-        // line 83
+        // line 98
         if (($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "home", array()) == true)) {
-            // line 84
-            echo "    <li class=\"nav-item ";
+            // line 99
+            echo "        <li class=\"nav-item ";
             echo (isset($context["current_page"]) ? $context["current_page"] : null);
             echo "\">
-             <a class=\"nav-link\" href=\"#about\">About</a>
+            <a class=\"nav-link\" href=\"#about\">About</a>
         </li>
         <li class=\"nav-item ";
-            // line 87
+            // line 102
             echo (isset($context["current_page"]) ? $context["current_page"] : null);
             echo "\">
-             <a class=\"nav-link\" href=\"#services\">Services</a>
+            <a class=\"nav-link\" href=\"about/resume\">Résumé</a>
         </li>
         <li class=\"nav-item ";
-            // line 90
+            // line 105
+            echo (isset($context["current_page"]) ? $context["current_page"] : null);
+            echo "\">
+            <a class=\"nav-link\" href=\"about/testimonials\">Testimonials</a>
+        </li>
+        <li class=\"nav-item ";
+            // line 108
+            echo (isset($context["current_page"]) ? $context["current_page"] : null);
+            echo "\">
+            <a class=\"nav-link\" href=\"#services\">Services</a>
+        </li>
+        <li class=\"nav-item ";
+            // line 111
             echo (isset($context["current_page"]) ? $context["current_page"] : null);
             echo "\">
             <a class=\"nav-link\" href=\"#work\">Work</a>
         </li>
         <li class=\"nav-item ";
-            // line 93
+            // line 114
             echo (isset($context["current_page"]) ? $context["current_page"] : null);
             echo "\">
             <a class=\"nav-link\" href=\"#contact\">Contact</a>
@@ -208,76 +241,94 @@ class __TwigTemplate_a1e81a1f9b219a207847317217fafe11c5b87789cf78b9499093e68c6be
     
     ";
         } else {
-            // line 98
+            // line 119
             echo "    
-    <li class=\"nav-item ";
-            // line 99
+        <li class=\"nav-item ";
+            // line 120
             echo (isset($context["current_page"]) ? $context["current_page"] : null);
             echo "\">
              <a class=\"nav-link\" href=\"";
-            // line 100
+            // line 121
             echo ((((isset($context["base_url"]) ? $context["base_url"] : null) == "")) ? ("/") : ((isset($context["base_url"]) ? $context["base_url"] : null)));
             echo "#about\">About</a>
         </li>
         <li class=\"nav-item ";
-            // line 102
+            // line 123
+            echo (isset($context["current_page"]) ? $context["current_page"] : null);
+            echo "\">
+            <a class=\"nav-link\" href=\"";
+            // line 124
+            echo (isset($context["base_url"]) ? $context["base_url"] : null);
+            echo "/about/resume\">Résumé</a>
+        </li>
+        <li class=\"nav-item ";
+            // line 126
+            echo (isset($context["current_page"]) ? $context["current_page"] : null);
+            echo "\">
+            <a class=\"nav-link\" href=\"";
+            // line 127
+            echo (isset($context["base_url"]) ? $context["base_url"] : null);
+            echo "/about/testimonials\">Testimonials</a>
+        </li>
+        <li class=\"nav-item ";
+            // line 129
             echo (isset($context["current_page"]) ? $context["current_page"] : null);
             echo "\">
              <a class=\"nav-link\" href=\"";
-            // line 103
+            // line 130
             echo ((((isset($context["base_url"]) ? $context["base_url"] : null) == "")) ? ("/") : ((isset($context["base_url"]) ? $context["base_url"] : null)));
             echo "#services\">Services</a>
         </li>
         <li class=\"nav-item ";
-            // line 105
+            // line 132
             echo (isset($context["current_page"]) ? $context["current_page"] : null);
             echo "\">
             <a class=\"nav-link\" href=\"";
-            // line 106
+            // line 133
             echo ((((isset($context["base_url"]) ? $context["base_url"] : null) == "")) ? ("/") : ((isset($context["base_url"]) ? $context["base_url"] : null)));
             echo "#work\">Work</a>
         </li>
         <li class=\"nav-item ";
-            // line 108
+            // line 135
             echo (isset($context["current_page"]) ? $context["current_page"] : null);
             echo "\">
             <a class=\"nav-link\" href=\"";
-            // line 109
+            // line 136
             echo ((((isset($context["base_url"]) ? $context["base_url"] : null) == "")) ? ("/") : ((isset($context["base_url"]) ? $context["base_url"] : null)));
             echo "#contact\">Contact</a>
         </li>
     
     ";
         }
-        // line 113
+        // line 140
         echo "    
     ";
-        // line 114
+        // line 141
         if ($this->getAttribute($this->getAttribute((isset($context["theme_config"]) ? $context["theme_config"] : null), "dropdown", array()), "enabled", array())) {
-            // line 115
+            // line 142
             echo "        ";
             echo $this->getAttribute($this, "loop", array(0 => (isset($context["pages"]) ? $context["pages"] : null)), "method");
             echo "
     ";
         } else {
-            // line 117
+            // line 144
             echo "        ";
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute((isset($context["pages"]) ? $context["pages"] : null), "children", array()), "visible", array()));
             foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
-                // line 118
+                // line 145
                 echo "            ";
                 $context["current_page"] = ((($this->getAttribute($context["page"], "active", array()) || $this->getAttribute($context["page"], "activeChild", array()))) ? ("active") : (""));
-                // line 119
+                // line 146
                 echo "            <li class=\"nav-item ";
                 echo (isset($context["current_page"]) ? $context["current_page"] : null);
                 echo "\">
                 <a class=\"nav-link\" href=\"";
-                // line 120
+                // line 147
                 echo $this->getAttribute($context["page"], "url", array());
                 echo "\">
                     ";
-                // line 121
+                // line 148
                 echo $this->getAttribute($context["page"], "menu", array());
                 echo "
                 </a>
@@ -287,24 +338,24 @@ class __TwigTemplate_a1e81a1f9b219a207847317217fafe11c5b87789cf78b9499093e68c6be
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 125
+            // line 152
             echo "    ";
         }
-        // line 126
+        // line 153
         echo "    
     ";
-        // line 127
+        // line 154
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "menu", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["mitem"]) {
-            // line 128
+            // line 155
             echo "        <li class=\"nav-item\">
             <a class=\"nav-link\" href=\"";
-            // line 129
+            // line 156
             echo $this->getAttribute($context["mitem"], "url", array());
             echo "\">
                 ";
-            // line 130
+            // line 157
             echo $this->getAttribute($context["mitem"], "text", array());
             echo "
             </a>
@@ -314,18 +365,18 @@ class __TwigTemplate_a1e81a1f9b219a207847317217fafe11c5b87789cf78b9499093e68c6be
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['mitem'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 134
+        // line 161
         echo "    
     ";
-        // line 135
+        // line 162
         if (($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["config"]) ? $context["config"] : null), "plugins", array()), "login", array()), "enabled", array()) && $this->getAttribute($this->getAttribute((isset($context["grav"]) ? $context["grav"] : null), "user", array()), "username", array()))) {
-            // line 136
+            // line 163
             echo "        <li>";
-            $this->loadTemplate("partials/login-status.html.twig", "partials/navigation.html.twig", 136)->display($context);
+            $this->loadTemplate("partials/login-status.html.twig", "partials/navigation.html.twig", 163)->display($context);
             echo "</li>
     ";
         }
-        // line 138
+        // line 165
         echo "</ul>
 
 
@@ -427,7 +478,7 @@ class __TwigTemplate_a1e81a1f9b219a207847317217fafe11c5b87789cf78b9499093e68c6be
 
     public function getDebugInfo()
     {
-        return array (  403 => 17,  397 => 14,  394 => 13,  392 => 12,  387 => 10,  383 => 9,  378 => 8,  375 => 7,  370 => 6,  358 => 5,  336 => 2,  329 => 138,  323 => 136,  321 => 135,  318 => 134,  308 => 130,  304 => 129,  301 => 128,  297 => 127,  294 => 126,  291 => 125,  281 => 121,  277 => 120,  272 => 119,  269 => 118,  264 => 117,  258 => 115,  256 => 114,  253 => 113,  246 => 109,  242 => 108,  237 => 106,  233 => 105,  228 => 103,  224 => 102,  219 => 100,  215 => 99,  212 => 98,  204 => 93,  198 => 90,  192 => 87,  185 => 84,  183 => 83,  177 => 79,  171 => 77,  169 => 76,  166 => 75,  156 => 71,  152 => 70,  149 => 69,  145 => 68,  142 => 67,  139 => 66,  129 => 62,  125 => 61,  120 => 60,  117 => 59,  112 => 58,  106 => 56,  104 => 55,  101 => 54,  94 => 50,  90 => 49,  85 => 47,  81 => 46,  76 => 44,  72 => 43,  67 => 41,  63 => 40,  60 => 39,  52 => 34,  46 => 31,  40 => 28,  33 => 25,  31 => 24,  25 => 20,  21 => 3,  19 => 1,);
+        return array (  454 => 17,  448 => 14,  445 => 13,  443 => 12,  438 => 10,  434 => 9,  429 => 8,  426 => 7,  421 => 6,  409 => 5,  387 => 2,  380 => 165,  374 => 163,  372 => 162,  369 => 161,  359 => 157,  355 => 156,  352 => 155,  348 => 154,  345 => 153,  342 => 152,  332 => 148,  328 => 147,  323 => 146,  320 => 145,  315 => 144,  309 => 142,  307 => 141,  304 => 140,  297 => 136,  293 => 135,  288 => 133,  284 => 132,  279 => 130,  275 => 129,  270 => 127,  266 => 126,  261 => 124,  257 => 123,  252 => 121,  248 => 120,  245 => 119,  237 => 114,  231 => 111,  225 => 108,  219 => 105,  213 => 102,  206 => 99,  204 => 98,  198 => 94,  192 => 92,  190 => 91,  187 => 90,  177 => 86,  173 => 85,  170 => 84,  166 => 83,  163 => 82,  160 => 81,  150 => 77,  146 => 76,  141 => 75,  138 => 74,  133 => 73,  127 => 71,  125 => 70,  122 => 69,  115 => 65,  111 => 64,  106 => 62,  102 => 61,  97 => 59,  93 => 58,  86 => 54,  80 => 51,  74 => 48,  70 => 47,  67 => 46,  60 => 42,  54 => 39,  48 => 36,  33 => 25,  31 => 24,  25 => 20,  21 => 3,  19 => 1,);
     }
 }
 /* {% set show_onpage_menu = header.onpage_menu == true or header.onpage_menu is null %}*/
@@ -454,8 +505,16 @@ class __TwigTemplate_a1e81a1f9b219a207847317217fafe11c5b87789cf78b9499093e68c6be
 /* <ul class="navigation nav-list u-pull-right desktop">*/
 /*     */
 /*     {% if page.header.home == true %}*/
-/*     <li class="nav-item {{ current_page }}">*/
-/*              <a class="nav-link" href="#about">About</a>*/
+/*         <li class="nav-item {{ current_page }} about-drop">*/
+/*             <a class="nav-link" href="#about">About</a>*/
+/*             <ul class="about-drop-list">*/
+/*                 <li class="about-drop-list-item">*/
+/*                     <a class="nav-link" href="about/resume">Résumé</a>*/
+/*                 </li>*/
+/*                 <li class="about-drop-list-item">*/
+/*                     <a class="nav-link" href="about/testimonials">Testimonials</a>*/
+/*                 </li>*/
+/*             </ul>*/
 /*         </li>*/
 /*         <li class="nav-item {{ current_page }}">*/
 /*              <a class="nav-link" href="#services">Services</a>*/
@@ -466,11 +525,18 @@ class __TwigTemplate_a1e81a1f9b219a207847317217fafe11c5b87789cf78b9499093e68c6be
 /*         <li class="nav-item {{ current_page }}">*/
 /*             <a class="nav-link" href="#contact">Contact</a>*/
 /*         </li>*/
-/*     */
 /*     {% else %}*/
 /*     */
-/*     <li class="nav-item {{ current_page }}">*/
-/*              <a class="nav-link" href="{{ base_url == '' ? '/' : base_url }}#about">About</a>*/
+/*         <li class="nav-item {{ current_page }} about-drop">*/
+/*             <a class="nav-link" href="{{ base_url == '' ? '/' : base_url }}#about">About</a>*/
+/*             <ul class="about-drop-list">*/
+/*                 <li class="about-drop-list-item">*/
+/*                     <a class="nav-link" href="{{ base_url }}/about/resume">Résumé</a>*/
+/*                 </li>*/
+/*                 <li class="about-drop-list-item">*/
+/*                     <a class="nav-link" href="{{ base_url }}/about/testimonials">Testimonials</a>*/
+/*                 </li>*/
+/*             </ul>*/
 /*         </li>*/
 /*         <li class="nav-item {{ current_page }}">*/
 /*              <a class="nav-link" href="{{ base_url == '' ? '/' : base_url }}#services">Services</a>*/
@@ -513,11 +579,17 @@ class __TwigTemplate_a1e81a1f9b219a207847317217fafe11c5b87789cf78b9499093e68c6be
 /* <ul class="navigation nav-list u-pull-right mobile">*/
 /*     */
 /*     {% if page.header.home == true %}*/
-/*     <li class="nav-item {{ current_page }}">*/
-/*              <a class="nav-link" href="#about">About</a>*/
+/*         <li class="nav-item {{ current_page }}">*/
+/*             <a class="nav-link" href="#about">About</a>*/
 /*         </li>*/
 /*         <li class="nav-item {{ current_page }}">*/
-/*              <a class="nav-link" href="#services">Services</a>*/
+/*             <a class="nav-link" href="about/resume">Résumé</a>*/
+/*         </li>*/
+/*         <li class="nav-item {{ current_page }}">*/
+/*             <a class="nav-link" href="about/testimonials">Testimonials</a>*/
+/*         </li>*/
+/*         <li class="nav-item {{ current_page }}">*/
+/*             <a class="nav-link" href="#services">Services</a>*/
 /*         </li>*/
 /*         <li class="nav-item {{ current_page }}">*/
 /*             <a class="nav-link" href="#work">Work</a>*/
@@ -528,8 +600,14 @@ class __TwigTemplate_a1e81a1f9b219a207847317217fafe11c5b87789cf78b9499093e68c6be
 /*     */
 /*     {% else %}*/
 /*     */
-/*     <li class="nav-item {{ current_page }}">*/
+/*         <li class="nav-item {{ current_page }}">*/
 /*              <a class="nav-link" href="{{ base_url == '' ? '/' : base_url }}#about">About</a>*/
+/*         </li>*/
+/*         <li class="nav-item {{ current_page }}">*/
+/*             <a class="nav-link" href="{{ base_url }}/about/resume">Résumé</a>*/
+/*         </li>*/
+/*         <li class="nav-item {{ current_page }}">*/
+/*             <a class="nav-link" href="{{ base_url }}/about/testimonials">Testimonials</a>*/
 /*         </li>*/
 /*         <li class="nav-item {{ current_page }}">*/
 /*              <a class="nav-link" href="{{ base_url == '' ? '/' : base_url }}#services">Services</a>*/

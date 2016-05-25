@@ -144,6 +144,8 @@ class __TwigTemplate_cb07f11150a7e896997ca702edd880c965f536e62bae646b0932a9d60f4
         // line 68
         echo ((((isset($context["base_url"]) ? $context["base_url"] : null) == "")) ? ("/") : ((isset($context["base_url"]) ? $context["base_url"] : null)));
         echo "#contact\"><button class=\"button\">Contact Kelley!</button></a>
+                            <span class=\"knockout-darker phone\"><strong>Call/text:</strong> (415)123-4567</span>
+                            <span class=\"knockout-darker email\"><strong>Email:</strong> kelley@kelley.ink</span>
                         </div>
                     </footer>
                 </div>
@@ -241,6 +243,8 @@ class __TwigTemplate_cb07f11150a7e896997ca702edd880c965f536e62bae646b0932a9d60f4
 /*                         <div class="four columns">*/
 /*                             <h4 class="knockout-darker">Currently <span class="knockout project-avail">open</span> for new projects.</h4>*/
 /*                             <a href="{{ base_url == '' ? '/' : base_url }}#contact"><button class="button">Contact Kelley!</button></a>*/
+/*                             <span class="knockout-darker phone"><strong>Call/text:</strong> (415)123-4567</span>*/
+/*                             <span class="knockout-darker email"><strong>Email:</strong> kelley@kelley.ink</span>*/
 /*                         </div>*/
 /*                     </footer>*/
 /*                 </div>*/
